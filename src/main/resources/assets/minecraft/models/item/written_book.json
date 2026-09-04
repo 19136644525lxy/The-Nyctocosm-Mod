@@ -1,0 +1,13 @@
+{
+	"parent": "item/generated",
+	"textures": {
+		"layer0": "item/written_book"
+	},
+	"overrides": [
+		{"predicate": {"custom_model_data":1}, "model": "nyctocosm:items/lorebooks/ancient_journals"},
+		{"predicate": {"custom_model_data":2}, "model": "nyctocosm:items/lorebooks/catechism"},
+		{"predicate": {"custom_model_data":3}, "model": "nyctocosm:items/lorebooks/adherents"},
+		{"predicate": {"custom_model_data":4}, "model": "nyctocosm:items/lorebooks/dreams"},
+		{"predicate": {"custom_model_data":5}, "model": "nyctocosm:items/lorebooks/axiotopology"}
+	]
+}

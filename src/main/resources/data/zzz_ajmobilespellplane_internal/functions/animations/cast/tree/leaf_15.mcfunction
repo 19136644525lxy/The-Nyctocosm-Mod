@@ -1,0 +1,1 @@
+execute on passengers run function zzz_ajmobilespellplane_internal:animations/cast/tree/leaf_15_as_bone

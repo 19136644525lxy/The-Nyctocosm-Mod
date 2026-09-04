@@ -1,0 +1,4 @@
+#built using mc-build (https://github.com/mc-build/mc-build)
+
+item replace entity @s weapon.mainhand with air
+item replace entity @s weapon.mainhand with written_book{CustomModelData:5,display:{Name:'[{"translate":"item.nyctocosm.axiotopology.title","color":"gold","italic":false,"with":[{"translate":"item.nyctocosm.book_number.1"},{"translate":"item.nyctocosm.axiotopology.1.title","color":"dark_aqua","italic":true}]}]',Lore:['{"translate":"book.byAuthor","color":"gray","italic":false,"with":[{"translate":"item.nyctocosm.axiotopology.author"}]}','{"translate":"item.nyctocosm.book.generation","color":"gray","italic":"false"}','{"translate":"item.nyctocosm.axiotopology.lore","color":"dark_gray"}']},title:"Theorem One",author:"Tarph-Xolaeta",generation:2,pages:['{"translate":"item.nyctocosm.axiotopology.1.page1"}','{"translate":"item.nyctocosm.axiotopology.1.page2"}','{"translate":"item.nyctocosm.axiotopology.1.page3"}'],HideFlags:32b} 1

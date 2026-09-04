@@ -1,0 +1,2 @@
+execute on passengers run function animated_java:ajsorcererm2/zzzzzzzz/animations/seekingsingularities/tree/leaf_30_as_bone
+execute unless entity @s[tag=aj.ajsorcererm2.disable_command_keyframes] at @s run execute positioned ^0.7 ^2.4 ^1.5 run function sorcerer:attacks/seekingsingularities/summon

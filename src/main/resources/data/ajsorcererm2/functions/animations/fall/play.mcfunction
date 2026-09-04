@@ -1,0 +1,2 @@
+execute if entity @s[tag=aj.ajsorcererm2.root] run function zzz_ajsorcererm2_internal:animations/fall/play_as_root
+execute if entity @s[tag=!aj.ajsorcererm2.root] run tellraw @a ["",{"text":"["},{"text":"Animated Java","color":"aqua"},{"text":"] "},{"text":"ERROR ☠","color":"red"},{"text":" > ","color":"gray"},[{"text":"The function","color":"yellow"},{"text":" ajsorcererm2:animations/fall/play ","color":"blue"},{"text":"must be run"},{"text":" as ","color":"red"},{"text":"the root entity!"}]]

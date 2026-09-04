@@ -1,0 +1,2 @@
+scoreboard players set @s aj.ajemissary_vfx.rig_loaded 1
+execute unless score @s aj.ajemissary_vfx.export_version = aj.ajemissary_vfx.export_version aj.i at @s run function animated_java:ajemissary_vfx/zzzzzzzz/mark_outdated_rig

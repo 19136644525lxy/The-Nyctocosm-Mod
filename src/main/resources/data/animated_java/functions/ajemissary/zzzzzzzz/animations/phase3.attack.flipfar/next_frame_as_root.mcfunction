@@ -1,0 +1,1 @@
+function animated_java:ajemissary/zzzzzzzz/animations/phase3.attack.flipfar/tick_animation

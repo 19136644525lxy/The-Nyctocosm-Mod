@@ -1,0 +1,3 @@
+execute if score @s aj.ajemissary.animation.phase3.attack.strafeleft.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:ajemissary/zzzzzzzz/animations/phase3.attack.strafeleft/end_loop
+execute if score @s aj.ajemissary.animation.phase3.attack.strafeleft.loop_mode = $aj.loop_mode.once aj.i run function animated_java:ajemissary/animations/phase3.attack.strafeleft/stop
+execute if score @s aj.ajemissary.animation.phase3.attack.strafeleft.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:ajemissary/animations/phase3.attack.strafeleft/pause

@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.ajspellplane.bone.outercircle1] run data modify entity @s {} merge value {transformation:[-1.533048449102396f,0f,1.827015996838763f,0f,0f,1.325f,0f,-0.0625f,-1.827015996838763f,0f,-1.533048449102396f,0f,0f,0f,0f,1f],start_interpolation:0}

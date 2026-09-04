@@ -1,0 +1,4 @@
+function animated_java:ajnullpoint/zzzzzzzz/animations/idle/pause_as_root
+function animated_java:ajnullpoint/zzzzzzzz/animations/emit/pause_as_root
+function animated_java:ajnullpoint/zzzzzzzz/animations/recall/pause_as_root
+function animated_java:ajnullpoint/zzzzzzzz/animations/hurt/pause_as_root

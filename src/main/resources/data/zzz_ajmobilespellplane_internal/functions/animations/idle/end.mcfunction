@@ -1,0 +1,3 @@
+execute if score @s aj.ajmobilespellplane.animation.idle.loop_mode = $aj.loop_mode.loop aj.i run function zzz_ajmobilespellplane_internal:animations/idle/end_loop
+execute if score @s aj.ajmobilespellplane.animation.idle.loop_mode = $aj.loop_mode.once aj.i run function ajmobilespellplane:animations/idle/stop
+execute if score @s aj.ajmobilespellplane.animation.idle.loop_mode = $aj.loop_mode.hold aj.i run function ajmobilespellplane:animations/idle/pause

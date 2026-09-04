@@ -1,0 +1,56 @@
+#built using mc-build (https://github.com/mc-build/mc-build)
+
+tag @s add successZ
+execute if entity @e[tag=portal,tag=origin,distance=..50] run tag @s remove successZ
+execute unless block ~10.1 ~.1 ~ minecraft:reinforced_deepslate run tag @s remove successZ
+execute unless block ~10.1 ~1.1 ~ minecraft:reinforced_deepslate run tag @s remove successZ
+execute unless block ~10.1 ~2.1 ~ minecraft:reinforced_deepslate run tag @s remove successZ
+execute unless block ~10.1 ~-.1 ~ minecraft:reinforced_deepslate run tag @s remove successZ
+execute unless block ~10.1 ~-1.1 ~ minecraft:reinforced_deepslate run tag @s remove successZ
+execute unless block ~10.1 ~-2.1 ~ minecraft:reinforced_deepslate run tag @s remove successZ
+execute unless block ~-10.1 ~.1 ~ minecraft:reinforced_deepslate run tag @s remove successZ
+execute unless block ~-10.1 ~1.1 ~ minecraft:reinforced_deepslate run tag @s remove successZ
+execute unless block ~-10.1 ~2.1 ~ minecraft:reinforced_deepslate run tag @s remove successZ
+execute unless block ~-10.1 ~-.1 ~ minecraft:reinforced_deepslate run tag @s remove successZ
+execute unless block ~-10.1 ~-1.1 ~ minecraft:reinforced_deepslate run tag @s remove successZ
+execute unless block ~-10.1 ~-2.1 ~ minecraft:reinforced_deepslate run tag @s remove successZ
+execute unless block ~.1 ~3.1 ~ minecraft:reinforced_deepslate run tag @s remove successZ
+execute unless block ~1.1 ~3.1 ~ minecraft:reinforced_deepslate run tag @s remove successZ
+execute unless block ~2.1 ~3.1 ~ minecraft:reinforced_deepslate run tag @s remove successZ
+execute unless block ~3.1 ~3.1 ~ minecraft:reinforced_deepslate run tag @s remove successZ
+execute unless block ~4.1 ~3.1 ~ minecraft:reinforced_deepslate run tag @s remove successZ
+execute unless block ~5.1 ~3.1 ~ minecraft:reinforced_deepslate run tag @s remove successZ
+execute unless block ~6.1 ~3.1 ~ minecraft:reinforced_deepslate run tag @s remove successZ
+execute unless block ~7.1 ~3.1 ~ minecraft:reinforced_deepslate run tag @s remove successZ
+execute unless block ~8.1 ~3.1 ~ minecraft:reinforced_deepslate run tag @s remove successZ
+execute unless block ~9.1 ~3.1 ~ minecraft:reinforced_deepslate run tag @s remove successZ
+execute unless block ~-.1 ~3.1 ~ minecraft:reinforced_deepslate run tag @s remove successZ
+execute unless block ~-1.1 ~3.1 ~ minecraft:reinforced_deepslate run tag @s remove successZ
+execute unless block ~-2.1 ~3.1 ~ minecraft:reinforced_deepslate run tag @s remove successZ
+execute unless block ~-3.1 ~3.1 ~ minecraft:reinforced_deepslate run tag @s remove successZ
+execute unless block ~-4.1 ~3.1 ~ minecraft:reinforced_deepslate run tag @s remove successZ
+execute unless block ~-5.1 ~3.1 ~ minecraft:reinforced_deepslate run tag @s remove successZ
+execute unless block ~-6.1 ~3.1 ~ minecraft:reinforced_deepslate run tag @s remove successZ
+execute unless block ~-7.1 ~3.1 ~ minecraft:reinforced_deepslate run tag @s remove successZ
+execute unless block ~-8.1 ~3.1 ~ minecraft:reinforced_deepslate run tag @s remove successZ
+execute unless block ~-9.1 ~3.1 ~ minecraft:reinforced_deepslate run tag @s remove successZ
+execute unless block ~.1 ~-3.1 ~ minecraft:reinforced_deepslate run tag @s remove successZ
+execute unless block ~1.1 ~-3.1 ~ minecraft:reinforced_deepslate run tag @s remove successZ
+execute unless block ~2.1 ~-3.1 ~ minecraft:reinforced_deepslate run tag @s remove successZ
+execute unless block ~3.1 ~-3.1 ~ minecraft:reinforced_deepslate run tag @s remove successZ
+execute unless block ~4.1 ~-3.1 ~ minecraft:reinforced_deepslate run tag @s remove successZ
+execute unless block ~5.1 ~-3.1 ~ minecraft:reinforced_deepslate run tag @s remove successZ
+execute unless block ~6.1 ~-3.1 ~ minecraft:reinforced_deepslate run tag @s remove successZ
+execute unless block ~7.1 ~-3.1 ~ minecraft:reinforced_deepslate run tag @s remove successZ
+execute unless block ~8.1 ~-3.1 ~ minecraft:reinforced_deepslate run tag @s remove successZ
+execute unless block ~9.1 ~-3.1 ~ minecraft:reinforced_deepslate run tag @s remove successZ
+execute unless block ~-.1 ~-3.1 ~ minecraft:reinforced_deepslate run tag @s remove successZ
+execute unless block ~-1.1 ~-3.1 ~ minecraft:reinforced_deepslate run tag @s remove successZ
+execute unless block ~-2.1 ~-3.1 ~ minecraft:reinforced_deepslate run tag @s remove successZ
+execute unless block ~-3.1 ~-3.1 ~ minecraft:reinforced_deepslate run tag @s remove successZ
+execute unless block ~-4.1 ~-3.1 ~ minecraft:reinforced_deepslate run tag @s remove successZ
+execute unless block ~-5.1 ~-3.1 ~ minecraft:reinforced_deepslate run tag @s remove successZ
+execute unless block ~-6.1 ~-3.1 ~ minecraft:reinforced_deepslate run tag @s remove successZ
+execute unless block ~-7.1 ~-3.1 ~ minecraft:reinforced_deepslate run tag @s remove successZ
+execute unless block ~-8.1 ~-3.1 ~ minecraft:reinforced_deepslate run tag @s remove successZ
+execute unless block ~-9.1 ~-3.1 ~ minecraft:reinforced_deepslate run tag @s remove successZ

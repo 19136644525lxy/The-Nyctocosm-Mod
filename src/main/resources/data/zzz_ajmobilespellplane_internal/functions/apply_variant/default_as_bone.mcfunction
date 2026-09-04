@@ -1,0 +1,10 @@
+execute if entity @s[tag=aj.ajmobilespellplane.bone.outercircle] run data modify entity @s item.tag.CustomModelData set value 2
+execute if entity @s[tag=aj.ajmobilespellplane.bone.innercircle] run data modify entity @s item.tag.CustomModelData set value 3
+execute if entity @s[tag=aj.ajmobilespellplane.bone.glyph] run data modify entity @s item.tag.CustomModelData set value 4
+execute if entity @s[tag=aj.ajmobilespellplane.bone.glyph2] run data modify entity @s item.tag.CustomModelData set value 5
+execute if entity @s[tag=aj.ajmobilespellplane.bone.glyph3] run data modify entity @s item.tag.CustomModelData set value 6
+execute if entity @s[tag=aj.ajmobilespellplane.bone.glyph4] run data modify entity @s item.tag.CustomModelData set value 7
+execute if entity @s[tag=aj.ajmobilespellplane.bone.glyph5] run data modify entity @s item.tag.CustomModelData set value 8
+execute if entity @s[tag=aj.ajmobilespellplane.bone.glyph6] run data modify entity @s item.tag.CustomModelData set value 9
+execute if entity @s[tag=aj.ajmobilespellplane.bone.glyph7] run data modify entity @s item.tag.CustomModelData set value 10
+execute if entity @s[tag=aj.ajmobilespellplane.bone.glyph8] run data modify entity @s item.tag.CustomModelData set value 11

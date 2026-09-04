@@ -1,0 +1,1 @@
+function animated_java:ajspellplane/zzzzzzzz/animations/cast/tick_animation

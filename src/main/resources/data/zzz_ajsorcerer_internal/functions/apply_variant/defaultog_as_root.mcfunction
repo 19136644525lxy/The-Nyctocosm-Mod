@@ -1,0 +1,1 @@
+execute on passengers run function zzz_ajsorcerer_internal:apply_variant/defaultog_as_bone

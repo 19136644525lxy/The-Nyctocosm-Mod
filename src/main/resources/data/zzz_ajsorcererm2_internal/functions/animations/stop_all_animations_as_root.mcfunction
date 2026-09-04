@@ -1,0 +1,10 @@
+function zzz_ajsorcererm2_internal:animations/fall/pause
+function zzz_ajsorcererm2_internal:animations/idle/pause
+function zzz_ajsorcererm2_internal:animations/risetransition/pause
+function zzz_ajsorcererm2_internal:animations/dashstrike/pause
+function zzz_ajsorcererm2_internal:animations/voidwave/pause
+function zzz_ajsorcererm2_internal:animations/javelinswing/pause
+function zzz_ajsorcererm2_internal:animations/airdash/pause
+function zzz_ajsorcererm2_internal:animations/voidbeam/pause
+function zzz_ajsorcererm2_internal:animations/seekingsingularities/pause
+function zzz_ajsorcererm2_internal:animations/die/pause

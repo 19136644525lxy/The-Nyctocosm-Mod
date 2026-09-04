@@ -1,0 +1,10 @@
+execute if entity @s[tag=aj.ajsorcererm2.animation.fall] run function animated_java:ajsorcererm2/zzzzzzzz/animations/fall/tick
+execute if entity @s[tag=aj.ajsorcererm2.animation.idle] run function animated_java:ajsorcererm2/zzzzzzzz/animations/idle/tick
+execute if entity @s[tag=aj.ajsorcererm2.animation.risetransition] run function animated_java:ajsorcererm2/zzzzzzzz/animations/risetransition/tick
+execute if entity @s[tag=aj.ajsorcererm2.animation.dashstrike] run function animated_java:ajsorcererm2/zzzzzzzz/animations/dashstrike/tick
+execute if entity @s[tag=aj.ajsorcererm2.animation.voidwave] run function animated_java:ajsorcererm2/zzzzzzzz/animations/voidwave/tick
+execute if entity @s[tag=aj.ajsorcererm2.animation.javelinswing] run function animated_java:ajsorcererm2/zzzzzzzz/animations/javelinswing/tick
+execute if entity @s[tag=aj.ajsorcererm2.animation.airdash] run function animated_java:ajsorcererm2/zzzzzzzz/animations/airdash/tick
+execute if entity @s[tag=aj.ajsorcererm2.animation.voidbeam] run function animated_java:ajsorcererm2/zzzzzzzz/animations/voidbeam/tick
+execute if entity @s[tag=aj.ajsorcererm2.animation.seekingsingularities] run function animated_java:ajsorcererm2/zzzzzzzz/animations/seekingsingularities/tick
+execute if entity @s[tag=aj.ajsorcererm2.animation.die] run function animated_java:ajsorcererm2/zzzzzzzz/animations/die/tick

@@ -1,0 +1,1 @@
+execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase1.attack.lightning_javelin/tree/leaf_10_as_bone

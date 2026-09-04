@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.test.bone.bone] run data modify entity @s item.tag.CustomModelData set value 24

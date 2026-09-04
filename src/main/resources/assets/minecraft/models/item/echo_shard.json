@@ -1,0 +1,13 @@
+{
+	"parent": "item/generated",
+	"textures": {
+		"layer0": "item/echo_shard"
+	},
+	"overrides": [
+		{"predicate": {"custom_model_data":1}, "model": "nyctocosm:portal/portal_surface_upper"},
+		{"predicate": {"custom_model_data":3}, "model": "nyctocosm:portal/external_resonance_corner_up"},
+		{"predicate": {"custom_model_data":4}, "model": "nyctocosm:portal/external_resonance_corner_down"},
+		{"predicate": {"custom_model_data":5}, "model": "nyctocosm:portal/external_resonance_vertical"},
+		{"predicate": {"custom_model_data":6}, "model": "nyctocosm:portal/external_resonance_horizontal"}
+	]
+}

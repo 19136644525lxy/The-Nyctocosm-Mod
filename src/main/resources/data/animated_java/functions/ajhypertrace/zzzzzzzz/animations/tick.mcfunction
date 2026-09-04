@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.ajhypertrace.animation.idle] run function animated_java:ajhypertrace/zzzzzzzz/animations/idle/tick

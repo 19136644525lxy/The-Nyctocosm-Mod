@@ -1,0 +1,2 @@
+execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase2_transition/tree/leaf_21_as_bone
+function animated_java:ajemissary/zzzzzzzz/apply_variant/wing_config_1/as_root

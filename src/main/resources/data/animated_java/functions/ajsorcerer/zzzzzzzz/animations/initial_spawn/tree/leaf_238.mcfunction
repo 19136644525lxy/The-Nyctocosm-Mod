@@ -1,0 +1,2 @@
+execute on passengers run function animated_java:ajsorcerer/zzzzzzzz/animations/initial_spawn/tree/leaf_238_as_bone
+execute unless entity @s[tag=aj.ajsorcerer.disable_command_keyframes] at @s run execute at @e[tag=aj.ajsorcerer.bone.group] run particle minecraft:reverse_portal ~ ~1.5 ~ 0.03 0.03 0.03 0 5

@@ -1,0 +1,3 @@
+execute if score @s aj.ajemissary.animation.die.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:ajemissary/zzzzzzzz/animations/die/end_loop
+execute if score @s aj.ajemissary.animation.die.loop_mode = $aj.loop_mode.once aj.i run function animated_java:ajemissary/animations/die/stop
+execute if score @s aj.ajemissary.animation.die.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:ajemissary/animations/die/pause

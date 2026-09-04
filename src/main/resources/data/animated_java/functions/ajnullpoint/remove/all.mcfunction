@@ -1,0 +1,2 @@
+execute as @e[type=minecraft:item_display,tag=aj.ajnullpoint.root] run function animated_java:ajnullpoint/zzzzzzzz/remove/as_root
+kill @e[tag=aj.ajnullpoint.rig_entity]

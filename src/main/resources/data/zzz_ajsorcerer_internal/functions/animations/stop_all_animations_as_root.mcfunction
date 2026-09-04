@@ -1,0 +1,2 @@
+function zzz_ajsorcerer_internal:animations/test/pause
+function zzz_ajsorcerer_internal:animations/initial_spawn/pause

@@ -1,0 +1,1 @@
+execute on passengers run function zzz_ajsorcererm2_internal:animations/dashstrike/tree/leaf_35_as_bone

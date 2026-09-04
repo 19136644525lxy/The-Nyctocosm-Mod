@@ -1,0 +1,15 @@
+{
+    "function": "minecraft:copy_nbt",
+    "source": {
+      "type": "minecraft:storage",
+      "source": "spells:soul"
+    },
+    "ops": [
+      {
+        "source": "SoulCount",
+        "target": "souls_held",
+        "op": "replace"
+      }
+    ]
+  }
+  

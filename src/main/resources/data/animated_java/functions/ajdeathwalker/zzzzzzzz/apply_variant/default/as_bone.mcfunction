@@ -1,0 +1,14 @@
+execute if entity @s[tag=aj.ajdeathwalker.bone.head] run data modify entity @s item.tag.CustomModelData set value 2
+execute if entity @s[tag=aj.ajdeathwalker.bone.neck] run data modify entity @s item.tag.CustomModelData set value 3
+execute if entity @s[tag=aj.ajdeathwalker.bone.bottomtorso] run data modify entity @s item.tag.CustomModelData set value 4
+execute if entity @s[tag=aj.ajdeathwalker.bone.toptorso] run data modify entity @s item.tag.CustomModelData set value 5
+execute if entity @s[tag=aj.ajdeathwalker.bone.upperarm] run data modify entity @s item.tag.CustomModelData set value 6
+execute if entity @s[tag=aj.ajdeathwalker.bone.lowerarm] run data modify entity @s item.tag.CustomModelData set value 7
+execute if entity @s[tag=aj.ajdeathwalker.bone.upperarm2] run data modify entity @s item.tag.CustomModelData set value 8
+execute if entity @s[tag=aj.ajdeathwalker.bone.lowerarm2] run data modify entity @s item.tag.CustomModelData set value 9
+execute if entity @s[tag=aj.ajdeathwalker.bone.shin] run data modify entity @s item.tag.CustomModelData set value 10
+execute if entity @s[tag=aj.ajdeathwalker.bone.thigh] run data modify entity @s item.tag.CustomModelData set value 11
+execute if entity @s[tag=aj.ajdeathwalker.bone.hip] run data modify entity @s item.tag.CustomModelData set value 12
+execute if entity @s[tag=aj.ajdeathwalker.bone.shin2] run data modify entity @s item.tag.CustomModelData set value 13
+execute if entity @s[tag=aj.ajdeathwalker.bone.thigh2] run data modify entity @s item.tag.CustomModelData set value 14
+execute if entity @s[tag=aj.ajdeathwalker.bone.hip2] run data modify entity @s item.tag.CustomModelData set value 15

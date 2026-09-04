@@ -1,0 +1,1 @@
+execute if score @s aj.anim_time matches 0..70 run function zzz_ajsorcererm2_internal:animations/dashstrike/tree/branch_0_70

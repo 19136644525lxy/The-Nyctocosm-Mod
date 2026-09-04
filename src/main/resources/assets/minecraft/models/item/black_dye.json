@@ -1,0 +1,12 @@
+{
+	"parent": "item/handheld",
+	"textures": {
+		"layer0": "item/black_dye"
+	},
+	"overrides": [
+		{"predicate": {"custom_model_data":1}, "model": "nyctocosm:magic/seelic_essence"},
+		{"predicate": {"custom_model_data":2}, "model": "nyctocosm:items/crafting/null_splinter"},
+		{"predicate": {"custom_model_data":3}, "model": "nyctocosm:items/crafting/void_shard"},
+		{"predicate": {"custom_model_data":4}, "model": "nyctocosm:items/crafting/nightmare_scale"}
+	]
+}

@@ -1,0 +1,2 @@
+execute on passengers run function zzz_ajsorcererm2_internal:animations/die/tree/leaf_0_as_bone
+function zzz_ajsorcererm2_internal:apply_variant/default_as_root

@@ -1,0 +1,4 @@
+summon minecraft:armor_stand ~ ~ ~ {Tags:["emissary","hand","locator","aj.ajemissary.locator","aj.ajemissary.locator.righthand","aj.new"],Invisible:1b,Marker:1b,CustomName:"[{\"text\":\"[\",\"color\":\"gray\"},{\"text\":\"AJ\",\"color\":\"aqua\"},\"] \",[\"\",{\"text\":\"ajemissary\",\"color\":\"light_purple\"},\".\",{\"text\":\"locatorEntity\",\"color\":\"white\"},\"[\",{\"text\":\"righthand\",\"color\":\"yellow\"},\"]\"]]"}
+execute as @e[type=minecraft:armor_stand,tag=aj.ajemissary.locator.righthand,tag=aj.new,limit=1,distance=..1] run function animated_java:ajemissary/zzzzzzzz/summon/locator_righthand/as_entity
+data modify entity @s Owner set from storage animated_java Owner
+data remove storage animated_java Owner

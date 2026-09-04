@@ -1,0 +1,3 @@
+execute if score @s aj.ajemissary.animation.phase3.attack.seeking_missiles.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:ajemissary/zzzzzzzz/animations/phase3.attack.seeking_missiles/end_loop
+execute if score @s aj.ajemissary.animation.phase3.attack.seeking_missiles.loop_mode = $aj.loop_mode.once aj.i run function animated_java:ajemissary/animations/phase3.attack.seeking_missiles/stop
+execute if score @s aj.ajemissary.animation.phase3.attack.seeking_missiles.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:ajemissary/animations/phase3.attack.seeking_missiles/pause

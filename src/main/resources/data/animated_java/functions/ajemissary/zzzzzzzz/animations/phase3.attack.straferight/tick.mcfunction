@@ -1,0 +1,2 @@
+execute if score @s aj.tween_time matches 1.. run function animated_java:ajemissary/zzzzzzzz/animations/phase3.attack.straferight/tick_tween
+execute unless score @s aj.tween_time matches 1.. run function animated_java:ajemissary/zzzzzzzz/animations/phase3.attack.straferight/tick_animation

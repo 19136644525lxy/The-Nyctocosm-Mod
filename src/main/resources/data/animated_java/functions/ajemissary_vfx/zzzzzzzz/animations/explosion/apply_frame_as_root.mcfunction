@@ -1,0 +1,1 @@
+execute if score @s aj.anim_time matches 0..47 run function animated_java:ajemissary_vfx/zzzzzzzz/animations/explosion/tree/branch_0_47

@@ -1,0 +1,11 @@
+execute if entity @s[tag=aj.ajemissary_vfx.bone.outercircle] run data modify entity @s {} merge value {transformation:[-0.0003183333333333334f,0f,3.8984589772857416e-20f,0f,0f,0.0003183333333333334f,0f,0f,-3.8984589772857416e-20f,0f,-0.0003183333333333334f,0f,0f,0f,0f,1f],start_interpolation:0}
+execute if entity @s[tag=aj.ajemissary_vfx.bone.innercircle] run data modify entity @s {} merge value {transformation:[-0.0003183333333333334f,0f,3.8984589772857416e-20f,0f,0f,0.0003183333333333334f,0f,0f,-3.8984589772857416e-20f,0f,-0.0003183333333333334f,0f,0f,0f,0f,1f],start_interpolation:0}
+execute if entity @s[tag=aj.ajemissary_vfx.bone.innerfireball] run data modify entity @s {} merge value {transformation:[-0.00013333333333333334f,0f,1.6328623988631377e-20f,0f,0f,0.00013333333333333334f,0f,0f,-1.6328623988631377e-20f,0f,-0.00013333333333333334f,0f,0f,0f,0f,1f],start_interpolation:0}
+execute if entity @s[tag=aj.ajemissary_vfx.bone.glow] run data modify entity @s {} merge value {transformation:[-0.00015333333333333337f,0f,1.8777917586926082e-20f,0f,0f,0.00015333333333333337f,0f,0f,-1.8777917586926082e-20f,0f,-0.00015333333333333337f,0f,0f,0f,0f,1f],start_interpolation:0}
+execute if entity @s[tag=aj.ajemissary_vfx.locator_origin.explosionpoint] at @s on origin run tp @s ^0 ^0 ^-0.00014 ~0 ~0
+execute if entity @s[tag=aj.ajemissary_vfx.locator_origin.explosionpoint2] at @s on origin run tp @s ^0 ^0 ^0.00014 ~0 ~0
+execute if entity @s[tag=aj.ajemissary_vfx.locator_origin.explosionpoint3] at @s on origin run tp @s ^0.00014 ^0 ^0 ~0 ~0
+execute if entity @s[tag=aj.ajemissary_vfx.locator_origin.explosionpoint4] at @s on origin run tp @s ^-0.00014 ^0 ^0 ~0 ~0
+execute if entity @s[tag=aj.ajemissary_vfx.locator_origin.explosionpoint5] at @s on origin run tp @s ^0 ^0.00014 ^0 ~0 ~0
+execute if entity @s[tag=aj.ajemissary_vfx.locator_origin.explosionpoint6] at @s on origin run tp @s ^0 ^-0.00014 ^0 ~0 ~0
+execute if entity @s[tag=aj.ajemissary_vfx.bone.animated] run data modify entity @s {} merge value {transformation:[-0.0003175f,0f,3.8882535872928467e-20f,-2.2579425359279324e-21f,0f,0.0003175f,0f,0.000008750000000000001f,-3.8882535872928467e-20f,0f,-0.0003175f,0.0000184375f,0f,0f,0f,1f],start_interpolation:0}

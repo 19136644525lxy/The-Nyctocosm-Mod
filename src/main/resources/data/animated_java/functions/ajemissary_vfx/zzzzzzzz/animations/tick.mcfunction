@@ -1,0 +1,2 @@
+execute if entity @s[tag=aj.ajemissary_vfx.animation.celestial_smite] run function animated_java:ajemissary_vfx/zzzzzzzz/animations/celestial_smite/tick
+execute if entity @s[tag=aj.ajemissary_vfx.animation.explosion] run function animated_java:ajemissary_vfx/zzzzzzzz/animations/explosion/tick

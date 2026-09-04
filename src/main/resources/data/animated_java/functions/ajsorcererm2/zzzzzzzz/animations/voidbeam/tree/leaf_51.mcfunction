@@ -1,0 +1,2 @@
+execute on passengers run function animated_java:ajsorcererm2/zzzzzzzz/animations/voidbeam/tree/leaf_51_as_bone
+execute unless entity @s[tag=aj.ajsorcererm2.disable_command_keyframes] at @s run execute positioned ^ ^3 ^2.5 run function sorcerer:attacks/voidbeam/beam

@@ -1,0 +1,3 @@
+execute if score @s aj.ajdeathwalker.animation.death.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:ajdeathwalker/zzzzzzzz/animations/death/end_loop
+execute if score @s aj.ajdeathwalker.animation.death.loop_mode = $aj.loop_mode.once aj.i run function animated_java:ajdeathwalker/animations/death/stop
+execute if score @s aj.ajdeathwalker.animation.death.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:ajdeathwalker/animations/death/pause

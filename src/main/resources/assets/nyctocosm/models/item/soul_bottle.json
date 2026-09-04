@@ -1,0 +1,4 @@
+{
+  "_comment": "P4 Curios 版 - 灵魂瓶 Soul Bottle，复用原资源包 models/magic/soul_bottle.json 的精美 3D 模型（与原数据包显示效果 1:1）。",
+  "parent": "nyctocosm:magic/soul_bottle"
+}

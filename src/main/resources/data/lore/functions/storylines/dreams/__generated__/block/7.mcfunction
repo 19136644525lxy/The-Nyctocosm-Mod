@@ -1,0 +1,4 @@
+#built using mc-build (https://github.com/mc-build/mc-build)
+
+item replace entity @s weapon.mainhand with air
+item replace entity @s weapon.mainhand with written_book{CustomModelData:4,display:{Name:'[{"translate":"item.nyctocosm.dreams.title","color":"gold","italic":false,"with":[{"translate":"item.nyctocosm.book_number.1"},{"translate":"item.nyctocosm.dreams.1.title","color":"aqua","italic":true}]}]',Lore:['{"translate":"book.byAuthor","color":"gray","italic":false,"with":[{"translate":"item.nyctocosm.dreams.author"}]}','{"translate":"item.nyctocosm.book.generation","color":"gray","italic":"false"}','{"translate":"item.nyctocosm.dreams.lore","color":"dark_gray"}']},title:"Insight One",author:"The Beast",generation:2,pages:['{"translate":"item.nyctocosm.dreams.1.page1"}','{"translate":"item.nyctocosm.dreams.1.page2"}','{"translate":"item.nyctocosm.dreams.1.page3"}','{"translate":"item.nyctocosm.dreams.1.page4"}'],HideFlags:32b} 1

@@ -1,0 +1,1 @@
+execute if score @s aj.anim_time matches 0..32 run function animated_java:ajemissary/zzzzzzzz/animations/phase3.attack.flipfar/tree/branch_0_32

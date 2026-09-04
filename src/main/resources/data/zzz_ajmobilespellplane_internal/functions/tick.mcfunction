@@ -1,0 +1,1 @@
+execute as @e[type=#ajmobilespellplane:aj_root,tag=aj.ajmobilespellplane.root] run function zzz_ajmobilespellplane_internal:tick_as_root

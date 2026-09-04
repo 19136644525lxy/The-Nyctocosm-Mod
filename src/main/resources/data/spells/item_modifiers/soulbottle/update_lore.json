@@ -1,0 +1,22 @@
+{
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      {
+        "translate": "item.nyctocosm.container.soul_count",
+        "color": "dark_gray",
+        "italic": false,
+        "with": [
+          {
+            "score": {
+              "name": "SoulCount",
+              "objective": "value"
+            },
+            "color": "dark_aqua",
+            "italic": false
+          }
+        ]
+      }
+    ],
+    "replace": true
+  }

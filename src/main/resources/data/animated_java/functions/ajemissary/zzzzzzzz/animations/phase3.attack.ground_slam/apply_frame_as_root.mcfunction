@@ -1,0 +1,1 @@
+execute if score @s aj.anim_time matches 0..25 run function animated_java:ajemissary/zzzzzzzz/animations/phase3.attack.ground_slam/tree/branch_0_25

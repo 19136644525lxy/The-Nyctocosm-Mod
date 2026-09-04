@@ -1,0 +1,1 @@
+execute if score @s aj.anim_time matches 0..50 run function animated_java:ajemissary_vfx/zzzzzzzz/animations/celestial_smite/tree/branch_0_50

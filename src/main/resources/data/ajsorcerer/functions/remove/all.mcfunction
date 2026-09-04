@@ -1,0 +1,2 @@
+execute as @e[type=#ajsorcerer:aj_root,tag=aj.ajsorcerer.root] run function zzz_ajsorcerer_internal:remove/as_root
+kill @e[tag=aj.ajsorcerer.rig_entity]

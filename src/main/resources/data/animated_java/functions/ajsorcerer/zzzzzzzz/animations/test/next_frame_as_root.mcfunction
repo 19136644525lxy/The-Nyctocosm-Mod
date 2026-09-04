@@ -1,0 +1,1 @@
+function animated_java:ajsorcerer/zzzzzzzz/animations/test/tick_animation

@@ -1,0 +1,1 @@
+execute on passengers run function zzz_ajdeathwalker_internal:animations/idle/tree/leaf_50_as_bone

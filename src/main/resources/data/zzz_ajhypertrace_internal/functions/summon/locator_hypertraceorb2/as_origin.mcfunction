@@ -1,0 +1,4 @@
+summon minecraft:marker ~ ~ ~ {Tags:["aj.ajhypertrace.locator_target","aj.ajhypertrace.locator_target.hypertraceorb2","aj.new"],CustomName:"[{\"text\":\"[\",\"color\":\"gray\"},{\"text\":\"AJ\",\"color\":\"aqua\"},\"] \",[\"\",{\"text\":\"ajhypertrace\",\"color\":\"light_purple\"},\".\",{\"text\":\"locatorTarget\",\"color\":\"white\"},\"[\",{\"text\":\"hypertraceorb2\",\"color\":\"yellow\"},\"]\"]]"}
+execute as @e[type=minecraft:marker,tag=aj.ajhypertrace.locator_target.hypertraceorb2,tag=aj.new,limit=1,distance=..0.1] run function zzz_ajhypertrace_internal:summon/locator_hypertraceorb2/as_target
+data modify entity @s Owner set from storage animated_java Owner
+data remove storage animated_java Owner

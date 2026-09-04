@@ -1,0 +1,1 @@
+function animated_java:ajemissary/zzzzzzzz/animations/phase3.attack.lightning_field/tick_animation

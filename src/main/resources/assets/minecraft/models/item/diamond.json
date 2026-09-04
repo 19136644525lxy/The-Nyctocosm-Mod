@@ -1,0 +1,10 @@
+{
+	"parent": "item/generated",
+	"textures": {
+		"layer0": "item/diamond"
+	},
+	"overrides": [
+		{"predicate": {"custom_model_data":1}, "model": "nyctocosm:mobs/nightmare_apparition/nightmare_apparition"},
+		{"predicate": {"custom_model_data":2}, "model": "nyctocosm:mobs/nightmare_apparition/nightmare_apparition_attacking"}
+	]
+}

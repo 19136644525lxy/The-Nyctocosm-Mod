@@ -1,0 +1,1 @@
+function animated_java:ajemissary/zzzzzzzz/animations/phase4.attack.corkscrew/tick_animation

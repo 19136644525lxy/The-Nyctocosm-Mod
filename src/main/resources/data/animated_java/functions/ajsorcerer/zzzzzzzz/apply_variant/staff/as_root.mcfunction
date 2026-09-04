@@ -1,0 +1,1 @@
+execute on passengers run function animated_java:ajsorcerer/zzzzzzzz/apply_variant/staff/as_bone

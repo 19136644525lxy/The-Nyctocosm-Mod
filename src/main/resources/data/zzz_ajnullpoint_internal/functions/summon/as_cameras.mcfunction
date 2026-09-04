@@ -1,0 +1,1 @@
+function #ajnullpoint:on_summon_as_cameras

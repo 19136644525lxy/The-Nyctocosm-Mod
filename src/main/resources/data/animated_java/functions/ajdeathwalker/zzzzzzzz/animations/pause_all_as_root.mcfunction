@@ -1,0 +1,5 @@
+function animated_java:ajdeathwalker/zzzzzzzz/animations/walk/pause_as_root
+function animated_java:ajdeathwalker/zzzzzzzz/animations/slam/pause_as_root
+function animated_java:ajdeathwalker/zzzzzzzz/animations/idle/pause_as_root
+function animated_java:ajdeathwalker/zzzzzzzz/animations/death/pause_as_root
+function animated_java:ajdeathwalker/zzzzzzzz/animations/death_alt/pause_as_root

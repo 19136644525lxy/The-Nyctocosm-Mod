@@ -1,0 +1,3 @@
+execute if score @s aj.ajemissary.animation.testpose.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:ajemissary/zzzzzzzz/animations/testpose/end_loop
+execute if score @s aj.ajemissary.animation.testpose.loop_mode = $aj.loop_mode.once aj.i run function animated_java:ajemissary/animations/testpose/stop
+execute if score @s aj.ajemissary.animation.testpose.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:ajemissary/animations/testpose/pause

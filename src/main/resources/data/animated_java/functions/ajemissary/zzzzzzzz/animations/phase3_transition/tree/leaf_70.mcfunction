@@ -1,0 +1,2 @@
+execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase3_transition/tree/leaf_70_as_bone
+execute unless entity @s[tag=aj.ajemissary.disable_command_keyframes] at @s run particle flash ~ ~1.5 ~ 0.4 0.4 0.4 0 3 force

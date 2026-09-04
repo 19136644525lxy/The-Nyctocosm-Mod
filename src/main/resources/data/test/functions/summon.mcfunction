@@ -1,0 +1,2 @@
+summon minecraft:item_display ~ ~ ~ {Tags:["aj.new","aj.test.root"],Passengers:[{id:"minecraft:item_display",Tags:["aj.new","aj.test.bone","aj.test.bone.bone"],transformation:[1.6666666666666667f,0f,0f,0f,0f,1.6666666666666667f,0f,0f,0f,0f,1.6666666666666667f,0f,0f,0f,0f,1f],interpolation_duration:1,item:{id:"minecraft:white_dye",Count:1,tag:{CustomModelData:24}},height:40,width:22}]}
+execute as @e[type=#test:aj_root,limit=1,distance=..1,tag=aj.new] run function zzz_test_internal:summon/as_root

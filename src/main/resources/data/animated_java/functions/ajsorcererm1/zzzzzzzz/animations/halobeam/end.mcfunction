@@ -1,0 +1,3 @@
+execute if score @s aj.ajsorcererm1.animation.halobeam.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:ajsorcererm1/zzzzzzzz/animations/halobeam/end_loop
+execute if score @s aj.ajsorcererm1.animation.halobeam.loop_mode = $aj.loop_mode.once aj.i run function animated_java:ajsorcererm1/animations/halobeam/stop
+execute if score @s aj.ajsorcererm1.animation.halobeam.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:ajsorcererm1/animations/halobeam/pause

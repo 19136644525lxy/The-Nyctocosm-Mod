@@ -1,0 +1,2 @@
+execute on passengers run function animated_java:ajsorcererm1/zzzzzzzz/animations/singularitycharge/tree/leaf_44_as_bone
+execute unless entity @s[tag=aj.ajsorcererm1.disable_command_keyframes] at @s run execute positioned ^ ^2 ^0.5 facing entity @a[distance=..50,sort=nearest,gamemode=!spectator] feet run function sorcerer:attacks/singularitycharge/throw

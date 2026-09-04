@@ -1,0 +1,63 @@
+{
+	"parent": "item/generated",
+	"textures": {
+		"layer0": "item/blue_dye"
+	},
+	"overrides": [
+		{
+			"predicate": {
+				"custom_model_data": 1
+			},
+			"model": "item/animated_java_empty"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 2
+			},
+			"model": "animated_java:item/ajnullpoint/orb"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 3
+			},
+			"model": "animated_java:item/ajnullpoint/smallring"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 4
+			},
+			"model": "animated_java:item/ajnullpoint/bigring"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 5
+			},
+			"model": "animated_java:item/ajnullpoint/all"
+		}
+	],
+	"animated_java": {
+		"rigs": {
+			"ajnullpoint": {
+				"used_ids": [
+					2,
+					3,
+					4,
+					5
+				]
+			}
+		}
+	},
+	"aj": {
+		"includedRigs": {
+			"dff4ad3d-2b00-e5f3-7c3f-1672c58491e2": {
+				"name": "ajnullpoint",
+				"usedIDs": [
+					[
+						1,
+						4
+					]
+				]
+			}
+		}
+	}
+}

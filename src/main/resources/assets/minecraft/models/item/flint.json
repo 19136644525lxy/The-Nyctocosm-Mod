@@ -1,0 +1,11 @@
+{
+	"parent": "item/generated",
+	"textures": {
+		"layer0": "item/flint"
+	},
+	"overrides": [
+		{"predicate": {"custom_model_data":1}, "model": "nyctocosm:serpent/serpent_head"},
+		{"predicate": {"custom_model_data":2}, "model": "nyctocosm:serpent/serpent_segment"},
+		{"predicate": {"custom_model_data":3}, "model": "nyctocosm:serpent/serpent_tail"}
+	]
+}

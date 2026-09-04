@@ -1,0 +1,1 @@
+tag @s remove aj.ajdeathwalker.animation.death_alt

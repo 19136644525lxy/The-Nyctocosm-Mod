@@ -1,0 +1,32 @@
+#built using mc-build (https://github.com/mc-build/mc-build)
+
+execute positioned ^ ^ ^0 run particle firework ~ ~ ~ 0.2 0.2 0.2 0.2 3 force
+execute positioned ^ ^ ^0 run particle flash ~ ~ ~ 0.2 0.2 0.2 0 2 force
+execute positioned ^ ^ ^0.2 run particle firework ~ ~ ~ 0.2 0.2 0.2 0.2 3 force
+execute positioned ^ ^ ^0.2 run particle flash ~ ~ ~ 0.2 0.2 0.2 0 2 force
+execute positioned ^ ^ ^0.4 run particle firework ~ ~ ~ 0.2 0.2 0.2 0.2 3 force
+execute positioned ^ ^ ^0.4 run particle flash ~ ~ ~ 0.2 0.2 0.2 0 2 force
+execute positioned ^ ^ ^0.6 run particle firework ~ ~ ~ 0.2 0.2 0.2 0.2 3 force
+execute positioned ^ ^ ^0.6 run particle flash ~ ~ ~ 0.2 0.2 0.2 0 2 force
+execute positioned ^ ^ ^0.8 run particle firework ~ ~ ~ 0.2 0.2 0.2 0.2 3 force
+execute positioned ^ ^ ^0.8 run particle flash ~ ~ ~ 0.2 0.2 0.2 0 2 force
+execute positioned ^ ^ ^1 run particle firework ~ ~ ~ 0.2 0.2 0.2 0.2 3 force
+execute positioned ^ ^ ^1 run particle flash ~ ~ ~ 0.2 0.2 0.2 0 2 force
+execute positioned ^ ^ ^1.2 run particle firework ~ ~ ~ 0.2 0.2 0.2 0.2 3 force
+execute positioned ^ ^ ^1.2 run particle flash ~ ~ ~ 0.2 0.2 0.2 0 2 force
+execute positioned ^ ^ ^1.4 run particle firework ~ ~ ~ 0.2 0.2 0.2 0.2 3 force
+execute positioned ^ ^ ^1.4 run particle flash ~ ~ ~ 0.2 0.2 0.2 0 2 force
+execute positioned ^ ^ ^1.6 run particle firework ~ ~ ~ 0.2 0.2 0.2 0.2 3 force
+execute positioned ^ ^ ^1.6 run particle flash ~ ~ ~ 0.2 0.2 0.2 0 2 force
+execute positioned ^ ^ ^1.8 run particle firework ~ ~ ~ 0.2 0.2 0.2 0.2 3 force
+execute positioned ^ ^ ^1.8 run particle flash ~ ~ ~ 0.2 0.2 0.2 0 2 force
+execute positioned ^ ^ ^2 run particle firework ~ ~ ~ 0.2 0.2 0.2 0.2 3 force
+execute positioned ^ ^ ^2 run particle flash ~ ~ ~ 0.2 0.2 0.2 0 2 force
+execute positioned ^ ^ ^2.2 run particle firework ~ ~ ~ 0.2 0.2 0.2 0.2 3 force
+execute positioned ^ ^ ^2.2 run particle flash ~ ~ ~ 0.2 0.2 0.2 0 2 force
+execute positioned ^ ^ ^2.4 run particle firework ~ ~ ~ 0.2 0.2 0.2 0.2 3 force
+execute positioned ^ ^ ^2.4 run particle flash ~ ~ ~ 0.2 0.2 0.2 0 2 force
+execute positioned ^ ^ ^2.6 run particle firework ~ ~ ~ 0.2 0.2 0.2 0.2 3 force
+execute positioned ^ ^ ^2.6 run particle flash ~ ~ ~ 0.2 0.2 0.2 0 2 force
+execute positioned ^ ^ ^2.8 run particle firework ~ ~ ~ 0.2 0.2 0.2 0.2 3 force
+execute positioned ^ ^ ^2.8 run particle flash ~ ~ ~ 0.2 0.2 0.2 0 2 force

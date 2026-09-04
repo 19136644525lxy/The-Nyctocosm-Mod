@@ -1,0 +1,2 @@
+scoreboard players set @s aj.ajhypertrace.rig_loaded 1
+execute unless score @s aj.ajhypertrace.export_version = aj.ajhypertrace.export_version aj.i at @s run function animated_java:ajhypertrace/zzzzzzzz/mark_outdated_rig

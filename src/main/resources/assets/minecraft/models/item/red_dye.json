@@ -1,0 +1,21 @@
+{
+	"parent": "item/handheld",
+	"textures": {
+		"layer0": "item/red_dye"
+	},
+	"overrides": [
+		{"predicate": {"custom_model_data":1}, "model": "nyctocosm:magic/artifacts/transposition"},
+		{"predicate": {"custom_model_data":2}, "model": "nyctocosm:magic/artifacts/amelioration"},
+		{"predicate": {"custom_model_data":3}, "model": "nyctocosm:magic/artifacts/levitation"},
+		{"predicate": {"custom_model_data":4}, "model": "nyctocosm:magic/artifacts/absorption"},
+		{"predicate": {"custom_model_data":5}, "model": "nyctocosm:magic/artifacts/accumulation"},
+		{"predicate": {"custom_model_data":6}, "model": "nyctocosm:magic/artifacts/protection_dream"},
+		{"predicate": {"custom_model_data":7}, "model": "nyctocosm:magic/artifacts/protection_radiance"},
+		{"predicate": {"custom_model_data":8}, "model": "nyctocosm:magic/artifacts/protection_resonance"},
+		{"predicate": {"custom_model_data":9}, "model": "nyctocosm:magic/artifacts/protection_nightmare"},
+		{"predicate": {"custom_model_data":10}, "model": "nyctocosm:magic/artifacts/protection_void"},
+		{"predicate": {"custom_model_data":11}, "model": "nyctocosm:magic/artifacts/protection_dissonance"},
+		{"predicate": {"custom_model_data":12}, "model": "nyctocosm:magic/artifacts/expulsion"},
+		{"predicate": {"custom_model_data":13}, "model": "nyctocosm:magic/artifacts/extraction"}
+	]
+}

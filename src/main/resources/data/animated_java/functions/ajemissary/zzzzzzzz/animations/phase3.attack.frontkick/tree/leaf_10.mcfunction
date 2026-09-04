@@ -1,0 +1,1 @@
+execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase3.attack.frontkick/tree/leaf_10_as_bone

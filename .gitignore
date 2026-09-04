@@ -1,0 +1,31 @@
+# eclipse
+bin
+*.launch
+.settings
+.metadata
+.classpath
+.project
+
+# idea
+out
+*.ipr
+*.iws
+*.iml
+.idea
+
+# gradle
+build
+.gradle
+
+# other
+eclipse
+run
+temp
+tools
+libs
+crash
+Nyctocosm Datapack v0.2.0.zip
+Nyctocosm Resources v0.2.0.zip
+
+# Files from Forge MDK
+forge*changelog.txt

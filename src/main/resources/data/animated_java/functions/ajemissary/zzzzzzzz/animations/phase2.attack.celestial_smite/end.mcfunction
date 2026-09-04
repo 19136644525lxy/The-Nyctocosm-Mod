@@ -1,0 +1,3 @@
+execute if score @s aj.ajemissary.animation.phase2.attack.celestial_smite.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:ajemissary/zzzzzzzz/animations/phase2.attack.celestial_smite/end_loop
+execute if score @s aj.ajemissary.animation.phase2.attack.celestial_smite.loop_mode = $aj.loop_mode.once aj.i run function animated_java:ajemissary/animations/phase2.attack.celestial_smite/stop
+execute if score @s aj.ajemissary.animation.phase2.attack.celestial_smite.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:ajemissary/animations/phase2.attack.celestial_smite/pause

@@ -1,0 +1,34 @@
+#built using mc-build (https://github.com/mc-build/mc-build)
+
+execute rotated ~45 0 positioned ^ ^ ^6 summon marker run function emissary:attacks/phase3/lightning_field/__generated__/block/629
+execute rotated ~135 0 positioned ^ ^ ^6 summon marker run function emissary:attacks/phase3/lightning_field/__generated__/block/630
+execute rotated ~225 0 positioned ^ ^ ^6 summon marker run function emissary:attacks/phase3/lightning_field/__generated__/block/631
+execute rotated ~315 0 positioned ^ ^ ^6 summon marker run function emissary:attacks/phase3/lightning_field/__generated__/block/632
+execute rotated ~45 0 positioned ^ ^ ^10 summon marker run function emissary:attacks/phase3/lightning_field/__generated__/block/633
+execute rotated ~135 0 positioned ^ ^ ^10 summon marker run function emissary:attacks/phase3/lightning_field/__generated__/block/634
+execute rotated ~225 0 positioned ^ ^ ^10 summon marker run function emissary:attacks/phase3/lightning_field/__generated__/block/635
+execute rotated ~315 0 positioned ^ ^ ^10 summon marker run function emissary:attacks/phase3/lightning_field/__generated__/block/636
+execute rotated ~45 0 positioned ^ ^ ^14 summon marker run function emissary:attacks/phase3/lightning_field/__generated__/block/637
+execute rotated ~135 0 positioned ^ ^ ^14 summon marker run function emissary:attacks/phase3/lightning_field/__generated__/block/638
+execute rotated ~225 0 positioned ^ ^ ^14 summon marker run function emissary:attacks/phase3/lightning_field/__generated__/block/639
+execute rotated ~315 0 positioned ^ ^ ^14 summon marker run function emissary:attacks/phase3/lightning_field/__generated__/block/640
+execute rotated ~45 0 positioned ^ ^ ^18 summon marker run function emissary:attacks/phase3/lightning_field/__generated__/block/641
+execute rotated ~135 0 positioned ^ ^ ^18 summon marker run function emissary:attacks/phase3/lightning_field/__generated__/block/642
+execute rotated ~225 0 positioned ^ ^ ^18 summon marker run function emissary:attacks/phase3/lightning_field/__generated__/block/643
+execute rotated ~315 0 positioned ^ ^ ^18 summon marker run function emissary:attacks/phase3/lightning_field/__generated__/block/644
+execute rotated ~45 0 positioned ^ ^ ^22 summon marker run function emissary:attacks/phase3/lightning_field/__generated__/block/645
+execute rotated ~135 0 positioned ^ ^ ^22 summon marker run function emissary:attacks/phase3/lightning_field/__generated__/block/646
+execute rotated ~225 0 positioned ^ ^ ^22 summon marker run function emissary:attacks/phase3/lightning_field/__generated__/block/647
+execute rotated ~315 0 positioned ^ ^ ^22 summon marker run function emissary:attacks/phase3/lightning_field/__generated__/block/648
+execute rotated ~45 0 positioned ^ ^ ^26 summon marker run function emissary:attacks/phase3/lightning_field/__generated__/block/649
+execute rotated ~135 0 positioned ^ ^ ^26 summon marker run function emissary:attacks/phase3/lightning_field/__generated__/block/650
+execute rotated ~225 0 positioned ^ ^ ^26 summon marker run function emissary:attacks/phase3/lightning_field/__generated__/block/651
+execute rotated ~315 0 positioned ^ ^ ^26 summon marker run function emissary:attacks/phase3/lightning_field/__generated__/block/652
+execute rotated ~45 0 positioned ^ ^ ^30 summon marker run function emissary:attacks/phase3/lightning_field/__generated__/block/653
+execute rotated ~135 0 positioned ^ ^ ^30 summon marker run function emissary:attacks/phase3/lightning_field/__generated__/block/654
+execute rotated ~225 0 positioned ^ ^ ^30 summon marker run function emissary:attacks/phase3/lightning_field/__generated__/block/655
+execute rotated ~315 0 positioned ^ ^ ^30 summon marker run function emissary:attacks/phase3/lightning_field/__generated__/block/656
+execute rotated ~45 0 positioned ^ ^ ^34 summon marker run function emissary:attacks/phase3/lightning_field/__generated__/block/657
+execute rotated ~135 0 positioned ^ ^ ^34 summon marker run function emissary:attacks/phase3/lightning_field/__generated__/block/658
+execute rotated ~225 0 positioned ^ ^ ^34 summon marker run function emissary:attacks/phase3/lightning_field/__generated__/block/659
+execute rotated ~315 0 positioned ^ ^ ^34 summon marker run function emissary:attacks/phase3/lightning_field/__generated__/block/660

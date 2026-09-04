@@ -1,0 +1,2 @@
+execute if entity @s[tag=aj.ajsorcerer.animation.test] run function animated_java:ajsorcerer/zzzzzzzz/animations/test/tick
+execute if entity @s[tag=aj.ajsorcerer.animation.initial_spawn] run function animated_java:ajsorcerer/zzzzzzzz/animations/initial_spawn/tick

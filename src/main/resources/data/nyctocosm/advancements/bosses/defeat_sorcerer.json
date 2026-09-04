@@ -1,0 +1,22 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:warped_fungus_on_a_stick",
+        "nbt": "{CustomModelData:10}"
+      },
+      "title": {
+        "translate": "advancements.nyctocosm.defeat_sorcerer.title",
+        "color": "dark_purple"
+      },
+      "description": {
+        "translate": "advancements.nyctocosm.defeat_sorcerer.description",
+        "color": "gray"
+      }
+    },
+    "parent": "nyctocosm:root",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:impossible"
+      }
+    }
+  }

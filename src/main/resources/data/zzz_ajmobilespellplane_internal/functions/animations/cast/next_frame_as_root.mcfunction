@@ -1,0 +1,1 @@
+function zzz_ajmobilespellplane_internal:animations/cast/tick_animation

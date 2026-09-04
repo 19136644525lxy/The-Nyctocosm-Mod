@@ -1,0 +1,1 @@
+execute on passengers run function zzz_test_internal:animations/ez/tree/leaf_15_as_bone

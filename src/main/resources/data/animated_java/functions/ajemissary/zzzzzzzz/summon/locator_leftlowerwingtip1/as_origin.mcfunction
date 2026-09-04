@@ -1,0 +1,4 @@
+summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["emissary","wing","locator","phase1","aj.ajemissary.locator","aj.ajemissary.locator.leftlowerwingtip1","aj.new"],Age:-2147483648,Duration:-1,WaitTime:-2147483648,CustomName:"[{\"text\":\"[\",\"color\":\"gray\"},{\"text\":\"AJ\",\"color\":\"aqua\"},\"] \",[\"\",{\"text\":\"ajemissary\",\"color\":\"light_purple\"},\".\",{\"text\":\"locatorEntity\",\"color\":\"white\"},\"[\",{\"text\":\"leftlowerwingtip1\",\"color\":\"yellow\"},\"]\"]]"}
+execute as @e[type=minecraft:area_effect_cloud,tag=aj.ajemissary.locator.leftlowerwingtip1,tag=aj.new,limit=1,distance=..1] run function animated_java:ajemissary/zzzzzzzz/summon/locator_leftlowerwingtip1/as_entity
+data modify entity @s Owner set from storage animated_java Owner
+data remove storage animated_java Owner

@@ -1,0 +1,144 @@
+{
+	"parent": "item/generated",
+	"textures": {
+		"layer0": "item/yellow_dye"
+	},
+	"overrides": [
+		{
+			"predicate": {
+				"custom_model_data": 1
+			},
+			"model": "nyctocosm:magic/cast_spell/big"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 2
+			},
+			"model": "nyctocosm:magic/cast_spell/smalltop"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 3
+			},
+			"model": "nyctocosm:magic/cast_spell/bigtop"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 4
+			},
+			"model": "nyctocosm:magic/cast_spell/bigbottom"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 5
+			},
+			"model": "nyctocosm:magic/cast_spell/smallbottom"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 6
+			},
+			"model": "nyctocosm:magic/dais/aj/inculcate/item"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 7
+			},
+			"model": "nyctocosm:magic/dais/aj/inculcate/left"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 8
+			},
+			"model": "nyctocosm:magic/dais/aj/inculcate/bigleft"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 9
+			},
+			"model": "nyctocosm:magic/dais/aj/inculcate/bigrunes"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 10
+			},
+			"model": "nyctocosm:magic/dais/aj/inculcate/bigleft2"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 11
+			},
+			"model": "nyctocosm:magic/dais/aj/inculcate/bigrunes3"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 12
+			},
+			"model": "nyctocosm:magic/dais/aj/inculcate/outerleft"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 13
+			},
+			"model": "nyctocosm:magic/dais/aj/inculcate/runes"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 14
+			},
+			"model": "nyctocosm:magic/dais/aj/inculcate/right"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 15
+			},
+			"model": "nyctocosm:magic/dais/aj/inculcate/bigright"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 16
+			},
+			"model": "nyctocosm:magic/dais/aj/inculcate/bigrunes2"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 17
+			},
+			"model": "nyctocosm:magic/dais/aj/inculcate/bigright2"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 18
+			},
+			"model": "nyctocosm:magic/dais/aj/inculcate/bigrunes4"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 19
+			},
+			"model": "nyctocosm:magic/dais/aj/inculcate/outerright"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 20
+			},
+			"model": "nyctocosm:magic/dais/aj/inculcate/runes2"
+		}
+	],
+	"aj": {
+		"includedRigs": {
+			"6d7ee218-e5b6-6599-7e63-0a6c80067843": {
+				"name": "aj_cast_spell",
+				"usedIDs": [
+					[1, 5]
+				]
+			},
+			"6dc89f40-9514-a41e-d112-f7be9ba6fc19": {
+				"name": "inculcate",
+				"usedIDs": [
+					[6, 20]
+				]
+			}
+		}
+	}
+}

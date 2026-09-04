@@ -1,0 +1,3 @@
+#built using mc-build (https://github.com/mc-build/mc-build)
+
+summon item ~ ~-0.5 ~ {Item:{id:"minecraft:carrot_on_a_stick",Count:1b,tag:{display:{Name:'{"translate":"item.nyctocosm.planar_coil","color":"gold","italic":false,"with":[{"translate":"item.nyctocosm.planar_coil1","color":"aqua"}]}',Lore:['{"translate":"item.nyctocosm.planar_coil.lore","color":"dark_gray","italic":false}']},CustomModelData:2,planar_circlet:1,active:0,souls_held:1}},PickupDelay:50,NoGravity:1b,Tags:["inculcated"]}

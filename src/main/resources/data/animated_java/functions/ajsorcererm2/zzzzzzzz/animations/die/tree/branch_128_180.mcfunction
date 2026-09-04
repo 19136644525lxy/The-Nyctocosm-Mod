@@ -1,0 +1,2 @@
+execute if score @s aj.anim_time matches 128..135 run function animated_java:ajsorcererm2/zzzzzzzz/animations/die/tree/branch_128_135
+execute if score @s aj.anim_time matches 180 run function animated_java:ajsorcererm2/zzzzzzzz/animations/die/tree/leaf_180

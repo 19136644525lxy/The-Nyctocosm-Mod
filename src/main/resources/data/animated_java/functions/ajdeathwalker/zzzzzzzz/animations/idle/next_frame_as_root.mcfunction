@@ -1,0 +1,1 @@
+function animated_java:ajdeathwalker/zzzzzzzz/animations/idle/tick_animation

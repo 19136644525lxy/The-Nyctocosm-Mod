@@ -1,0 +1,3 @@
+execute if score @s aj.ajsorcererm2.animation.javelinswing.loop_mode = $aj.loop_mode.loop aj.i run function zzz_ajsorcererm2_internal:animations/javelinswing/end_loop
+execute if score @s aj.ajsorcererm2.animation.javelinswing.loop_mode = $aj.loop_mode.once aj.i run function ajsorcererm2:animations/javelinswing/stop
+execute if score @s aj.ajsorcererm2.animation.javelinswing.loop_mode = $aj.loop_mode.hold aj.i run function ajsorcererm2:animations/javelinswing/pause

@@ -1,0 +1,2 @@
+scoreboard players set @s aj.ajspellplane.rig_loaded 1
+execute unless score @s aj.ajspellplane.export_version = aj.ajspellplane.export_version aj.i at @s run function animated_java:ajspellplane/zzzzzzzz/mark_outdated_rig

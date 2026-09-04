@@ -1,0 +1,1 @@
+execute on passengers run function animated_java:ajemissary/zzzzzzzz/apply_variant/armorful/as_bone

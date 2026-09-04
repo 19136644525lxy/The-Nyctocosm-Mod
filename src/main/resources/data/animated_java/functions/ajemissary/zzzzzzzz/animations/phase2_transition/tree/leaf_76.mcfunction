@@ -1,0 +1,2 @@
+execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase2_transition/tree/leaf_76_as_bone
+execute unless entity @s[tag=aj.ajemissary.disable_command_keyframes] at @s run execute rotated ~ 0 run tp @s ^ ^ ^0.4

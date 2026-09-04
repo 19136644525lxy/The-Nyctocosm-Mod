@@ -1,0 +1,1 @@
+function animated_java:ajemissary/zzzzzzzz/animations/phase1.attack.pillars/tick_animation

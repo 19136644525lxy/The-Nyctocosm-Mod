@@ -1,0 +1,32 @@
+#built using mc-build (https://github.com/mc-build/mc-build)
+
+particle reverse_portal ^0 ^ ^-0.7 0 0 0 0 1 force
+particle reverse_portal ^0.1455 ^ ^-0.6847 0 0 0 0 1 force
+particle reverse_portal ^0.2847 ^ ^-0.6395 0 0 0 0 1 force
+particle reverse_portal ^0.4114 ^ ^-0.5663 0 0 0 0 1 force
+particle reverse_portal ^0.5202 ^ ^-0.4684 0 0 0 0 1 force
+particle reverse_portal ^0.6062 ^ ^-0.35 0 0 0 0 1 force
+particle reverse_portal ^0.6657 ^ ^-0.2163 0 0 0 0 1 force
+particle reverse_portal ^0.6962 ^ ^-0.0732 0 0 0 0 1 force
+particle reverse_portal ^0.6962 ^ ^0.0732 0 0 0 0 1 force
+particle reverse_portal ^0.6657 ^ ^0.2163 0 0 0 0 1 force
+particle reverse_portal ^0.6062 ^ ^0.35 0 0 0 0 1 force
+particle reverse_portal ^0.5202 ^ ^0.4684 0 0 0 0 1 force
+particle reverse_portal ^0.4114 ^ ^0.5663 0 0 0 0 1 force
+particle reverse_portal ^0.2847 ^ ^0.6395 0 0 0 0 1 force
+particle reverse_portal ^0.1455 ^ ^0.6847 0 0 0 0 1 force
+particle reverse_portal ^0 ^ ^0.7 0 0 0 0 1 force
+particle reverse_portal ^-0.1455 ^ ^0.6847 0 0 0 0 1 force
+particle reverse_portal ^-0.2847 ^ ^0.6395 0 0 0 0 1 force
+particle reverse_portal ^-0.4114 ^ ^0.5663 0 0 0 0 1 force
+particle reverse_portal ^-0.5202 ^ ^0.4684 0 0 0 0 1 force
+particle reverse_portal ^-0.6062 ^ ^0.35 0 0 0 0 1 force
+particle reverse_portal ^-0.6657 ^ ^0.2163 0 0 0 0 1 force
+particle reverse_portal ^-0.6962 ^ ^0.0732 0 0 0 0 1 force
+particle reverse_portal ^-0.6962 ^ ^-0.0732 0 0 0 0 1 force
+particle reverse_portal ^-0.6657 ^ ^-0.2163 0 0 0 0 1 force
+particle reverse_portal ^-0.6062 ^ ^-0.35 0 0 0 0 1 force
+particle reverse_portal ^-0.5202 ^ ^-0.4684 0 0 0 0 1 force
+particle reverse_portal ^-0.4114 ^ ^-0.5663 0 0 0 0 1 force
+particle reverse_portal ^-0.2847 ^ ^-0.6395 0 0 0 0 1 force
+particle reverse_portal ^-0.1455 ^ ^-0.6847 0 0 0 0 1 force

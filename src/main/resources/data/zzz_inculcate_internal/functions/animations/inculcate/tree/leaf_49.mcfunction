@@ -1,0 +1,1 @@
+execute on passengers run function zzz_inculcate_internal:animations/inculcate/tree/leaf_49_as_bone

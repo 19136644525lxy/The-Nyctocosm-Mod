@@ -1,0 +1,1 @@
+execute if score @s aj.anim_time matches 0..180 run function animated_java:ajemissary/zzzzzzzz/animations/phase4.attack.grapple_grab/tree/branch_0_180

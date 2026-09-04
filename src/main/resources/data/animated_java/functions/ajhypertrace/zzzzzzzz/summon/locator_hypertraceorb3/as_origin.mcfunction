@@ -1,0 +1,4 @@
+summon minecraft:marker ~ ~ ~ {Tags:["aj.ajhypertrace.locator","aj.ajhypertrace.locator.hypertraceorb3","aj.new"],CustomName:"[{\"text\":\"[\",\"color\":\"gray\"},{\"text\":\"AJ\",\"color\":\"aqua\"},\"] \",[\"\",{\"text\":\"ajhypertrace\",\"color\":\"light_purple\"},\".\",{\"text\":\"locatorEntity\",\"color\":\"white\"},\"[\",{\"text\":\"hypertraceorb3\",\"color\":\"yellow\"},\"]\"]]"}
+execute as @e[type=minecraft:marker,tag=aj.ajhypertrace.locator.hypertraceorb3,tag=aj.new,limit=1,distance=..1] run function animated_java:ajhypertrace/zzzzzzzz/summon/locator_hypertraceorb3/as_entity
+data modify entity @s Owner set from storage animated_java Owner
+data remove storage animated_java Owner

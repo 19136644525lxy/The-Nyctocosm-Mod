@@ -1,0 +1,1 @@
+execute on passengers run function animated_java:ajemissary_vfx/zzzzzzzz/animations/celestial_smite/tree/leaf_24_as_bone

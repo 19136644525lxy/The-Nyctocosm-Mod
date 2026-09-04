@@ -1,0 +1,1 @@
+function animated_java:ajemissary/zzzzzzzz/animations/phase2_idle/tick_animation

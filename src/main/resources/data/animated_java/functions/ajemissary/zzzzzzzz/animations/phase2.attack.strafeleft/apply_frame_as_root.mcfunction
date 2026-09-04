@@ -1,0 +1,1 @@
+execute if score @s aj.anim_time matches 0..20 run function animated_java:ajemissary/zzzzzzzz/animations/phase2.attack.strafeleft/tree/branch_0_20

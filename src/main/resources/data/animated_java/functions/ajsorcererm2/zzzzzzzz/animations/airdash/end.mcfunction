@@ -1,0 +1,3 @@
+execute if score @s aj.ajsorcererm2.animation.airdash.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:ajsorcererm2/zzzzzzzz/animations/airdash/end_loop
+execute if score @s aj.ajsorcererm2.animation.airdash.loop_mode = $aj.loop_mode.once aj.i run function animated_java:ajsorcererm2/animations/airdash/stop
+execute if score @s aj.ajsorcererm2.animation.airdash.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:ajsorcererm2/animations/airdash/pause

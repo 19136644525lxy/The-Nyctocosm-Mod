@@ -1,0 +1,1 @@
+function animated_java:ajemissary/zzzzzzzz/animations/die/tick_animation

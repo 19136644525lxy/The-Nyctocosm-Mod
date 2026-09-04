@@ -1,0 +1,1 @@
+execute as @e[type=#inculcate:aj_root,tag=aj.inculcate.root] run function zzz_inculcate_internal:tick_as_root

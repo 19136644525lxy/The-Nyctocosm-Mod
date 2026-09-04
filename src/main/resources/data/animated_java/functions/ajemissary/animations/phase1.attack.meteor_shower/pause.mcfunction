@@ -1,0 +1,2 @@
+execute if entity @s[tag=aj.ajemissary.root] run function animated_java:ajemissary/zzzzzzzz/animations/phase1.attack.meteor_shower/pause_as_root
+execute if entity @s[tag=!aj.ajemissary.root] run tellraw @a ["",{"text":"["},{"text":"Animated Java","color":"aqua"},{"text":"] "},{"text":"ERROR ☠","color":"red"},{"text":" > ","color":"gray"},[{"text":"The function","color":"yellow"},{"text":" animated_java:ajemissary/animations/phase1.attack.meteor_shower/pause ","color":"blue"},{"text":"must be run"},{"text":" as ","color":"red"},{"text":"the root entity!"}]]

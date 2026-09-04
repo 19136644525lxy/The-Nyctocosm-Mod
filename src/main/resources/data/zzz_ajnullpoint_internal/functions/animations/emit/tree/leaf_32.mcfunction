@@ -1,0 +1,1 @@
+execute on passengers run function zzz_ajnullpoint_internal:animations/emit/tree/leaf_32_as_bone

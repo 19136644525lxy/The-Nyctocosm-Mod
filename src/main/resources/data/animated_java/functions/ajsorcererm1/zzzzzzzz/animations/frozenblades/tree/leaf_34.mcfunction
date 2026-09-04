@@ -1,0 +1,2 @@
+execute on passengers run function animated_java:ajsorcererm1/zzzzzzzz/animations/frozenblades/tree/leaf_34_as_bone
+execute unless entity @s[tag=aj.ajsorcererm1.disable_command_keyframes] at @s run execute positioned ^ ^2 ^1 run function sorcerer:attacks/frozenblades/throw

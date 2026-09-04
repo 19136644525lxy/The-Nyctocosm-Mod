@@ -1,0 +1,1 @@
+execute if score @s aj.anim_time matches 0..10 run function animated_java:ajemissary/zzzzzzzz/animations/phase3.attack.run/tree/branch_0_10

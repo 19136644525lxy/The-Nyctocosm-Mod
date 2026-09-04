@@ -1,0 +1,2 @@
+execute if entity @s[tag=aj.ajsorcerer.animation.test] run function zzz_ajsorcerer_internal:animations/test/tick
+execute if entity @s[tag=aj.ajsorcerer.animation.initial_spawn] run function zzz_ajsorcerer_internal:animations/initial_spawn/tick

@@ -1,0 +1,2 @@
+execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase3_transition/tree/leaf_171_as_bone
+function animated_java:ajemissary/zzzzzzzz/apply_variant/armorless/as_root

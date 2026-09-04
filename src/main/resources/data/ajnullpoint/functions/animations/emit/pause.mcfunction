@@ -1,0 +1,2 @@
+execute if entity @s[tag=aj.ajnullpoint.root] run function zzz_ajnullpoint_internal:animations/emit/pause_as_root
+execute if entity @s[tag=!aj.ajnullpoint.root] run tellraw @a ["",{"text":"["},{"text":"Animated Java","color":"aqua"},{"text":"] "},{"text":"ERROR ☠","color":"red"},{"text":" > ","color":"gray"},[{"text":"The function","color":"yellow"},{"text":" ajnullpoint:animations/emit/pause ","color":"blue"},{"text":"must be run"},{"text":" as ","color":"red"},{"text":"the root entity!"}]]

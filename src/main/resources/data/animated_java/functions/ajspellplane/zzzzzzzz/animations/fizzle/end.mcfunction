@@ -1,0 +1,3 @@
+execute if score @s aj.ajspellplane.animation.fizzle.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:ajspellplane/zzzzzzzz/animations/fizzle/end_loop
+execute if score @s aj.ajspellplane.animation.fizzle.loop_mode = $aj.loop_mode.once aj.i run function animated_java:ajspellplane/animations/fizzle/stop
+execute if score @s aj.ajspellplane.animation.fizzle.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:ajspellplane/animations/fizzle/pause

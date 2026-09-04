@@ -1,0 +1,1 @@
+function animated_java:ajsorcererm2/zzzzzzzz/animations/voidwave/tick_animation

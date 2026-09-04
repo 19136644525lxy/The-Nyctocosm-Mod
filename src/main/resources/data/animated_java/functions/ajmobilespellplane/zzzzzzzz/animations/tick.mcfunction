@@ -1,0 +1,3 @@
+execute if entity @s[tag=aj.ajmobilespellplane.animation.idle] run function animated_java:ajmobilespellplane/zzzzzzzz/animations/idle/tick
+execute if entity @s[tag=aj.ajmobilespellplane.animation.cast] run function animated_java:ajmobilespellplane/zzzzzzzz/animations/cast/tick
+execute if entity @s[tag=aj.ajmobilespellplane.animation.fizzle] run function animated_java:ajmobilespellplane/zzzzzzzz/animations/fizzle/tick

@@ -1,0 +1,2 @@
+execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase3.attack.flame_slash/tree/leaf_26_as_bone
+function animated_java:ajemissary/zzzzzzzz/apply_variant/swordless/as_root

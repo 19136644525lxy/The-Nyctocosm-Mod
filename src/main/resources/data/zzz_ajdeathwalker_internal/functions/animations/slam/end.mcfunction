@@ -1,0 +1,3 @@
+execute if score @s aj.ajdeathwalker.animation.slam.loop_mode = $aj.loop_mode.loop aj.i run function zzz_ajdeathwalker_internal:animations/slam/end_loop
+execute if score @s aj.ajdeathwalker.animation.slam.loop_mode = $aj.loop_mode.once aj.i run function ajdeathwalker:animations/slam/stop
+execute if score @s aj.ajdeathwalker.animation.slam.loop_mode = $aj.loop_mode.hold aj.i run function ajdeathwalker:animations/slam/pause

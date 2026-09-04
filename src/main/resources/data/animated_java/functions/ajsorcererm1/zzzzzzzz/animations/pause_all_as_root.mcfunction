@@ -1,0 +1,8 @@
+function animated_java:ajsorcererm1/zzzzzzzz/animations/rise/pause_as_root
+function animated_java:ajsorcererm1/zzzzzzzz/animations/idle/pause_as_root
+function animated_java:ajsorcererm1/zzzzzzzz/animations/falltransition/pause_as_root
+function animated_java:ajsorcererm1/zzzzzzzz/animations/halobeam/pause_as_root
+function animated_java:ajsorcererm1/zzzzzzzz/animations/shardhail/pause_as_root
+function animated_java:ajsorcererm1/zzzzzzzz/animations/singularitycharge/pause_as_root
+function animated_java:ajsorcererm1/zzzzzzzz/animations/frozenblades/pause_as_root
+function animated_java:ajsorcererm1/zzzzzzzz/animations/voidmeteor/pause_as_root

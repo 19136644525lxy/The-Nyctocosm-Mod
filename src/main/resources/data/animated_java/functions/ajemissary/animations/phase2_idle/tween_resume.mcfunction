@@ -1,0 +1,2 @@
+execute if entity @s[tag=aj.ajemissary.root] run function animated_java:ajemissary/zzzzzzzz/animations/phase2_idle/tween_resume_as_root
+execute if entity @s[tag=!aj.ajemissary.root] run tellraw @a ["",{"text":"["},{"text":"Animated Java","color":"aqua"},{"text":"] "},{"text":"ERROR ☠","color":"red"},{"text":" > ","color":"gray"},[{"text":"The function","color":"yellow"},{"text":" animated_java:ajemissary/animations/phase2_idle/tween_resume ","color":"blue"},{"text":"must be run"},{"text":" as ","color":"red"},{"text":"the root entity!"}]]

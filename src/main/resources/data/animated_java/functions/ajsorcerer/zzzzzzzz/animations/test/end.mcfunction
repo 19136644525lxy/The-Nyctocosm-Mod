@@ -1,0 +1,3 @@
+execute if score @s aj.ajsorcerer.animation.test.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:ajsorcerer/zzzzzzzz/animations/test/end_loop
+execute if score @s aj.ajsorcerer.animation.test.loop_mode = $aj.loop_mode.once aj.i run function animated_java:ajsorcerer/animations/test/stop
+execute if score @s aj.ajsorcerer.animation.test.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:ajsorcerer/animations/test/pause

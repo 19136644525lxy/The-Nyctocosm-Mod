@@ -1,0 +1,4 @@
+#built using mc-build (https://github.com/mc-build/mc-build)
+
+item replace entity @s weapon.mainhand with air
+item replace entity @s weapon.mainhand with written_book{CustomModelData:2,display:{Name:'[{"translate":"item.nyctocosm.catechism.title","color":"gold","italic":false,"with":[{"translate":"item.nyctocosm.book_number.2"},{"translate":"item.nyctocosm.catechism.2.title","color":"dark_purple","italic":true}]}]',Lore:['{"translate":"book.byAuthor","color":"gray","italic":false,"with":[{"translate":"item.nyctocosm.catechism.author"}]}','{"translate":"item.nyctocosm.book.generation","color":"gray","italic":"false"}','{"translate":"item.nyctocosm.catechism.lore","color":"dark_gray"}']},title:"Precept Two",author:"The Archmage",generation:2,pages:['{"translate":"item.nyctocosm.catechism.2.page1"}','{"translate":"item.nyctocosm.catechism.2.page2"}','{"translate":"item.nyctocosm.catechism.2.page3"}'],HideFlags:32b} 1

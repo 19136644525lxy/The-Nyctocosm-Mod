@@ -1,0 +1,1 @@
+execute on passengers run function zzz_ajsorcererm2_internal:animations/idle/tree/leaf_25_as_bone

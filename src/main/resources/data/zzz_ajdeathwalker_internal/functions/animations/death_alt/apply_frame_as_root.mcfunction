@@ -1,0 +1,1 @@
+execute if score @s aj.anim_time matches 0..63 run function zzz_ajdeathwalker_internal:animations/death_alt/tree/branch_0_63

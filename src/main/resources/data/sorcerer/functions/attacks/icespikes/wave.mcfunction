@@ -1,0 +1,32 @@
+#built using mc-build (https://github.com/mc-build/mc-build)
+
+execute rotated 0 0 positioned ^ ^ ^0.4 run function sorcerer:attacks/icespikes/summon
+execute rotated 12 0 positioned ^ ^ ^0.4 run function sorcerer:attacks/icespikes/summon
+execute rotated 24 0 positioned ^ ^ ^0.4 run function sorcerer:attacks/icespikes/summon
+execute rotated 36 0 positioned ^ ^ ^0.4 run function sorcerer:attacks/icespikes/summon
+execute rotated 48 0 positioned ^ ^ ^0.4 run function sorcerer:attacks/icespikes/summon
+execute rotated 60 0 positioned ^ ^ ^0.4 run function sorcerer:attacks/icespikes/summon
+execute rotated 72 0 positioned ^ ^ ^0.4 run function sorcerer:attacks/icespikes/summon
+execute rotated 84 0 positioned ^ ^ ^0.4 run function sorcerer:attacks/icespikes/summon
+execute rotated 96 0 positioned ^ ^ ^0.4 run function sorcerer:attacks/icespikes/summon
+execute rotated 108 0 positioned ^ ^ ^0.4 run function sorcerer:attacks/icespikes/summon
+execute rotated 120 0 positioned ^ ^ ^0.4 run function sorcerer:attacks/icespikes/summon
+execute rotated 132 0 positioned ^ ^ ^0.4 run function sorcerer:attacks/icespikes/summon
+execute rotated 144 0 positioned ^ ^ ^0.4 run function sorcerer:attacks/icespikes/summon
+execute rotated 156 0 positioned ^ ^ ^0.4 run function sorcerer:attacks/icespikes/summon
+execute rotated 168 0 positioned ^ ^ ^0.4 run function sorcerer:attacks/icespikes/summon
+execute rotated 180 0 positioned ^ ^ ^0.4 run function sorcerer:attacks/icespikes/summon
+execute rotated 192 0 positioned ^ ^ ^0.4 run function sorcerer:attacks/icespikes/summon
+execute rotated 204 0 positioned ^ ^ ^0.4 run function sorcerer:attacks/icespikes/summon
+execute rotated 216 0 positioned ^ ^ ^0.4 run function sorcerer:attacks/icespikes/summon
+execute rotated 228 0 positioned ^ ^ ^0.4 run function sorcerer:attacks/icespikes/summon
+execute rotated 240 0 positioned ^ ^ ^0.4 run function sorcerer:attacks/icespikes/summon
+execute rotated 252 0 positioned ^ ^ ^0.4 run function sorcerer:attacks/icespikes/summon
+execute rotated 264 0 positioned ^ ^ ^0.4 run function sorcerer:attacks/icespikes/summon
+execute rotated 276 0 positioned ^ ^ ^0.4 run function sorcerer:attacks/icespikes/summon
+execute rotated 288 0 positioned ^ ^ ^0.4 run function sorcerer:attacks/icespikes/summon
+execute rotated 300 0 positioned ^ ^ ^0.4 run function sorcerer:attacks/icespikes/summon
+execute rotated 312 0 positioned ^ ^ ^0.4 run function sorcerer:attacks/icespikes/summon
+execute rotated 324 0 positioned ^ ^ ^0.4 run function sorcerer:attacks/icespikes/summon
+execute rotated 336 0 positioned ^ ^ ^0.4 run function sorcerer:attacks/icespikes/summon
+execute rotated 348 0 positioned ^ ^ ^0.4 run function sorcerer:attacks/icespikes/summon

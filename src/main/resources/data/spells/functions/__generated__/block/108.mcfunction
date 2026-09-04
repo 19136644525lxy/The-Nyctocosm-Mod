@@ -1,0 +1,29 @@
+#built using mc-build (https://github.com/mc-build/mc-build)
+
+execute positioned ~ ~ ~ if block ~ ~ ~ #minecraft:candles run function spells:incandescence/light_candle
+execute positioned ~1 ~ ~ if block ~ ~ ~ #minecraft:candles run function spells:incandescence/light_candle
+execute positioned ~-1 ~ ~ if block ~ ~ ~ #minecraft:candles run function spells:incandescence/light_candle
+execute positioned ~ ~ ~1 if block ~ ~ ~ #minecraft:candles run function spells:incandescence/light_candle
+execute positioned ~ ~ ~-1 if block ~ ~ ~ #minecraft:candles run function spells:incandescence/light_candle
+execute positioned ~1 ~ ~1 if block ~ ~ ~ #minecraft:candles run function spells:incandescence/light_candle
+execute positioned ~1 ~ ~-1 if block ~ ~ ~ #minecraft:candles run function spells:incandescence/light_candle
+execute positioned ~-1 ~ ~1 if block ~ ~ ~ #minecraft:candles run function spells:incandescence/light_candle
+execute positioned ~-1 ~ ~-1 if block ~ ~ ~ #minecraft:candles run function spells:incandescence/light_candle
+execute positioned ~ ~1 ~ if block ~ ~ ~ #minecraft:candles run function spells:incandescence/light_candle
+execute positioned ~1 ~1 ~ if block ~ ~ ~ #minecraft:candles run function spells:incandescence/light_candle
+execute positioned ~-1 ~1 ~ if block ~ ~ ~ #minecraft:candles run function spells:incandescence/light_candle
+execute positioned ~ ~1 ~1 if block ~ ~ ~ #minecraft:candles run function spells:incandescence/light_candle
+execute positioned ~ ~1 ~-1 if block ~ ~ ~ #minecraft:candles run function spells:incandescence/light_candle
+execute positioned ~1 ~1 ~1 if block ~ ~ ~ #minecraft:candles run function spells:incandescence/light_candle
+execute positioned ~1 ~1 ~-1 if block ~ ~ ~ #minecraft:candles run function spells:incandescence/light_candle
+execute positioned ~-1 ~1 ~1 if block ~ ~ ~ #minecraft:candles run function spells:incandescence/light_candle
+execute positioned ~-1 ~1 ~-1 if block ~ ~ ~ #minecraft:candles run function spells:incandescence/light_candle
+execute positioned ~ ~-1 ~ if block ~ ~ ~ #minecraft:candles run function spells:incandescence/light_candle
+execute positioned ~1 ~-1 ~ if block ~ ~ ~ #minecraft:candles run function spells:incandescence/light_candle
+execute positioned ~-1 ~-1 ~ if block ~ ~ ~ #minecraft:candles run function spells:incandescence/light_candle
+execute positioned ~ ~-1 ~1 if block ~ ~ ~ #minecraft:candles run function spells:incandescence/light_candle
+execute positioned ~ ~-1 ~-1 if block ~ ~ ~ #minecraft:candles run function spells:incandescence/light_candle
+execute positioned ~1 ~-1 ~1 if block ~ ~ ~ #minecraft:candles run function spells:incandescence/light_candle
+execute positioned ~1 ~-1 ~-1 if block ~ ~ ~ #minecraft:candles run function spells:incandescence/light_candle
+execute positioned ~-1 ~-1 ~1 if block ~ ~ ~ #minecraft:candles run function spells:incandescence/light_candle
+execute positioned ~-1 ~-1 ~-1 if block ~ ~ ~ #minecraft:candles run function spells:incandescence/light_candle

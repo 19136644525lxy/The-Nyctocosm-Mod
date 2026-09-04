@@ -1,0 +1,1 @@
+execute if score @s aj.anim_time matches 0..25 run function zzz_ajnullpoint_internal:animations/recall/tree/branch_0_25

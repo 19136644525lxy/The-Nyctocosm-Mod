@@ -1,0 +1,1 @@
+execute on passengers run function zzz_ajmobilespellplane_internal:apply_variant/default_as_bone

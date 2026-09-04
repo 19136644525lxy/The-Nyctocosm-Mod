@@ -1,0 +1,13 @@
+{
+	"parent": "item/handheld_rod",
+	"textures": {
+		"layer0": "item/carrot_on_a_stick"
+	},
+	"overrides": [
+		{"predicate": {"custom_model_data":1}, "model": "nyctocosm:magic/soul_bottle"},
+		{"predicate": {"custom_model_data":2}, "model": "nyctocosm:magic/planar_circlet"},
+		{"predicate": {"custom_model_data":3}, "model": "nyctocosm:magic/planar_circlet_active"},
+
+		{"predicate": {"custom_model_data":7001}, "model": "nyctocosm:magic/artifacts/transposition"}
+	]
+}

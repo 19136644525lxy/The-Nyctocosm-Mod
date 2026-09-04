@@ -1,0 +1,6 @@
+execute if entity @s[tag=aj.ajhypertrace.locator_origin.hypertraceorb1] at @s on origin run tp @s ^-0.29389 ^0 ^-0.40451 ~144 ~0
+execute if entity @s[tag=aj.ajhypertrace.bone.orbital1] run data modify entity @s {} merge value {transformation:[0.8090169943749473f,0f,0.587785252292473f,0f,0f,1f,0f,0f,-0.587785252292473f,0f,0.8090169943749473f,0f,0f,0f,0f,1f],start_interpolation:0}
+execute if entity @s[tag=aj.ajhypertrace.locator_origin.hypertraceorb2] at @s on origin run tp @s ^0.19479 ^0.17035 ^0.42783 ~-24.48 ~-19.92
+execute if entity @s[tag=aj.ajhypertrace.bone.orbital2] run data modify entity @s {} merge value {transformation:[-0.9101059706849957f,-0.14118097266069066f,-0.38958318121051244f,0f,1.3877787807814457e-17f,0.9401692548500502f,-0.34070775194395164f,0f,0.41437558099328403f,-0.3100801593028528f,-0.8556536522934941f,0f,0f,0f,0f,1f],start_interpolation:0}
+execute if entity @s[tag=aj.ajhypertrace.locator_origin.hypertraceorb3] at @s on origin run tp @s ^-0.19479 ^-0.17035 ^0.42783 ~24.48 ~19.92
+execute if entity @s[tag=aj.ajhypertrace.bone.orbital3] run data modify entity @s {} merge value {transformation:[-0.9101059706849957f,-0.1411809726606907f,0.38958318121051266f,0f,1.3877787807814457e-17f,0.9401692548500502f,0.34070775194395164f,0f,-0.41437558099328425f,0.3100801593028528f,-0.8556536522934941f,0f,0f,0f,0f,1f],start_interpolation:0}

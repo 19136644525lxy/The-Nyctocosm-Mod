@@ -1,0 +1,24 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:fire_charge"
+    },
+    "title": {
+      "translate": "advancements.nyctocosm.defeat_emissary.title",
+      "color": "gold"
+    },
+    "description": {
+      "translate": "advancements.nyctocosm.defeat_emissary.description",
+      "color": "gray"
+    }
+  },
+  "parent": "nyctocosm:root",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "function": "emissary:cutscene/start"
+  }
+}

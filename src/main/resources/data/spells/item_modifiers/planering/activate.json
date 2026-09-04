@@ -1,0 +1,5 @@
+{
+    "function": "minecraft:set_nbt",
+    "tag": "{CustomModelData:3,active:1}"
+  }
+  

@@ -1,0 +1,15 @@
+execute if entity @s[tag=aj.inculcate.bone.item] run data modify entity @s {} merge value {transformation:[1f,0f,0f,0f,0f,1f,0f,0f,0f,0f,1f,0f,0f,0f,0f,1f],start_interpolation:0}
+execute if entity @s[tag=aj.inculcate.bone.bigrunes] run data modify entity @s {} merge value {transformation:[1f,0f,0f,0f,0f,1f,0f,0f,0f,0f,1f,0f,0f,0f,0f,1f],start_interpolation:0}
+execute if entity @s[tag=aj.inculcate.bone.bigrunes3] run data modify entity @s {} merge value {transformation:[1f,0f,0f,0f,0f,1f,0f,0f,0f,0f,1f,0f,0f,0f,0f,1f],start_interpolation:0}
+execute if entity @s[tag=aj.inculcate.bone.outerleft] run data modify entity @s {} merge value {transformation:[1f,0f,0f,0f,0f,1f,0f,0f,0f,0f,1f,0f,0f,0f,0f,1f],start_interpolation:0}
+execute if entity @s[tag=aj.inculcate.bone.bigleft2] run data modify entity @s {} merge value {transformation:[1f,0f,0f,0f,0f,1f,0f,0f,0f,0f,1f,0f,0f,0f,0f,1f],start_interpolation:0}
+execute if entity @s[tag=aj.inculcate.bone.bigleft] run data modify entity @s {} merge value {transformation:[1f,0f,0f,0f,0f,1f,0f,0f,0f,0f,1f,0f,0f,0f,0f,1f],start_interpolation:0}
+execute if entity @s[tag=aj.inculcate.bone.runes] run data modify entity @s {} merge value {transformation:[1f,0f,0f,0f,0f,1f,0f,0f,0f,0f,1f,0f,0f,0f,0f,1f],start_interpolation:0}
+execute if entity @s[tag=aj.inculcate.bone.left] run data modify entity @s {} merge value {transformation:[1f,0f,0f,0f,0f,1f,0f,0f,0f,0f,1f,0f,0f,0f,0f,1f],start_interpolation:0}
+execute if entity @s[tag=aj.inculcate.bone.bigrunes2] run data modify entity @s {} merge value {transformation:[1f,0f,0f,0f,0f,1f,0f,0f,0f,0f,1f,0f,0f,0f,0f,1f],start_interpolation:0}
+execute if entity @s[tag=aj.inculcate.bone.bigrunes4] run data modify entity @s {} merge value {transformation:[1f,0f,0f,0f,0f,1f,0f,0f,0f,0f,1f,0f,0f,0f,0f,1f],start_interpolation:0}
+execute if entity @s[tag=aj.inculcate.bone.outerright] run data modify entity @s {} merge value {transformation:[1f,0f,0f,0f,0f,1f,0f,0f,0f,0f,1f,0f,0f,0f,0f,1f],start_interpolation:0}
+execute if entity @s[tag=aj.inculcate.bone.bigright2] run data modify entity @s {} merge value {transformation:[1f,0f,0f,0f,0f,1f,0f,0f,0f,0f,1f,0f,0f,0f,0f,1f],start_interpolation:0}
+execute if entity @s[tag=aj.inculcate.bone.bigright] run data modify entity @s {} merge value {transformation:[1f,0f,0f,0f,0f,1f,0f,0f,0f,0f,1f,0f,0f,0f,0f,1f],start_interpolation:0}
+execute if entity @s[tag=aj.inculcate.bone.runes2] run data modify entity @s {} merge value {transformation:[1f,0f,0f,0f,0f,1f,0f,0f,0f,0f,1f,0f,0f,0f,0f,1f],start_interpolation:0}
+execute if entity @s[tag=aj.inculcate.bone.right] run data modify entity @s {} merge value {transformation:[1f,0f,0f,0f,0f,1f,0f,0f,0f,0f,1f,0f,0f,0f,0f,1f],start_interpolation:0}

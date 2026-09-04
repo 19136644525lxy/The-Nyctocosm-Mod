@@ -1,0 +1,1 @@
+execute on passengers run function zzz_ajsorcererm1_internal:animations/rise/tree/leaf_0_as_bone

@@ -1,0 +1,1 @@
+tag @s remove aj.ajhypertrace.animation.idle

@@ -1,0 +1,4 @@
+{
+  "_comment": "P4 Curios 版 - 戒指 Planar Circlet，复用原资源包 models/magic/planar_circlet.json 的精美 3D 模型（与原数据包显示效果 1:1）。",
+  "parent": "nyctocosm:magic/planar_circlet"
+}

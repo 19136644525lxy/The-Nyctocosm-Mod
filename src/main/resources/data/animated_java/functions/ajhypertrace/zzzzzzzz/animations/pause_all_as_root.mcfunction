@@ -1,0 +1,1 @@
+function animated_java:ajhypertrace/zzzzzzzz/animations/idle/pause_as_root

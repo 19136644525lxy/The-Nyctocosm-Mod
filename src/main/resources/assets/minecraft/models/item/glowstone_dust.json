@@ -1,0 +1,27 @@
+{
+	"parent": "item/generated",
+	"textures": {
+		"layer0": "item/glowstone_dust"
+	},
+	"overrides": [
+		{"predicate": {"custom_model_data":1}, "model": "nyctocosm:magic/spell_plane"},
+		{"predicate": {"custom_model_data":2}, "model": "nyctocosm:magic/spell_circles/abhorrence"},
+		{"predicate": {"custom_model_data":3}, "model": "nyctocosm:magic/spell_circles/evanescence"},
+		{"predicate": {"custom_model_data":4}, "model": "nyctocosm:magic/spell_circles/forbiddance"},
+		{"predicate": {"custom_model_data":5}, "model": "nyctocosm:magic/spell_circles/gravitance"},
+		{"predicate": {"custom_model_data":6}, "model": "nyctocosm:magic/spell_circles/incurrence"},
+		{"predicate": {"custom_model_data":7}, "model": "nyctocosm:magic/spell_circles/luminescence"},
+		{"predicate": {"custom_model_data":8}, "model": "nyctocosm:magic/spell_circles/resonance"},
+		{"predicate": {"custom_model_data":9}, "model": "nyctocosm:magic/spell_circles/subsistence"},
+		{"predicate": {"custom_model_data":10}, "model": "nyctocosm:magic/spell_circles/reflectance"},
+		{"predicate": {"custom_model_data":11}, "model": "nyctocosm:magic/spell_circles/submergence"},
+		{"predicate": {"custom_model_data":12}, "model": "nyctocosm:magic/spell_circles/adamance"},
+		{"predicate": {"custom_model_data":13}, "model": "nyctocosm:magic/spell_circles/incandescence"},
+		{"predicate": {"custom_model_data":14}, "model": "nyctocosm:magic/spell_circles/resistance"},
+		{"predicate": {"custom_model_data":15}, "model": "nyctocosm:magic/spell_circles/transmittance"},
+		{"predicate": {"custom_model_data":16}, "model": "nyctocosm:magic/spell_circles/vacance"},
+		{"predicate": {"custom_model_data":17}, "model": "nyctocosm:magic/spell_circles/repellance"},
+		{"predicate": {"custom_model_data":18}, "model": "nyctocosm:magic/spell_circles/fulminance"},
+		{"predicate": {"custom_model_data":19}, "model": "nyctocosm:magic/sorcerer_plane"}
+	]
+}

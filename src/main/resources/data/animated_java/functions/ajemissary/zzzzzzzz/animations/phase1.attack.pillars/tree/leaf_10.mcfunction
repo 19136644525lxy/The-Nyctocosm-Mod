@@ -1,0 +1,2 @@
+execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase1.attack.pillars/tree/leaf_10_as_bone
+execute unless entity @s[tag=aj.ajemissary.disable_command_keyframes] at @s run playsound nyctocosm:emissary.attack.pillars.throw master @a[distance=..300] ~ ~ ~ 50

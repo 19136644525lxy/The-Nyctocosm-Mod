@@ -1,0 +1,5 @@
+function animated_java:ajemissary_vfx/zzzzzzzz/animations/celestial_smite/resume_as_root
+function animated_java:ajemissary_vfx/zzzzzzzz/animations/celestial_smite/tween_as_root
+function animated_java:ajemissary_vfx/zzzzzzzz/animations/celestial_smite/apply_frame_as_root
+execute if score #tween_duration aj.i matches ..0 on passengers run data modify entity @s interpolation_duration set value 1
+scoreboard players reset #tween_duration aj.i

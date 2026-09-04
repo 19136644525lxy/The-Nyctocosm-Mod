@@ -1,0 +1,2 @@
+execute on passengers run function zzz_ajnullpoint_internal:animations/hurt/tree/leaf_0_as_bone
+execute unless entity @s[tag=aj.ajnullpoint.disable_command_keyframes] at @s run playsound nyctocosm:sorcerer.staff.hurt master @a[distance=..30]

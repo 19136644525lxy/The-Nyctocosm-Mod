@@ -1,0 +1,1 @@
+execute on passengers run function animated_java:ajsorcererm2/zzzzzzzz/animations/risetransition/tree/leaf_10_as_bone

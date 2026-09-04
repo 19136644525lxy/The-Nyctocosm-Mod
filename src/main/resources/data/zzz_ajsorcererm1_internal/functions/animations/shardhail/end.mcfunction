@@ -1,0 +1,3 @@
+execute if score @s aj.ajsorcererm1.animation.shardhail.loop_mode = $aj.loop_mode.loop aj.i run function zzz_ajsorcererm1_internal:animations/shardhail/end_loop
+execute if score @s aj.ajsorcererm1.animation.shardhail.loop_mode = $aj.loop_mode.once aj.i run function ajsorcererm1:animations/shardhail/stop
+execute if score @s aj.ajsorcererm1.animation.shardhail.loop_mode = $aj.loop_mode.hold aj.i run function ajsorcererm1:animations/shardhail/pause

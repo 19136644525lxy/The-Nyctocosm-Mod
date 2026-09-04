@@ -1,0 +1,1 @@
+execute on passengers run function zzz_ajsorcererm2_internal:apply_variant/invisstaff_as_bone

@@ -1,0 +1,4 @@
+tp @s ^8.21875 ^2.09375 ^-0.3125 ~0 ~0
+data modify storage animated_java Owner set from entity @s UUID
+tag @s remove aj.new
+function #animated_java:ajemissary/on_summon/as_locator_entities

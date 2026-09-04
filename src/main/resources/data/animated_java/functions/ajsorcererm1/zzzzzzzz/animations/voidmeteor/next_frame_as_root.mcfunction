@@ -1,0 +1,1 @@
+function animated_java:ajsorcererm1/zzzzzzzz/animations/voidmeteor/tick_animation

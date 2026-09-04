@@ -1,0 +1,4 @@
+summon minecraft:marker ~ ~ ~ {Tags:["emissary","eye","locator","aj.ajemissary.locator","aj.ajemissary.locator.lefteye","aj.new"],CustomName:"[{\"text\":\"[\",\"color\":\"gray\"},{\"text\":\"AJ\",\"color\":\"aqua\"},\"] \",[\"\",{\"text\":\"ajemissary\",\"color\":\"light_purple\"},\".\",{\"text\":\"locatorEntity\",\"color\":\"white\"},\"[\",{\"text\":\"lefteye\",\"color\":\"yellow\"},\"]\"]]"}
+execute as @e[type=minecraft:marker,tag=aj.ajemissary.locator.lefteye,tag=aj.new,limit=1,distance=..1] run function animated_java:ajemissary/zzzzzzzz/summon/locator_lefteye/as_entity
+data modify entity @s Owner set from storage animated_java Owner
+data remove storage animated_java Owner

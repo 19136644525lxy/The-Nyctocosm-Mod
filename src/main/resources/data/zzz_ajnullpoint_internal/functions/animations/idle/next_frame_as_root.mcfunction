@@ -1,0 +1,1 @@
+function zzz_ajnullpoint_internal:animations/idle/tick_animation

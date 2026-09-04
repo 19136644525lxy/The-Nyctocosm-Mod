@@ -1,0 +1,1 @@
+execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase2.attack.sword_plunge/tree/leaf_56_as_bone

@@ -1,0 +1,2 @@
+execute if score @s aj.tween_time matches 1.. run function zzz_test_internal:animations/ez/tick_tween
+execute unless score @s aj.tween_time matches 1.. run function zzz_test_internal:animations/ez/tick_animation

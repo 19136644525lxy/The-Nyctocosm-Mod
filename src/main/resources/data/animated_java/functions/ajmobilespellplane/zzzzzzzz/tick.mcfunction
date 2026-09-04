@@ -1,0 +1,1 @@
+execute if entity @s[tag=aj.ajmobilespellplane.root] run function animated_java:ajmobilespellplane/zzzzzzzz/tick_as_root

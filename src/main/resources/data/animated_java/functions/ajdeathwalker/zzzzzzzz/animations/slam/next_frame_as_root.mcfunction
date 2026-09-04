@@ -1,0 +1,1 @@
+function animated_java:ajdeathwalker/zzzzzzzz/animations/slam/tick_animation

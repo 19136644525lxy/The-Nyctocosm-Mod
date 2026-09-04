@@ -1,0 +1,1 @@
+function animated_java:ajsorcererm1/zzzzzzzz/animations/falltransition/tick_animation

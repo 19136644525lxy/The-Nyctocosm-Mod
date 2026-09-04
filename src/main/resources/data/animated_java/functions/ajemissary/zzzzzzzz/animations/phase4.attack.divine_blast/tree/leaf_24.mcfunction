@@ -1,0 +1,2 @@
+execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4.attack.divine_blast/tree/leaf_24_as_bone
+execute unless entity @s[tag=aj.ajemissary.disable_command_keyframes] at @s run function emissary:attacks/phase4/divine_blast/activate

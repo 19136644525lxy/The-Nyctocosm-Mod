@@ -1,0 +1,3 @@
+execute if score @s aj.ajemissary.animation.phase3_idle.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:ajemissary/zzzzzzzz/animations/phase3_idle/end_loop
+execute if score @s aj.ajemissary.animation.phase3_idle.loop_mode = $aj.loop_mode.once aj.i run function animated_java:ajemissary/animations/phase3_idle/stop
+execute if score @s aj.ajemissary.animation.phase3_idle.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:ajemissary/animations/phase3_idle/pause

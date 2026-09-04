@@ -1,0 +1,7 @@
+execute if score @s aj.anim_time matches 24 run function animated_java:ajemissary/zzzzzzzz/animations/phase4_idle_transition_flying/tree/leaf_24
+execute if score @s aj.anim_time matches 25 run function animated_java:ajemissary/zzzzzzzz/animations/phase4_idle_transition_flying/tree/leaf_25
+execute if score @s aj.anim_time matches 26 run function animated_java:ajemissary/zzzzzzzz/animations/phase4_idle_transition_flying/tree/leaf_26
+execute if score @s aj.anim_time matches 27 run function animated_java:ajemissary/zzzzzzzz/animations/phase4_idle_transition_flying/tree/leaf_27
+execute if score @s aj.anim_time matches 28 run function animated_java:ajemissary/zzzzzzzz/animations/phase4_idle_transition_flying/tree/leaf_28
+execute if score @s aj.anim_time matches 29 run function animated_java:ajemissary/zzzzzzzz/animations/phase4_idle_transition_flying/tree/leaf_29
+execute if score @s aj.anim_time matches 30 run function animated_java:ajemissary/zzzzzzzz/animations/phase4_idle_transition_flying/tree/leaf_30

@@ -1,0 +1,22 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:warped_fungus_on_a_stick",
+        "nbt": "{CustomModelData:2}"
+      },
+      "title": {
+        "translate": "advancements.nyctocosm.defeat_serpent.title",
+        "color": "dark_red"
+      },
+      "description": {
+        "translate": "advancements.nyctocosm.defeat_serpent.description",
+        "color": "gray"
+      }
+    },
+    "parent": "nyctocosm:root",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:impossible"
+      }
+    }
+  }

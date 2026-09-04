@@ -1,0 +1,4 @@
+#built using mc-build (https://github.com/mc-build/mc-build)
+
+item replace entity @s weapon.mainhand with air
+item replace entity @s weapon.mainhand with written_book{CustomModelData:1,display:{Name:'[{"translate":"item.nyctocosm.journal.title","color":"gold","italic":false,"with":[{"translate":"item.nyctocosm.book_number.5"},{"translate":"item.nyctocosm.journal.5.title","color":"aqua","italic":true}]}]',Lore:['{"translate":"book.byAuthor","color":"gray","italic":false,"with":[{"translate":"item.nyctocosm.journal.author"}]}','{"translate":"item.nyctocosm.book.generation","color":"gray","italic":"false"}','{"translate":"item.nyctocosm.journal.lore","color":"dark_gray"}']},title:"Entry Five",author:"The Researcher",generation:2,pages:['{"text":"5"}'],HideFlags:32b} 1

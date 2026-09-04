@@ -1,0 +1,1 @@
+execute if score @s aj.anim_time matches 0..331 run function animated_java:ajsorcerer/zzzzzzzz/animations/initial_spawn/tree/branch_0_331

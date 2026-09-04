@@ -1,0 +1,2 @@
+execute on passengers run function animated_java:ajemissary_vfx/zzzzzzzz/animations/explosion/tree/leaf_12_as_bone
+execute unless entity @s[tag=aj.ajemissary_vfx.disable_command_keyframes] at @s run function effects:emissary/explosion/particles

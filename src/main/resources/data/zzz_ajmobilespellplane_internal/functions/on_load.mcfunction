@@ -1,0 +1,2 @@
+scoreboard players set @s aj.ajmobilespellplane.rig_loaded 1
+execute unless score @s aj.ajmobilespellplane.export_version = aj.ajmobilespellplane.export_version aj.i at @s run function zzz_ajmobilespellplane_internal:upgrade_rig

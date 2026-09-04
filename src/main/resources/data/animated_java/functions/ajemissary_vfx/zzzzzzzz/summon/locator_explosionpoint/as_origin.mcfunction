@@ -1,0 +1,4 @@
+summon minecraft:marker ~ ~ ~ {Tags:["locator","explosionpoint","aj.ajemissary_vfx.locator","aj.ajemissary_vfx.locator.explosionpoint","aj.new"],CustomName:"[{\"text\":\"[\",\"color\":\"gray\"},{\"text\":\"AJ\",\"color\":\"aqua\"},\"] \",[\"\",{\"text\":\"ajemissary_vfx\",\"color\":\"light_purple\"},\".\",{\"text\":\"locatorEntity\",\"color\":\"white\"},\"[\",{\"text\":\"explosionpoint\",\"color\":\"yellow\"},\"]\"]]"}
+execute as @e[type=minecraft:marker,tag=aj.ajemissary_vfx.locator.explosionpoint,tag=aj.new,limit=1,distance=..1] run function animated_java:ajemissary_vfx/zzzzzzzz/summon/locator_explosionpoint/as_entity
+data modify entity @s Owner set from storage animated_java Owner
+data remove storage animated_java Owner

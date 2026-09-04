@@ -1,0 +1,1 @@
+function zzz_ajsorcererm1_internal:animations/rise/tick_animation

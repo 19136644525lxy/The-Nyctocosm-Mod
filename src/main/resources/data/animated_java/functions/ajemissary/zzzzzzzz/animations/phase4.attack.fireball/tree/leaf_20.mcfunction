@@ -1,0 +1,2 @@
+execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase4.attack.fireball/tree/leaf_20_as_bone
+execute unless entity @s[tag=aj.ajemissary.disable_command_keyframes] at @s run execute if predicate emissary:fireballchance run function emissary:attacks/phase4/fireball/start

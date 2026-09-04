@@ -1,0 +1,3 @@
+#built using mc-build (https://github.com/mc-build/mc-build)
+
+tellraw @s [["",{"text":"[ ","color":"dark_gray"},{"text":"AJ","color":"green"},{"text":" → ","color":"light_purple"},{"text":"Error ☠","color":"red"},{"text":" ]","color":"dark_gray"},"\n"],{"text":"→ ","color":"red"},{"text":"The function ","color":"gray"},{"text":"aj_cast_spell:animations/cast_spell/pause ","color":"yellow"},{"text":"must be","color":"gray"},"\n",{"text":"executed as @e[tag=aj.aj_cast_spell.root]","color":"light_purple"}]

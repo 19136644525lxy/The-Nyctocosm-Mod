@@ -1,0 +1,1 @@
+execute as @e[type=#ajhypertrace:aj_root,tag=aj.ajhypertrace.root] run function zzz_ajhypertrace_internal:tick_as_root

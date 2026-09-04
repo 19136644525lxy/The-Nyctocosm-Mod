@@ -1,0 +1,8 @@
+function zzz_ajsorcererm1_internal:animations/rise/pause
+function zzz_ajsorcererm1_internal:animations/idle/pause
+function zzz_ajsorcererm1_internal:animations/falltransition/pause
+function zzz_ajsorcererm1_internal:animations/halobeam/pause
+function zzz_ajsorcererm1_internal:animations/shardhail/pause
+function zzz_ajsorcererm1_internal:animations/singularitycharge/pause
+function zzz_ajsorcererm1_internal:animations/frozenblades/pause
+function zzz_ajsorcererm1_internal:animations/voidmeteor/pause

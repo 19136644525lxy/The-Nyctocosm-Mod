@@ -1,0 +1,2 @@
+scoreboard players set @s aj.ajdeathwalker.rig_loaded 1
+execute unless score @s aj.ajdeathwalker.export_version = aj.ajdeathwalker.export_version aj.i at @s run function zzz_ajdeathwalker_internal:upgrade_rig

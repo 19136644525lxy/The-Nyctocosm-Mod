@@ -1,0 +1,1 @@
+kill @e[tag=aj.inculcate.rig_entity]

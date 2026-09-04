@@ -1,0 +1,1 @@
+execute on passengers run function zzz_ajsorcererm1_internal:animations/falltransition/tree/leaf_50_as_bone

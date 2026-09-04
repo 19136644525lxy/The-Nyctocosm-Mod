@@ -1,0 +1,3 @@
+execute if score @s aj.ajemissary_vfx.animation.explosion.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:ajemissary_vfx/zzzzzzzz/animations/explosion/end_loop
+execute if score @s aj.ajemissary_vfx.animation.explosion.loop_mode = $aj.loop_mode.once aj.i run function animated_java:ajemissary_vfx/animations/explosion/stop
+execute if score @s aj.ajemissary_vfx.animation.explosion.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:ajemissary_vfx/animations/explosion/pause

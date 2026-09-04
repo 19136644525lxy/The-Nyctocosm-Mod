@@ -1,0 +1,1 @@
+execute if score @s aj.anim_time matches 0..41 run function zzz_ajdeathwalker_internal:animations/death/tree/branch_0_41

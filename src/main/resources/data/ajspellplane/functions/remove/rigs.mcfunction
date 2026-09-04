@@ -1,0 +1,1 @@
+execute as @e[type=#ajspellplane:aj_root,tag=aj.ajspellplane.root] run function zzz_ajspellplane_internal:remove/as_root

@@ -1,0 +1,1 @@
+execute if score @s aj.anim_time matches 0..90 run function zzz_death_walker_internal:animations/slam/tree/branch_0_90

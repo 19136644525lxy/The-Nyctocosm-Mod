@@ -1,0 +1,1 @@
+execute if score @s aj.anim_time matches 0..80 run function animated_java:ajemissary/zzzzzzzz/animations/phase2.attack.wing_blast/tree/branch_0_80

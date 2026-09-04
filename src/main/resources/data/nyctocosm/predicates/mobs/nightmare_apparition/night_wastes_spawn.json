@@ -1,0 +1,18 @@
+[
+    {
+      "condition": "minecraft:random_chance",
+      "chance": 0.5
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "type": "minecraft:illusioner",
+        "location": {
+          "biome": "nyctocosm:night_wastes",
+          "dimension": "nyctocosm:nyctocosm"
+        }
+      }
+    }
+  ]
+  

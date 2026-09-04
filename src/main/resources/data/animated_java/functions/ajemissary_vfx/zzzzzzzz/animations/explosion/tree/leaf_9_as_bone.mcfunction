@@ -1,0 +1,9 @@
+execute if entity @s[tag=aj.ajemissary_vfx.bone.innerfireball] run data modify entity @s {} merge value {transformation:[-12.104173984385442f,0f,2.0417200888458287f,0f,0f,12.275163899739583f,0f,0f,-2.0417200888458287f,0f,-12.104173984385442f,0f,0f,0f,0f,1f],start_interpolation:0}
+execute if entity @s[tag=aj.ajemissary_vfx.bone.glow] run data modify entity @s {} merge value {transformation:[1.412994673395141f,0f,14.0455431203386f,0f,0f,14.116438484700522f,0f,0f,-14.0455431203386f,0f,1.412994673395141f,0f,0f,0f,0f,1f],start_interpolation:0}
+execute if entity @s[tag=aj.ajemissary_vfx.locator_origin.explosionpoint] at @s on origin run tp @s ^12.80988 ^0 ^1.28869 ~95.74468 ~0
+execute if entity @s[tag=aj.ajemissary_vfx.locator_origin.explosionpoint2] at @s on origin run tp @s ^-12.80988 ^0 ^-1.28869 ~95.74468 ~0
+execute if entity @s[tag=aj.ajemissary_vfx.locator_origin.explosionpoint3] at @s on origin run tp @s ^-1.28869 ^0 ^12.80988 ~95.74468 ~0
+execute if entity @s[tag=aj.ajemissary_vfx.locator_origin.explosionpoint4] at @s on origin run tp @s ^1.28869 ^0 ^-12.80988 ~95.74468 ~0
+execute if entity @s[tag=aj.ajemissary_vfx.locator_origin.explosionpoint5] at @s on origin run tp @s ^0 ^12.87454 ^0 ~95.74468 ~0
+execute if entity @s[tag=aj.ajemissary_vfx.locator_origin.explosionpoint6] at @s on origin run tp @s ^0 ^-12.87454 ^0 ~95.74468 ~0
+execute if entity @s[tag=aj.ajemissary_vfx.bone.animated] run data modify entity @s {} merge value {transformation:[2.9258204921932f,0f,29.083434395918513f,-1.6889002257472365f,0f,29.230234036254885f,0f,0.8055576309204102f,-29.083434395918513f,0f,2.9258204921932f,-0.16990493015688857f,0f,0f,0f,1f],start_interpolation:0}

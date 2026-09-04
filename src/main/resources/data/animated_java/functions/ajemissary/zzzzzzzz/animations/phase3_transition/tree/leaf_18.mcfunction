@@ -1,0 +1,2 @@
+execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase3_transition/tree/leaf_18_as_bone
+execute unless entity @s[tag=aj.ajemissary.disable_command_keyframes] at @s run playsound nyctocosm:emissary.phase3.wingfade master @a[distance=..300] ~ ~ ~ 50

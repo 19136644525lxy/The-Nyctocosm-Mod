@@ -1,0 +1,1 @@
+execute on passengers run function zzz_ajnullpoint_internal:animations/hurt/tree/leaf_4_as_bone

@@ -1,0 +1,20 @@
+{
+	"parent": "item/generated",
+	"textures": {
+		"layer0": "item/quartz"
+	},
+	"overrides": [
+		{"predicate": {"custom_model_data":1}, "model": "nyctocosm:magic/elements/dream"},
+		{"predicate": {"custom_model_data":2}, "model": "nyctocosm:magic/elements/radiance"},
+		{"predicate": {"custom_model_data":3}, "model": "nyctocosm:magic/elements/resonance"},
+		{"predicate": {"custom_model_data":4}, "model": "nyctocosm:magic/elements/nightmare"},
+		{"predicate": {"custom_model_data":5}, "model": "nyctocosm:magic/elements/void"},
+		{"predicate": {"custom_model_data":6}, "model": "nyctocosm:magic/elements/dissonance"},
+		{"predicate": {"custom_model_data":7}, "model": "nyctocosm:magic/dais/dais_ring"},
+		{"predicate": {"custom_model_data":8}, "model": "nyctocosm:magic/dais/dais_ring_glyph"},
+		{"predicate": {"custom_model_data":9}, "model": "nyctocosm:magic/dais/dais_anvil"},
+		{"predicate": {"custom_model_data":10}, "model": "nyctocosm:magic/spells/icicle"},
+		{"predicate": {"custom_model_data":11}, "model": "nyctocosm:magic/spells/ice_spike"},
+		{"predicate": {"custom_model_data":12}, "model": "nyctocosm:emissary/emissarysword"}
+	]
+}

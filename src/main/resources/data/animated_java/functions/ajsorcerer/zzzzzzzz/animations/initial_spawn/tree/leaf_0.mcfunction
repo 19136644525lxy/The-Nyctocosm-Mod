@@ -1,0 +1,2 @@
+execute on passengers run function animated_java:ajsorcerer/zzzzzzzz/animations/initial_spawn/tree/leaf_0_as_bone
+function animated_java:ajsorcerer/zzzzzzzz/apply_variant/staffless/as_root

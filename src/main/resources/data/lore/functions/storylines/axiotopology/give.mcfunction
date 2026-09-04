@@ -1,0 +1,3 @@
+#built using mc-build (https://github.com/mc-build/mc-build)
+
+give @s written_book{CustomModelData:5,display:{Name:'[{"translate":"[%s] ","color":"gold","italic":false,"with":[{"translate":"item.nyctocosm.prefix.lore"}]},{"translate":"item.nyctocosm.axiotopology","color":"dark_aqua","italic":false}]',Lore:['{"translate":"book.byAuthor","color":"gray","italic":false,"with":[{"translate":"item.nyctocosm.axiotopology.author"}]}','{"translate":"item.nyctocosm.book.generation","color":"gray","italic":false}','{"translate":"item.nyctocosm.axiotopology.lore","color":"dark_gray"}']},title:"Theorem One",author:"Tarph-Xolaeta",lorebook:1,storyline:3,generation:2,pages:['{"translate":"item.nyctocosm.axiotopology.page1"}'],HideFlags:32b}

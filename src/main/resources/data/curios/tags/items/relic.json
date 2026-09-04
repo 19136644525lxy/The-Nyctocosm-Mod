@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "nyctocosm:artifact_protection_dream",
+    "nyctocosm:artifact_protection_radiance",
+    "nyctocosm:artifact_protection_resonance",
+    "nyctocosm:artifact_protection_nightmare",
+    "nyctocosm:artifact_protection_void",
+    "nyctocosm:artifact_protection_dissonance"
+  ]
+}

@@ -1,0 +1,3 @@
+execute if score @s aj.ajdeathwalker.animation.death_alt.loop_mode = $aj.loop_mode.loop aj.i run function zzz_ajdeathwalker_internal:animations/death_alt/end_loop
+execute if score @s aj.ajdeathwalker.animation.death_alt.loop_mode = $aj.loop_mode.once aj.i run function ajdeathwalker:animations/death_alt/stop
+execute if score @s aj.ajdeathwalker.animation.death_alt.loop_mode = $aj.loop_mode.hold aj.i run function ajdeathwalker:animations/death_alt/pause

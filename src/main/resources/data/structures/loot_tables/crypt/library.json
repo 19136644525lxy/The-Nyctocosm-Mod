@@ -1,0 +1,482 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+      {
+        "rolls": {
+          "type": "minecraft:uniform",
+          "min": 0,
+          "max": 1
+        },
+        "bonus_rolls": 0,
+        "entries": [
+          {
+            "type": "minecraft:group",
+            "children": [
+              {
+                "type": "minecraft:item",
+                "name": "minecraft:red_dye",
+                "functions": [
+                  {
+                    "function": "minecraft:set_nbt",
+                    "tag": "{display:{Name:'{\"translate\":\"artifact.protection_dream\"}',Lore:['{\"translate\":\"artifact.type.dream\"}','{\"translate\":\"artifact.protection.lore\"}','{\"translate\":\"artifact.protection.lore1\"}']},CustomModelData:6,protection_dream:1,artifact:1}"
+                  }
+                ]
+              },
+              {
+                "type": "minecraft:item",
+                "name": "minecraft:red_dye",
+                "functions": [
+                  {
+                    "function": "minecraft:set_nbt",
+                    "tag": "{display:{Name:'{\"translate\":\"artifact.protection_radiance\"}',Lore:['{\"translate\":\"artifact.type.radiance\"}','{\"translate\":\"artifact.protection.lore\"}','{\"translate\":\"artifact.protection.lore1\"}']},CustomModelData:7,protection_radiance:1,artifact:1}"
+                  }
+                ]
+              },
+              {
+                "type": "minecraft:item",
+                "name": "minecraft:red_dye",
+                "functions": [
+                  {
+                    "function": "minecraft:set_nbt",
+                    "tag": "{display:{Name:'{\"translate\":\"artifact.protection_resonance\"}',Lore:['{\"translate\":\"artifact.type.resonance\"}','{\"translate\":\"artifact.protection.lore\"}','{\"translate\":\"artifact.protection.lore1\"}']},CustomModelData:8,protection_resonance:1,artifact:1}"
+                  }
+                ]
+              },
+              {
+                "type": "minecraft:item",
+                "name": "minecraft:red_dye",
+                "functions": [
+                  {
+                    "function": "minecraft:set_nbt",
+                    "tag": "{display:{Name:'{\"translate\":\"artifact.protection_nightmare\"}',Lore:['{\"translate\":\"artifact.type.nightmare\"}','{\"translate\":\"artifact.protection.lore\"}','{\"translate\":\"artifact.protection.lore1\"}']},CustomModelData:9,protection_nightmare:1,artifact:1}"
+                  }
+                ]
+              },
+              {
+                "type": "minecraft:item",
+                "name": "minecraft:red_dye",
+                "functions": [
+                  {
+                    "function": "minecraft:set_nbt",
+                    "tag": "{display:{Name:'{\"translate\":\"artifact.protection_void\"}',Lore:['{\"translate\":\"artifact.type.void\"}','{\"translate\":\"artifact.protection.lore\"}','{\"translate\":\"artifact.protection.lore1\"}']},CustomModelData:10,protection_void:1,artifact:1}"
+                  }
+                ]
+              },
+              {
+                "type": "minecraft:item",
+                "name": "minecraft:red_dye",
+                "functions": [
+                  {
+                    "function": "minecraft:set_nbt",
+                    "tag": "{display:{Name:'{\"translate\":\"artifact.protection_dissonance\"}',Lore:['{\"translate\":\"artifact.type.dissonance\"}','{\"translate\":\"artifact.protection.lore\"}','{\"translate\":\"artifact.protection.lore1\"}']},CustomModelData:11,protection_dissonance:1,artifact:1}"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:red_dye",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{display:{Name:'{\"translate\":\"artifact.expulsion\"}',Lore:['{\"translate\":\"artifact.type.dissonance\"}','{\"translate\":\"artifact.expulsion.lore\"}','{\"translate\":\"artifact.expulsion.lore1\"}']},CustomModelData:12,expulsion:1,artifact:1}"
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:red_dye",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{display:{Name:'{\"translate\":\"artifact.accumulation\"}',Lore:['{\"translate\":\"artifact.type.resonance\"}','{\"translate\":\"artifact.accumulation.lore\"}']},CustomModelData:5,accumulation:1,artifact:1}"
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:red_dye",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{display:{Name:'{\"translate\":\"artifact.absorption\"}',Lore:['{\"translate\":\"artifact.type.void\"}','{\"translate\":\"artifact.absorption.lore\"}','{\"translate\":\"artifact.absorption.lore1\"}']},CustomModelData:4,absorption:1,artifact:1}"
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:red_dye",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{display:{Name:'{\"translate\":\"artifact.levitation\"}',Lore:['{\"translate\":\"artifact.type.dream\"}','{\"translate\":\"artifact.levitation.lore\"}']},CustomModelData:3,levitation:1,artifact:1}"
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:red_dye",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{display:{Name:'{\"translate\":\"artifact.amelioration\"}',Lore:['{\"translate\":\"artifact.type.radiance\"}','{\"translate\":\"artifact.amelioration.lore\"}']},CustomModelData:2,amelioration:1,artifact:1}"
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:red_dye",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{display:{Name:'{\"translate\":\"artifact.transposition\"}',Lore:['{\"translate\":\"artifact.type.dream\"}','{\"translate\":\"artifact.transposition.lore\"}']},CustomModelData:1,transposition:1,artifact:1}"
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:red_dye",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{display:{Name:'{\"translate\":\"artifact.extraction\"}',Lore:['{\"translate\":\"artifact.type.resonance\"}','{\"translate\":\"artifact.extraction.lore\"}']},CustomModelData:13,extraction:1,artifact:1}"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:written_book",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": 1
+              },
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{CustomModelData:5,display:{Name:'[{\"translate\":\"[%s] \",\"color\":\"gold\",\"italic\":false,\"with\":[{\"translate\":\"item.nyctocosm.prefix.lore\"}]},{\"translate\":\"item.nyctocosm.axiotopology\",\"color\":\"dark_aqua\",\"italic\":false}]',Lore:['{\"translate\":\"book.byAuthor\",\"color\":\"gray\",\"italic\":false,\"with\":[{\"translate\":\"item.nyctocosm.axiotopology.author\"}]}','{\"translate\":\"item.nyctocosm.book.generation\",\"color\":\"gray\",\"italic\":false}','{\"translate\":\"item.nyctocosm.axiotopology.lore\",\"color\":\"dark_gray\"}']},title:\"Theorem One\",author:\"Tarph-Xolaeta\",lorebook:1,storyline:3,generation:2,pages:['{\"translate\":\"item.nyctocosm.axiotopology.page1\"}'],HideFlags:32b}"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "rolls": {
+          "type": "minecraft:uniform",
+          "min": 5,
+          "max": 10
+        },
+        "bonus_rolls": 0,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:enchanted_golden_apple",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "type": "minecraft:uniform",
+                  "min": 1,
+                  "max": 2
+                },
+                "add": false
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:music_disc_otherside"
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 2,
+            "name": "minecraft:compass",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": 1,
+                "add": false
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 2,
+            "name": "minecraft:name_tag"
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 2,
+            "name": "minecraft:lead",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": 1,
+                "add": false
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 2,
+            "name": "minecraft:comparator",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": 1,
+                "add": false
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 5,
+            "name": "minecraft:redstone_torch",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 2,
+                  "max": 8
+                },
+                "add": false
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 2,
+            "name": "minecraft:music_disc_13"
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 2,
+            "name": "minecraft:music_disc_cat"
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 2,
+            "name": "minecraft:diamond_leggings",
+            "functions": [
+              {
+                "function": "minecraft:enchant_with_levels",
+                "levels": {
+                  "type": "minecraft:uniform",
+                  "min": 30,
+                  "max": 50
+                },
+                "treasure": true
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 3,
+            "name": "minecraft:book",
+            "functions": [
+              {
+                "function": "minecraft:enchant_randomly",
+                "enchantments": [
+                  "minecraft:swift_sneak"
+                ]
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 3,
+            "name": "minecraft:candle",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "type": "minecraft:uniform",
+                  "min": 1,
+                  "max": 4
+                },
+                "add": false
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 3,
+            "name": "minecraft:amethyst_shard",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "type": "minecraft:uniform",
+                  "min": 1,
+                  "max": 15
+                },
+                "add": false
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 3,
+            "name": "minecraft:experience_bottle",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "type": "minecraft:uniform",
+                  "min": 1,
+                  "max": 3
+                },
+                "add": false
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 3,
+            "name": "minecraft:repeater",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "type": "minecraft:uniform",
+                  "min": 1,
+                  "max": 15
+                },
+                "add": false
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 2,
+            "name": "minecraft:echo_shard",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "type": "minecraft:uniform",
+                  "min": 1,
+                  "max": 2
+                },
+                "add": false
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 5,
+            "name": "minecraft:potion",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "type": "minecraft:uniform",
+                  "min": 1,
+                  "max": 3
+                },
+                "add": false
+              },
+              {
+                "function": "minecraft:set_potion",
+                "id": "minecraft:strong_regeneration"
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 5,
+            "name": "minecraft:book",
+            "functions": [
+              {
+                "function": "minecraft:enchant_randomly"
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 5,
+            "name": "minecraft:book",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "type": "minecraft:uniform",
+                  "min": 3,
+                  "max": 10
+                },
+                "add": false
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 5,
+            "name": "minecraft:bone",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "type": "minecraft:uniform",
+                  "min": 1,
+                  "max": 15
+                },
+                "add": false
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 5,
+            "name": "minecraft:soul_torch",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "type": "minecraft:uniform",
+                  "min": 1,
+                  "max": 15
+                },
+                "add": false
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 7,
+            "name": "minecraft:coal",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "type": "minecraft:uniform",
+                  "min": 6,
+                  "max": 15
+                },
+                "add": false
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 7,
+            "name": "minecraft:redstone",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 5,
+                  "max": 18
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

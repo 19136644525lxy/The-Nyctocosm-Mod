@@ -1,0 +1,4 @@
+#built using mc-build (https://github.com/mc-build/mc-build)
+
+execute if score #uninstall aj.i matches 0 run tellraw @a [["",{"text":"[ ","color":"dark_gray"},{"text":"AJ","color":"green"},{"text":" → ","color":"light_purple"},{"text":"Error ☠","color":"red"},{"text":" ]","color":"dark_gray"},"\n"],{"text":"Uninstall not in-progress. Please run ","color":"gray"},"\n",{"text":" function aj_cast_spell:uninstall","color":"red"},"\n",{"text":" to start the uninstallation process.","color":"gray"}]
+execute if score #uninstall aj.i matches 1 run function aj_cast_spell:uninstall/__generated__/execute/3

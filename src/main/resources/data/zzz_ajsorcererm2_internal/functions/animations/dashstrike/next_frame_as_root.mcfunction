@@ -1,0 +1,1 @@
+function zzz_ajsorcererm2_internal:animations/dashstrike/tick_animation

@@ -1,0 +1,10 @@
+function animated_java:ajsorcererm2/zzzzzzzz/animations/fall/pause_as_root
+function animated_java:ajsorcererm2/zzzzzzzz/animations/idle/pause_as_root
+function animated_java:ajsorcererm2/zzzzzzzz/animations/risetransition/pause_as_root
+function animated_java:ajsorcererm2/zzzzzzzz/animations/dashstrike/pause_as_root
+function animated_java:ajsorcererm2/zzzzzzzz/animations/voidwave/pause_as_root
+function animated_java:ajsorcererm2/zzzzzzzz/animations/javelinswing/pause_as_root
+function animated_java:ajsorcererm2/zzzzzzzz/animations/airdash/pause_as_root
+function animated_java:ajsorcererm2/zzzzzzzz/animations/voidbeam/pause_as_root
+function animated_java:ajsorcererm2/zzzzzzzz/animations/seekingsingularities/pause_as_root
+function animated_java:ajsorcererm2/zzzzzzzz/animations/die/pause_as_root

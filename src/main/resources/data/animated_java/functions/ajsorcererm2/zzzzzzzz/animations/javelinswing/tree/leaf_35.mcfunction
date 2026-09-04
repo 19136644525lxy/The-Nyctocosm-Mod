@@ -1,0 +1,2 @@
+execute on passengers run function animated_java:ajsorcererm2/zzzzzzzz/animations/javelinswing/tree/leaf_35_as_bone
+execute unless entity @s[tag=aj.ajsorcererm2.disable_command_keyframes] at @s run execute positioned ^ ^1 ^2 run function sorcerer:attacks/javelinswing/swing

@@ -1,0 +1,2 @@
+execute if entity @s[tag=aj.ajemissary_vfx.root] run function animated_java:ajemissary_vfx/zzzzzzzz/animations/celestial_smite/play_as_root
+execute if entity @s[tag=!aj.ajemissary_vfx.root] run tellraw @a ["",{"text":"["},{"text":"Animated Java","color":"aqua"},{"text":"] "},{"text":"ERROR ☠","color":"red"},{"text":" > ","color":"gray"},[{"text":"The function","color":"yellow"},{"text":" animated_java:ajemissary_vfx/animations/celestial_smite/play ","color":"blue"},{"text":"must be run"},{"text":" as ","color":"red"},{"text":"the root entity!"}]]

@@ -1,0 +1,2 @@
+execute on passengers run function animated_java:ajsorcererm2/zzzzzzzz/animations/airdash/tree/leaf_25_as_bone
+execute unless entity @s[tag=aj.ajsorcererm2.disable_command_keyframes] at @s run playsound nyctocosm:sorcerer.airdash.dash master @a[distance=..30] ~ ~ ~ 5

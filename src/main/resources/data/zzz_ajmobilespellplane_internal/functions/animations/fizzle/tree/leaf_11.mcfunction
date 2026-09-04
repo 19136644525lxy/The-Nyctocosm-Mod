@@ -1,0 +1,1 @@
+execute on passengers run function zzz_ajmobilespellplane_internal:animations/fizzle/tree/leaf_11_as_bone

@@ -1,0 +1,99 @@
+#built using mc-build (https://github.com/mc-build/mc-build)
+
+particle minecraft:end_rod ~ ~ ~ ^1000000 ^ ^0 0.0000001 0 force
+particle minecraft:end_rod ~ ~ ~ ^997564.05 ^ ^69756.47 0.0000001 0 force
+particle minecraft:end_rod ~ ~ ~ ^990268.07 ^ ^139173.1 0.0000001 0 force
+particle minecraft:end_rod ~ ~ ~ ^978147.6 ^ ^207911.69 0.0000001 0 force
+particle minecraft:end_rod ~ ~ ~ ^961261.7 ^ ^275637.36 0.0000001 0 force
+particle minecraft:end_rod ~ ~ ~ ^939692.62 ^ ^342020.14 0.0000001 0 force
+particle minecraft:end_rod ~ ~ ~ ^913545.46 ^ ^406736.64 0.0000001 0 force
+particle minecraft:end_rod ~ ~ ~ ^882947.59 ^ ^469471.56 0.0000001 0 force
+particle minecraft:end_rod ~ ~ ~ ^848048.1 ^ ^529919.26 0.0000001 0 force
+particle minecraft:end_rod ~ ~ ~ ^809016.99 ^ ^587785.25 0.0000001 0 force
+particle minecraft:end_rod ~ ~ ~ ^766044.44 ^ ^642787.61 0.0000001 0 force
+particle minecraft:end_rod ~ ~ ~ ^719339.8 ^ ^694658.37 0.0000001 0 force
+particle minecraft:end_rod ~ ~ ~ ^669130.61 ^ ^743144.83 0.0000001 0 force
+particle minecraft:end_rod ~ ~ ~ ^615661.48 ^ ^788010.75 0.0000001 0 force
+particle minecraft:end_rod ~ ~ ~ ^559192.9 ^ ^829037.57 0.0000001 0 force
+particle minecraft:end_rod ~ ~ ~ ^500000 ^ ^866025.4 0.0000001 0 force
+particle minecraft:end_rod ~ ~ ~ ^438371.15 ^ ^898794.05 0.0000001 0 force
+particle minecraft:end_rod ~ ~ ~ ^374606.59 ^ ^927183.85 0.0000001 0 force
+particle minecraft:end_rod ~ ~ ~ ^309016.99 ^ ^951056.52 0.0000001 0 force
+particle minecraft:end_rod ~ ~ ~ ^241921.9 ^ ^970295.73 0.0000001 0 force
+particle minecraft:end_rod ~ ~ ~ ^173648.18 ^ ^984807.75 0.0000001 0 force
+particle minecraft:end_rod ~ ~ ~ ^104528.46 ^ ^994521.9 0.0000001 0 force
+particle minecraft:end_rod ~ ~ ~ ^34899.5 ^ ^999390.83 0.0000001 0 force
+particle minecraft:end_rod ~ ~ ~ ^-34899.5 ^ ^999390.83 0.0000001 0 force
+particle minecraft:end_rod ~ ~ ~ ^-104528.46 ^ ^994521.9 0.0000001 0 force
+particle minecraft:end_rod ~ ~ ~ ^-173648.18 ^ ^984807.75 0.0000001 0 force
+particle minecraft:end_rod ~ ~ ~ ^-241921.9 ^ ^970295.73 0.0000001 0 force
+particle minecraft:end_rod ~ ~ ~ ^-309016.99 ^ ^951056.52 0.0000001 0 force
+particle minecraft:end_rod ~ ~ ~ ^-374606.59 ^ ^927183.85 0.0000001 0 force
+particle minecraft:end_rod ~ ~ ~ ^-438371.15 ^ ^898794.05 0.0000001 0 force
+particle minecraft:end_rod ~ ~ ~ ^-500000 ^ ^866025.4 0.0000001 0 force
+particle minecraft:end_rod ~ ~ ~ ^-559192.9 ^ ^829037.57 0.0000001 0 force
+particle minecraft:end_rod ~ ~ ~ ^-615661.48 ^ ^788010.75 0.0000001 0 force
+particle minecraft:end_rod ~ ~ ~ ^-669130.61 ^ ^743144.83 0.0000001 0 force
+particle minecraft:end_rod ~ ~ ~ ^-719339.8 ^ ^694658.37 0.0000001 0 force
+particle minecraft:end_rod ~ ~ ~ ^-766044.44 ^ ^642787.61 0.0000001 0 force
+particle minecraft:end_rod ~ ~ ~ ^-809016.99 ^ ^587785.25 0.0000001 0 force
+particle minecraft:end_rod ~ ~ ~ ^-848048.1 ^ ^529919.26 0.0000001 0 force
+particle minecraft:end_rod ~ ~ ~ ^-882947.59 ^ ^469471.56 0.0000001 0 force
+particle minecraft:end_rod ~ ~ ~ ^-913545.46 ^ ^406736.64 0.0000001 0 force
+particle minecraft:end_rod ~ ~ ~ ^-939692.62 ^ ^342020.14 0.0000001 0 force
+particle minecraft:end_rod ~ ~ ~ ^-961261.7 ^ ^275637.36 0.0000001 0 force
+particle minecraft:end_rod ~ ~ ~ ^-978147.6 ^ ^207911.69 0.0000001 0 force
+particle minecraft:end_rod ~ ~ ~ ^-990268.07 ^ ^139173.1 0.0000001 0 force
+particle minecraft:end_rod ~ ~ ~ ^-997564.05 ^ ^69756.47 0.0000001 0 force
+particle minecraft:end_rod ~ ~ ~ ^-1000000 ^ ^0 0.0000001 0 force
+particle minecraft:end_rod ~ ~ ~ ^-997564.05 ^ ^-69756.47 0.0000001 0 force
+particle minecraft:end_rod ~ ~ ~ ^-990268.07 ^ ^-139173.1 0.0000001 0 force
+particle minecraft:end_rod ~ ~ ~ ^-978147.6 ^ ^-207911.69 0.0000001 0 force
+particle minecraft:end_rod ~ ~ ~ ^-961261.7 ^ ^-275637.36 0.0000001 0 force
+particle minecraft:end_rod ~ ~ ~ ^-939692.62 ^ ^-342020.14 0.0000001 0 force
+particle minecraft:end_rod ~ ~ ~ ^-913545.46 ^ ^-406736.64 0.0000001 0 force
+particle minecraft:end_rod ~ ~ ~ ^-882947.59 ^ ^-469471.56 0.0000001 0 force
+particle minecraft:end_rod ~ ~ ~ ^-848048.1 ^ ^-529919.26 0.0000001 0 force
+particle minecraft:end_rod ~ ~ ~ ^-809016.99 ^ ^-587785.25 0.0000001 0 force
+particle minecraft:end_rod ~ ~ ~ ^-766044.44 ^ ^-642787.61 0.0000001 0 force
+particle minecraft:end_rod ~ ~ ~ ^-719339.8 ^ ^-694658.37 0.0000001 0 force
+particle minecraft:end_rod ~ ~ ~ ^-669130.61 ^ ^-743144.83 0.0000001 0 force
+particle minecraft:end_rod ~ ~ ~ ^-615661.48 ^ ^-788010.75 0.0000001 0 force
+particle minecraft:end_rod ~ ~ ~ ^-559192.9 ^ ^-829037.57 0.0000001 0 force
+particle minecraft:end_rod ~ ~ ~ ^-500000 ^ ^-866025.4 0.0000001 0 force
+particle minecraft:end_rod ~ ~ ~ ^-438371.15 ^ ^-898794.05 0.0000001 0 force
+particle minecraft:end_rod ~ ~ ~ ^-374606.59 ^ ^-927183.85 0.0000001 0 force
+particle minecraft:end_rod ~ ~ ~ ^-309016.99 ^ ^-951056.52 0.0000001 0 force
+particle minecraft:end_rod ~ ~ ~ ^-241921.9 ^ ^-970295.73 0.0000001 0 force
+particle minecraft:end_rod ~ ~ ~ ^-173648.18 ^ ^-984807.75 0.0000001 0 force
+particle minecraft:end_rod ~ ~ ~ ^-104528.46 ^ ^-994521.9 0.0000001 0 force
+particle minecraft:end_rod ~ ~ ~ ^-34899.5 ^ ^-999390.83 0.0000001 0 force
+particle minecraft:end_rod ~ ~ ~ ^34899.5 ^ ^-999390.83 0.0000001 0 force
+particle minecraft:end_rod ~ ~ ~ ^104528.46 ^ ^-994521.9 0.0000001 0 force
+particle minecraft:end_rod ~ ~ ~ ^173648.18 ^ ^-984807.75 0.0000001 0 force
+particle minecraft:end_rod ~ ~ ~ ^241921.9 ^ ^-970295.73 0.0000001 0 force
+particle minecraft:end_rod ~ ~ ~ ^309016.99 ^ ^-951056.52 0.0000001 0 force
+particle minecraft:end_rod ~ ~ ~ ^374606.59 ^ ^-927183.85 0.0000001 0 force
+particle minecraft:end_rod ~ ~ ~ ^438371.15 ^ ^-898794.05 0.0000001 0 force
+particle minecraft:end_rod ~ ~ ~ ^500000 ^ ^-866025.4 0.0000001 0 force
+particle minecraft:end_rod ~ ~ ~ ^559192.9 ^ ^-829037.57 0.0000001 0 force
+particle minecraft:end_rod ~ ~ ~ ^615661.48 ^ ^-788010.75 0.0000001 0 force
+particle minecraft:end_rod ~ ~ ~ ^669130.61 ^ ^-743144.83 0.0000001 0 force
+particle minecraft:end_rod ~ ~ ~ ^719339.8 ^ ^-694658.37 0.0000001 0 force
+particle minecraft:end_rod ~ ~ ~ ^766044.44 ^ ^-642787.61 0.0000001 0 force
+particle minecraft:end_rod ~ ~ ~ ^809016.99 ^ ^-587785.25 0.0000001 0 force
+particle minecraft:end_rod ~ ~ ~ ^848048.1 ^ ^-529919.26 0.0000001 0 force
+particle minecraft:end_rod ~ ~ ~ ^882947.59 ^ ^-469471.56 0.0000001 0 force
+particle minecraft:end_rod ~ ~ ~ ^913545.46 ^ ^-406736.64 0.0000001 0 force
+particle minecraft:end_rod ~ ~ ~ ^939692.62 ^ ^-342020.14 0.0000001 0 force
+particle minecraft:end_rod ~ ~ ~ ^961261.7 ^ ^-275637.36 0.0000001 0 force
+particle minecraft:end_rod ~ ~ ~ ^978147.6 ^ ^-207911.69 0.0000001 0 force
+particle minecraft:end_rod ~ ~ ~ ^990268.07 ^ ^-139173.1 0.0000001 0 force
+particle minecraft:end_rod ~ ~ ~ ^997564.05 ^ ^-69756.47 0.0000001 0 force
+execute summon marker run function effects:shockwave/__generated__/block/25
+execute summon marker run function effects:shockwave/__generated__/block/26
+execute summon marker run function effects:shockwave/__generated__/block/27
+execute summon marker run function effects:shockwave/__generated__/block/28
+execute summon marker run function effects:shockwave/__generated__/block/29
+execute summon marker run function effects:shockwave/__generated__/block/30
+kill @s

@@ -1,0 +1,4 @@
+function zzz_ajnullpoint_internal:animations/idle/pause
+function zzz_ajnullpoint_internal:animations/emit/pause
+function zzz_ajnullpoint_internal:animations/recall/pause
+function zzz_ajnullpoint_internal:animations/hurt/pause

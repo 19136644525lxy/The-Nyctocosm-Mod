@@ -1,0 +1,15 @@
+{
+	"replace": false,
+	"values": [
+		"animated_java:ajdeathwalker/zzzzzzzz/tick",
+		"animated_java:ajspellplane/zzzzzzzz/tick",
+		"animated_java:ajmobilespellplane/zzzzzzzz/tick",
+		"animated_java:ajhypertrace/zzzzzzzz/tick",
+		"animated_java:ajnullpoint/zzzzzzzz/tick",
+		"animated_java:ajsorcererm2/zzzzzzzz/tick",
+		"animated_java:ajsorcererm1/zzzzzzzz/tick",
+		"animated_java:ajsorcerer/zzzzzzzz/tick",
+		"animated_java:ajemissary_vfx/zzzzzzzz/tick",
+		"animated_java:ajemissary/zzzzzzzz/tick"
+	]
+}

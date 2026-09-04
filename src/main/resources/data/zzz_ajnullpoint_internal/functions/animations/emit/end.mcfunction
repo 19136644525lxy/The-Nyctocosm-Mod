@@ -1,0 +1,3 @@
+execute if score @s aj.ajnullpoint.animation.emit.loop_mode = $aj.loop_mode.loop aj.i run function zzz_ajnullpoint_internal:animations/emit/end_loop
+execute if score @s aj.ajnullpoint.animation.emit.loop_mode = $aj.loop_mode.once aj.i run function ajnullpoint:animations/emit/stop
+execute if score @s aj.ajnullpoint.animation.emit.loop_mode = $aj.loop_mode.hold aj.i run function ajnullpoint:animations/emit/pause
