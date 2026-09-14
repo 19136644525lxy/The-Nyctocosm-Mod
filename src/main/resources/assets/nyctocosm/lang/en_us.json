@@ -8674,5 +8674,9 @@
   "subtitles.nyctocosm.spells.transmutate.transmittance": "Spell of Transmittance transmutates",
   "subtitles.nyctocosm.spells.transmutate.vacance": "Spell of Vacance transmutates",
   "subtitles.nyctocosm.tony.disappear": "The strange creature disappears",
-  "subtitles.nyctocosm.tony.spawn": "A strange creature appears"
+  "subtitles.nyctocosm.tony.spawn": "A strange creature appears",
+  "curios.identifier.ring": "Ring",
+  "curios.identifier.soul_bottle": "Soul Bottle",
+  "curios.identifier.relic": "Relic",
+  "curios.identifier.artifact": "Artifact"
 }

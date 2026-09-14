@@ -8675,5 +8675,9 @@
   "subtitles.nyctocosm.spells.transmutate.transmittance": "Spell of Transmittance transmutates §7[§c待翻译§7]",
   "subtitles.nyctocosm.spells.transmutate.vacance": "Spell of Vacance transmutates §7[§c待翻译§7]",
   "subtitles.nyctocosm.tony.disappear": "The strange creature disappears §7[§c待翻译§7]",
-  "subtitles.nyctocosm.tony.spawn": "A strange creature appears §7[§c待翻译§7]"
+  "subtitles.nyctocosm.tony.spawn": "A strange creature appears §7[§c待翻译§7]",
+  "curios.identifier.ring": "戒指",
+  "curios.identifier.soul_bottle": "灵魂瓶",
+  "curios.identifier.relic": "圣物",
+  "curios.identifier.artifact": "秘宝"
 }
