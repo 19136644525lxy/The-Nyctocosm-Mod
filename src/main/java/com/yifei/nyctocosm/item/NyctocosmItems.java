@@ -19,6 +19,10 @@ import net.minecraftforge.registries.RegistryObject;
  * 本类不注册新的 Item 类型，而是注册一个 {@link CreativeModeTab}，将 25 个
  * "带正确 NBT 的原版物品" ItemStack 放入创造栏。
  * <p>
+ * 【现状标注】创造栏已改用 NyctocosmEquipmentItems / BookItems / MaterialItems / CurioItems 的
+ * 30 个自定义物品；本类 25 个 SNBT 常量与 buildStack() 已无调用者（死代码）。
+ * 保留目的仅为「与原数据包 give 命令产出 NBT 逐字对照」，勿在此扩展新功能。
+ * <p>
  * 玩家从创造栏拿到的物品，与 mcfunction give 命令产出的物品完全一致，
  * 因此数据包中的 predicate（如 {@code items:["minecraft:warped_fungus_on_a_stick"], nbt:"{scythe:1}"})
  * 能完美识别，无需修改任何 mcfunction。

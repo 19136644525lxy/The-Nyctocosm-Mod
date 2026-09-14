@@ -59,10 +59,37 @@ public interface ISpellPlayerData {
 
     void setTraceChanceBase(int v);
 
-    /** 法术强度加成（上限 50，原 m.spell.power） */
+    /** 法术强度加成（上限 50，原 m.spell.power；运行期由 recalcSpellPower 从元素统计求和刷新） */
     int getSpellPower();
 
     void setSpellPower(int v);
+
+    // ========== 元素属性（对应原 magic 命名空间 m.<element>.power）==========
+
+    /**
+     * 按元素维度的法术强度（6 元素数组，index = Element.index-1，原 m.&lt;element&gt;.power）。
+     * 修复 #4：此前只有全局 spellPower 且无任何运行期来源（仅 PlayerEvent.Clone 复制），
+     * 法术强度恒为 0、scaledDamage/scaledDuration 全部退化为基础值。
+     * 本数组即原 magic 属性统计的 Java 落点——默认全 0（=原包无任何加成时的状态），
+     * 数值来源（圣物/击杀/装备加成）由后续 magic 属性系统 Java 化时写入。
+     */
+    int[] getElementPower();
+
+    /** 读取某元素法术强度（默认 0） */
+    default int getElementPower(ElementType type) {
+        return getElementPower()[type.index - 1];
+    }
+
+    /** 覆盖某元素法术强度（钳制 0~50） */
+    default void setElementPower(ElementType type, int value) {
+        getElementPower()[type.index - 1] = Math.max(0, Math.min(50, value));
+    }
+
+    /** 累加某元素法术强度（钳制 0~50） */
+    default void addElementPower(ElementType type, int delta) {
+        getElementPower()[type.index - 1] =
+                Math.max(0, Math.min(50, getElementPower()[type.index - 1] + delta));
+    }
 
     /** 按元素维度统计：造成的总伤害（6 元素数组，index=Element.index-1） */
     long[] getDamageDealt();

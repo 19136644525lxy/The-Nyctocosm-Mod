@@ -91,4 +91,15 @@ public class NyctocosmConfig {
         enableCustomDamageTypes = ENABLE_CUSTOM_DAMAGE_TYPES.get();
         logDebug = LOG_DEBUG.get();
     }
+
+    /**
+     * MOD 总线回调：配置加载（Loading）与重载（Reloading）完成后刷新运行期缓存字段。
+     * 修复：此前 refresh() 与缓存字段无任何调用者（无 ModConfigEvent 订阅），配置实际不生效。
+     * 注册点：NyctocosmMod 构造时 {@code modBus.addListener(NyctocosmConfig::onModConfigEvent)}。
+     *
+     * @param event ModConfigEvent（覆盖 Loading/Reloading 两个子类型）
+     */
+    public static void onModConfigEvent(net.minecraftforge.fml.event.config.ModConfigEvent event) {
+        refresh();
+    }
 }

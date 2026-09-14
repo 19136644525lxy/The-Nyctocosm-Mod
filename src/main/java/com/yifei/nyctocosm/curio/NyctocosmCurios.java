@@ -24,9 +24,9 @@ import java.util.concurrent.atomic.AtomicInteger;
  * <p>
  * 职责：
  * <ol>
- *   <li>触发 14 个饰品 Item 的 DeferredRegister 注册（4 种槽位由 datapack JSON 声明，见
+ *   <li>触发 16 个饰品 Item 的 DeferredRegister 注册（4 种槽位由 datapack JSON 声明，见
  *       {@code resources/data/nyctocosm/curios/slots/}）</li>
- *   <li>注册全局饰品被动事件监听器（{@link ArtifactPassiveHandler}）到 Forge 主线程事件总线</li>
+ *   <li>全局饰品被动事件监听器（{@link ArtifactPassiveHandler}）通过 @Mod.EventBusSubscriber 自动注册到 Forge 主事件总线</li>
  *   <li>提供面向业务层的静态工具：{@link #getCurioStacks(Player, String)} 等，封装 Curios Capability 查询</li>
  * </ol>
  * <p>
@@ -61,13 +61,14 @@ public final class NyctocosmCurios {
      *               避免调用已 forRemoval 的 FMLJavaModLoadingContext.get()）
      */
     public static void init(IEventBus modBus) {
-        // 注册 Curios 饰品 Item：戒指 1 + 灵魂瓶 1 + 12 种圣物 = 14
+        // 注册 Curios 饰品 Item：戒指 1 + 灵魂瓶 1 + 14 种圣物 = 16 个
         NyctocosmCurioItems.ITEMS.register(modBus);
 
         // 注册 Player 能力附加兼容（占位；Curios 会自动注入 INVENTORY 能力）
         MinecraftForge.EVENT_BUS.register(NyctocosmCurios.class);
-        // 注册全局饰品被动 Handler（LivingTick/LivingDamage/LivingDeath/PlayerInteract 驱动）
-        MinecraftForge.EVENT_BUS.register(ArtifactPassiveHandler.class);
+        // 全局饰品被动 Handler（LivingTick/LivingDamage/LivingDeath/PlayerInteract 驱动）由
+        // @Mod.EventBusSubscriber(bus = FORGE) 自动注册，此处不再手动 register ——
+        // 修复此前「注解自动注册 + 手动 register」双注册导致的事件双触发（扣双魂/被动跑两遍）。
     }
 
     // ==================== 工具方法（迪米特法则：业务层直接调这里，不直接依赖 CuriosCapability） ====================

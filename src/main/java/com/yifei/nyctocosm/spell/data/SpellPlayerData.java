@@ -26,6 +26,9 @@ public class SpellPlayerData implements ISpellPlayerData {
     private int traceChanceBase;   // 默认 0（基础追踪概率 %）
     private int spellPower;        // 默认 0（上限 50）
 
+    // 元素属性：法术强度（6 元素，index = ElementType.index-1；修复 #4 见接口注释）
+    private final int[] elementPower = new int[6];
+
     // 统计（6 元素，长度固定为 6，index = ElementType.index-1）
     private final long[] damageDealt = new long[6];
     private final int[] kills = new int[6];
@@ -85,6 +88,9 @@ public class SpellPlayerData implements ISpellPlayerData {
     public void setSpellPower(int v) { this.spellPower = Math.min(50, Math.max(0, v)); }
 
     @Override
+    public int[] getElementPower() { return elementPower; }
+
+    @Override
     public long[] getDamageDealt() { return damageDealt; }
 
     @Override
@@ -138,6 +144,7 @@ public class SpellPlayerData implements ISpellPlayerData {
         this.castTicksLeft = other.getCastTicksLeft();
         this.traceChanceBase = other.getTraceChanceBase();
         this.spellPower = other.getSpellPower();
+        System.arraycopy(other.getElementPower(), 0, this.elementPower, 0, 6);
         System.arraycopy(other.getDamageDealt(), 0, this.damageDealt, 0, 6);
         System.arraycopy(other.getKills(), 0, this.kills, 0, 6);
         System.arraycopy(other.getSpellsCast(), 0, this.spellsCast, 0, 6);
@@ -158,6 +165,7 @@ public class SpellPlayerData implements ISpellPlayerData {
         tag.putInt("CastTicksLeft", castTicksLeft);
         tag.putInt("TraceChanceBase", traceChanceBase);
         tag.putInt("SpellPower", spellPower);
+        tag.putIntArray("ElementPower", Arrays.copyOf(elementPower, 6));
         // NBT 支持原生数组直接写入
         tag.putLongArray("DamageDealt", Arrays.copyOf(damageDealt, 6));
         tag.putIntArray("Kills", Arrays.copyOf(kills, 6));
@@ -179,6 +187,11 @@ public class SpellPlayerData implements ISpellPlayerData {
         castTicksLeft = tag.getInt("CastTicksLeft");
         traceChanceBase = tag.getInt("TraceChanceBase");
         spellPower = Math.min(50, tag.getInt("SpellPower"));
+        // 11 = Tag.TAG_INT_ARRAY（旧存档无此键时保持全 0）
+        if (tag.contains("ElementPower", 11)) {
+            int[] arr = tag.getIntArray("ElementPower");
+            System.arraycopy(arr, 0, elementPower, 0, Math.min(6, arr.length));
+        }
         // 12 = Tag.TAG_LONG_ARRAY
         if (tag.contains("DamageDealt", 12)) {
             long[] arr = tag.getLongArray("DamageDealt");

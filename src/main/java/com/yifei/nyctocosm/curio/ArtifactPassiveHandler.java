@@ -28,6 +28,7 @@ import net.minecraftforge.fml.common.Mod;
 
 import javax.annotation.Nonnull;
 import java.util.*;
+import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * 10 圣物 + 戒指 全局被动事件驱动（SRP：只负责"分派事件到具体圣物效果"）。
@@ -41,14 +42,17 @@ import java.util.*;
  * - 单次扫描 charm 槽最多 5 个物品（槽数由 NyctocosmCurios 定义），O(5)，可忽略。
  * - 借助 WeakHashMap 缓存玩家 → 已激活被动集合，避免每 tick 多次重复扫描和重复触发（主要给 locomotion dash/expulsion 冷却用）。
  */
-@Mod.EventBusSubscriber(modid = NyctocosmMod.MOD_ID)
+// 显式指定 FORGE 总线：与 NyctocosmCurios.init 的手动注册二选一（只保留注解自动注册，
+// 修复此前「注解默认总线 + init 手动 register」双注册导致的事件双触发缺陷）。
+@Mod.EventBusSubscriber(modid = NyctocosmMod.MOD_ID, bus = Mod.EventBusSubscriber.Bus.FORGE)
 public final class ArtifactPassiveHandler {
 
     private ArtifactPassiveHandler() {}
 
-    // 玩家维度 cooldown 状态（用 ConcurrentHashMap 避免跨线程访问，实际只在 Server 线程读写）
-    private static final Map<UUID, CooldownState> COOLDOWNS =
-            Collections.synchronizedMap(new WeakHashMap<>());
+    // 玩家维度 cooldown 状态（仅 Server 线程读写）。
+    // 修复：WeakHashMap<UUID,...> 的弱键在无外部强引用时随时被 GC，导致冲刺冷却随机失效；
+    // 改用 ConcurrentHashMap，并配合 onPlayerTick 的空闲清理避免条目无限增长。
+    private static final Map<UUID, CooldownState> COOLDOWNS = new ConcurrentHashMap<>();
 
     private static final class CooldownState {
         int locomotionDashCd = 0;    // locomotion: 10 tick 冷却
@@ -119,6 +123,11 @@ public final class ArtifactPassiveHandler {
                 p.addEffect(new MobEffectInstance(MobEffects.SLOW_FALLING, 5 * 20, 0,
                         true, false, true));
             }
+        }
+
+        // 空闲清理：冲刺未进行且无冷却时移除状态条目（冷却归零后重建默认状态等价），防止 Map 无限增长
+        if (!st.locomotionDashing && st.locomotionDashCd == 0 && st.locomotionDashTimer == 0) {
+            COOLDOWNS.remove(p.getUUID());
         }
     }
 
@@ -275,10 +284,14 @@ public final class ArtifactPassiveHandler {
                     SoundEvents.GENERIC_EXPLODE, SoundSource.PLAYERS, 1F, 1F);
         }
 
-        // Amelioration：死了"任何 hypertrace（这里用 nyctocosm livingthings 近似）"→ 半径 6 格内玩家治疗 + 饱和
-        if (hasAmelioration && dead.getType().is(
-                net.minecraft.tags.TagKey.create(net.minecraft.core.registries.Registries.ENTITY_TYPE,
-                        net.minecraft.resources.ResourceLocation.fromNamespaceAndPath("nyctocosm", "livingthings")))) {
+        // Amelioration（healburst）：原包 = 佩戴者自己的 hypertrace 被摧毁且佩戴者在 6 格内时，
+        // 治疗佩戴者周围 6 格玩家 + 饱和。Java 无 hypertrace 实体，近似以「佩戴者击杀 nyctocosm
+        // 怪物（livingthings 标签）且在 6 格内」作为"自己的追迹体被摧毁"等价事件。
+        if (hasAmelioration
+                && p.distanceToSqr(dead) <= 6.0 * 6.0
+                && dead.getType().is(
+                        net.minecraft.tags.TagKey.create(net.minecraft.core.registries.Registries.ENTITY_TYPE,
+                                net.minecraft.resources.ResourceLocation.fromNamespaceAndPath("nyctocosm", "livingthings")))) {
             Vec3 center = dead.position();
             for (Player healee : dead.level().getEntitiesOfClass(Player.class,
                     new net.minecraft.world.phys.AABB(center, center).inflate(6.0))) {

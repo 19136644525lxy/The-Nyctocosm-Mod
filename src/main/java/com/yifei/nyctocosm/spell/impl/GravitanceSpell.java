@@ -19,7 +19,7 @@ import java.util.List;
  * 生成引力吸心球（每 tick 把周围怪物吸入中心，造成 20 + power×2 伤害）。
  * Java 化：
  * <ul>
- *   <li>20 tick 吟唱后，对施法者前方 6 格半径 AOE 范围目标造成 20 + power×2 伤害</li>
+ *   <li>60 tick（3 秒）吟唱后（构造 castTime=60，与元数据一致），对施法者前方 6 格半径 AOE 范围目标造成 20 + power×2 伤害</li>
  *   <li>给目标加 LEVITATION（浮升）2 秒 + 减速 3 级 10 秒（模拟「吸进去无法挣脱」效果）</li>
  *   <li>200 tick active：每 10 tick 在中心再造成一次小范围拉拽（伤害较小）</li>
  * </ul>

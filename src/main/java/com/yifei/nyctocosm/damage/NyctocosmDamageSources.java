@@ -138,16 +138,20 @@ public final class NyctocosmDamageSources {
     /**
      * 反向查找：若给定 DamageSource 属于 nyctocosm 6 元素之一则返回对应 ElementType，否则 null。
      * 用于 ArtifactPassiveHandler 实现 Protection 圣物"元素抗性"（按元素减免伤害）。
+     * <p>
+     * 修复：此前只比较 location.path（如 "void"），任意模组同名 damage_type（如别的 mod 的
+     * "void"）会被误判成本模组元素、误触发 Protection 减免；现改为比较完整 ResourceLocation
+     * （namespace + path，即只有 magic:dream 等本模组 6 元素伤害类型可命中）。
      */
     @Nullable
     public static com.yifei.nyctocosm.spell.ElementType resolveElement(DamageSource src) {
         if (src == null) return null;
-        String key = src.typeHolder().unwrapKey()
-                .map(k -> k.location().getPath())
+        net.minecraft.resources.ResourceLocation loc = src.typeHolder().unwrapKey()
+                .map(k -> k.location())
                 .orElse(null);
-        if (key == null) return null;
+        if (loc == null) return null;
         for (com.yifei.nyctocosm.spell.ElementType t : com.yifei.nyctocosm.spell.ElementType.values()) {
-            if (t.damageTypeKey != null && t.damageTypeKey.location().getPath().equals(key)) {
+            if (t.damageTypeKey != null && t.damageTypeKey.location().equals(loc)) {
                 return t;
             }
         }

@@ -40,11 +40,11 @@ public interface IArtifactItem {
         ELEMENT_RESISTANCE,
         /** 吸收：击杀对应元素怪物时 +1 魂 */
         ABSORPTION,
-        /** 积聚：靠近 hypertrace 时自动增大掉魂概率 */
+        /** 积聚：靠近 hypertrace 时自动增大掉魂概率（依赖 hypertrace 系统，Java 化前佩戴暂无效果） */
         ACCUMULATION,
-        /** 改善：死亡 hypertrace 触发时周围 6 格玩家治疗 + 饱和 */
+        /** 改善：佩戴者击杀 nyctocosm 怪物（hypertrace 近似）且在 6 格内时，治疗周围 6 格玩家 + 饱和 */
         AMELIORATION,
-        /** 置换：潜行 + 右键向前方瞬移（原数据包 logic 待补充，暂以冲刺等效实现） */
+        /** 置换：佩戴时施法平面改为跟随施法者移动（原 a.transposition → cast_ring_plane 移动平面） */
         TRANSPOSITION,
         /** 悬浮：潜行（3 魂）→ 缓慢下落 5s */
         LEVITATION,

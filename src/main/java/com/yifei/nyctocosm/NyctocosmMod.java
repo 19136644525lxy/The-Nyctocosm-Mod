@@ -55,6 +55,9 @@ public class NyctocosmMod {
         // 注册配置规范（Forge 自动加载与持久化）
         context.registerConfig(ModConfig.Type.COMMON, NyctocosmConfig.SPEC, "nyctocosm.toml");
 
+        // 配置加载/重载完成后刷新运行期缓存（修复：此前 refresh() 无调用者，配置开关实际不生效）
+        modBus.addListener(NyctocosmConfig::onModConfigEvent);
+
         // 注册 Forge 主事件总线（用于 ServerStarting 等游戏事件）
         MinecraftForge.EVENT_BUS.register(this);
     }

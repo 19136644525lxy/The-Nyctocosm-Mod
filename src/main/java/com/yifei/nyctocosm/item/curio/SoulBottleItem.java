@@ -25,11 +25,14 @@ import java.util.List;
  * <p>
  * 对应原数据包 {@code spells/bottle/give.mcfunction}（carrot_on_a_stick + CMD=1 + souls_held:1 + soul_bottle:1）。
  * <p>
- * 逻辑 1:1 映射：
+ * [修复 #7] 右键语义已对齐原包（此前 Java 映射与数据包相反）：
  * <ul>
- *   <li>左键穿戴/Charm 槽 → 被其他代码（戒指激活、Absorption 等）读取 souls_held。</li>
- *   <li>主手右键（未潜行）：等价于 {@code items/bottle/add.mcfunction}，souls_held +1（上限 999）。</li>
- *   <li>主手 Shift+右键：等价于 {@code items/bottle/subtract_50.mcfunction}，souls_held -50（下限 0）。</li>
+ *   <li>主手右键（未潜行）：等价于 items:playertick 的 click_bottle → {@code spells/bottle/subtract.mcfunction}，
+ *       souls_held <b>-1</b>（扣至 0）。原数据包扣至 ≤0 会把物品替换回 glass_bottle；Java 物品是独立自定义
+ *       物品，不转回玻璃瓶，仅扣至 0。</li>
+ *   <li>主手 Shift+右键：原数据包<b>无</b>对应交互（Java 先前虚构的"潜行 -50"映射已移除，改仅提示）。</li>
+ *   <li>灵魂<b>收集 +1</b> 不由右键完成：原包是击杀/灵魂标记（items:tick 对 soul marker）自动触发
+ *       {@code spells/bottle/add.mcfunction}，Java 侧自动收集接入待「判定兼容改造（#8 范围）」统一处理。</li>
  * </ul>
  * 与 PlanarCirclet 共享的灵魂池：施法优先消耗 PlanarCirclet，不足时再向 SoulBottle 借。
  */
@@ -54,19 +57,19 @@ public class SoulBottleItem extends Item implements ICurioItem {
 
         int cur = stack.getOrCreateTag().getInt(TAG_SOULS_HELD);
         if (player.isShiftKeyDown()) {
-            // subtract_50.mcfunction 等价 —— 每次 -50，最低 0
-            int next = Math.max(0, cur - 50);
-            stack.getOrCreateTag().putInt(TAG_SOULS_HELD, next);
-            player.playNotifySound(SoundEvents.BOTTLE_FILL_DRAGONBREATH, SoundSource.PLAYERS, 0.5F, 1.2F);
+            // 原数据包无"潜行 -50"交互（Java 先前为虚构映射，[修复 #7] 移除）；仅提示收集方式
+            player.displayClientMessage(Component.translatableWithFallback(
+                    "item.nyctocosm.soul_bottle.tip_shift",
+                    "灵魂瓶：击杀怪物或拾取灵魂标记会自动 +1 灵魂"), true);
         } else {
-            // add.mcfunction 等价 —— 每次 +1（预留容量，不超过 999）
-            if (cur >= MAX_SOULS) {
-                player.sendSystemMessage(Component.translatable("item.nyctocosm.soul_bottle.full")
-                        .withStyle(ChatFormatting.DARK_RED));
+            // 对齐原包 click_bottle → spells:bottle/subtract：右键消耗 1 魂（扣至 0）
+            if (cur <= 0) {
+                player.displayClientMessage(Component.translatableWithFallback(
+                        "item.nyctocosm.soul_bottle.empty", "灵魂瓶已空"), true);
                 return InteractionResultHolder.fail(stack);
             }
-            stack.getOrCreateTag().putInt(TAG_SOULS_HELD, cur + 1);
-            player.playNotifySound(SoundEvents.BOTTLE_FILL, SoundSource.PLAYERS, 0.8F, 1.0F);
+            stack.getOrCreateTag().putInt(TAG_SOULS_HELD, cur - 1);
+            player.playNotifySound(SoundEvents.BOTTLE_EMPTY, SoundSource.PLAYERS, 0.6F, 1.0F);
         }
         return InteractionResultHolder.sidedSuccess(stack, false);
     }
