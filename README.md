@@ -189,7 +189,3 @@ com.yifei.nyctocosm/
 ```
 
 动画采用 native_rigs 采样矩阵方案（`assets/nyctocosm/native_rigs/*.json.gz`，AJ 逐帧矩阵离线导入 + 运行时 TRS 插值）；饰品为纯 Java 库存检测（无外部前置依赖）。
-
-## 八、开发进度与路线
-
-见 [PROGRESS.md](PROGRESS.md)（R1-R13 全记录 + 剩余 Pending：全流程录像对照验收、本地化校对、符文大阵 rig 动画等）。
