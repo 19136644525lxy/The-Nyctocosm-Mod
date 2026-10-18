@@ -1,1 +1,0 @@
-function zzz_ajdeathwalker_internal:animations/death/tick_animation

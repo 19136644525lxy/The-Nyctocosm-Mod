@@ -1,1 +1,0 @@
-execute on passengers run function zzz_ajsorcererm1_internal:animations/shardhail/tree/leaf_46_as_bone

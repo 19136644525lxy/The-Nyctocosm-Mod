@@ -1,1 +1,0 @@
-function zzz_ajsorcererm1_internal:animations/voidmeteor/tick_animation

@@ -1,1 +1,0 @@
-execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/die/tree/leaf_46_as_bone

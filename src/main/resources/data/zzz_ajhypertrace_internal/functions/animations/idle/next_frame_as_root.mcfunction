@@ -1,1 +1,0 @@
-function zzz_ajhypertrace_internal:animations/idle/tick_animation

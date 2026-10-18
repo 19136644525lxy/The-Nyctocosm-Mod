@@ -1,1 +1,0 @@
-execute on passengers run function zzz_ajsorcererm2_internal:animations/die/tree/leaf_90_as_bone

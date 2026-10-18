@@ -1,1 +1,0 @@
-execute if score @s aj.anim_time matches 0..66 run function animated_java:ajsorcererm1/zzzzzzzz/animations/idle/tree/branch_0_66

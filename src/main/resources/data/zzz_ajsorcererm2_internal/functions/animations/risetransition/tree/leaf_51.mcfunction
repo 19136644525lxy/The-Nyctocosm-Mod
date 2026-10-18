@@ -1,2 +1,0 @@
-execute on passengers run function zzz_ajsorcererm2_internal:animations/risetransition/tree/leaf_51_as_bone
-execute unless entity @s[tag=aj.ajsorcererm2.disable_command_keyframes] at @s run function sorcerer:risetransition1

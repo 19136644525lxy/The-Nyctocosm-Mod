@@ -1,2 +1,0 @@
-function animated_java:ajsorcerer/zzzzzzzz/animations/test/pause_as_root
-function animated_java:ajsorcerer/zzzzzzzz/animations/initial_spawn/pause_as_root

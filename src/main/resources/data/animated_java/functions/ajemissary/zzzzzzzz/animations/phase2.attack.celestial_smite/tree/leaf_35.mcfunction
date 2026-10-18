@@ -1,1 +1,0 @@
-execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase2.attack.celestial_smite/tree/leaf_35_as_bone

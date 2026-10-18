@@ -1,1 +1,0 @@
-execute on passengers run function zzz_ajnullpoint_internal:apply_variant/default_as_bone

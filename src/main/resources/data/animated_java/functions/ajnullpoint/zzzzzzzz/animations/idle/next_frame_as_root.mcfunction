@@ -1,1 +1,0 @@
-function animated_java:ajnullpoint/zzzzzzzz/animations/idle/tick_animation

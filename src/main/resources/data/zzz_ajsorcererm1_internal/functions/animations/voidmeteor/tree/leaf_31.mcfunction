@@ -1,1 +1,0 @@
-execute on passengers run function zzz_ajsorcererm1_internal:animations/voidmeteor/tree/leaf_31_as_bone

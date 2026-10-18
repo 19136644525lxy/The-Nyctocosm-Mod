@@ -1,13 +1,1 @@
-{
-	"description": "All living entities",
-	"values": [
-		{
-			"id": "#nyctocosm:mobs",
-			"required": false
-		},
-		{
-			"id": "minecraft:player",
-			"required": false
-		}
-	]
-}
+{"values":["#nyctocosm:mobs","minecraft:player"]}

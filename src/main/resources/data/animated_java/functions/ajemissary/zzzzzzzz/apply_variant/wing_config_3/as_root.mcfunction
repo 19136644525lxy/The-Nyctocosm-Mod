@@ -1,1 +1,0 @@
-execute on passengers run function animated_java:ajemissary/zzzzzzzz/apply_variant/wing_config_3/as_bone

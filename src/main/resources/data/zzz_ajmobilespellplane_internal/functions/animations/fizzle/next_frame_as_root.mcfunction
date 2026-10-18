@@ -1,1 +1,0 @@
-function zzz_ajmobilespellplane_internal:animations/fizzle/tick_animation

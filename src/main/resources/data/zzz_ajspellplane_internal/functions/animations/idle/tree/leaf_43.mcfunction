@@ -1,1 +1,0 @@
-execute on passengers run function zzz_ajspellplane_internal:animations/idle/tree/leaf_43_as_bone

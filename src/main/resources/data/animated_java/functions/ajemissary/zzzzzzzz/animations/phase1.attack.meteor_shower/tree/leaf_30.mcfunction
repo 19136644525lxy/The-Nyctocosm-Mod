@@ -1,1 +1,0 @@
-execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase1.attack.meteor_shower/tree/leaf_30_as_bone

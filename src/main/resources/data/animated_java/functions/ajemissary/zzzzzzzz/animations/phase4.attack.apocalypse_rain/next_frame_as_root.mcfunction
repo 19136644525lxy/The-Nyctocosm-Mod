@@ -1,1 +1,0 @@
-function animated_java:ajemissary/zzzzzzzz/animations/phase4.attack.apocalypse_rain/tick_animation

@@ -1,3 +1,0 @@
-function zzz_ajmobilespellplane_internal:animations/idle/pause
-function zzz_ajmobilespellplane_internal:animations/cast/pause
-function zzz_ajmobilespellplane_internal:animations/fizzle/pause

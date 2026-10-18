@@ -1,1 +1,0 @@
-execute on passengers run function zzz_ajmobilespellplane_internal:animations/idle/tree/leaf_148_as_bone

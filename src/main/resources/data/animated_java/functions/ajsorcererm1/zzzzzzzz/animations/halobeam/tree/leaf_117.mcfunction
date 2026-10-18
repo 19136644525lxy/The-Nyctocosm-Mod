@@ -1,1 +1,0 @@
-execute on passengers run function animated_java:ajsorcererm1/zzzzzzzz/animations/halobeam/tree/leaf_117_as_bone

@@ -1,1 +1,0 @@
-function animated_java:ajsorcererm1/zzzzzzzz/animations/frozenblades/tick_animation

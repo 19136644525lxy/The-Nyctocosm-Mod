@@ -1,1 +1,0 @@
-function animated_java:ajemissary/zzzzzzzz/animations/phase2_transition/tick_animation

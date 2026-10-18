@@ -1,1 +1,0 @@
-execute on passengers run function zzz_ajnullpoint_internal:animations/emit/tree/leaf_38_as_bone

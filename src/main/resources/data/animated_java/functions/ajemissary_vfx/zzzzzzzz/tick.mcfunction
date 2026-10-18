@@ -1,1 +1,0 @@
-execute if entity @s[tag=aj.ajemissary_vfx.root] run function animated_java:ajemissary_vfx/zzzzzzzz/tick_as_root

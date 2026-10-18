@@ -1,4 +1,0 @@
-{
-  "_comment": "原数据包中没有 Locomotion 的独立 Artifact 3D 模型，此处采用 absorption 纹理（红染料/护符造型）替代。若后续添加模型，修改 parent 即可。",
-  "parent": "nyctocosm:magic/artifacts/absorption"
-}

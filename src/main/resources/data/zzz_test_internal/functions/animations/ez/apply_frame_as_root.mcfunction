@@ -1,1 +1,0 @@
-execute if score @s aj.anim_time matches 0..20 run function zzz_test_internal:animations/ez/tree/branch_0_20

@@ -1,1 +1,0 @@
-function zzz_ajsorcerer_internal:animations/test/tick_animation

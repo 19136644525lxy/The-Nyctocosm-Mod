@@ -1,2 +1,0 @@
-function ajsorcerer:set_variant/slashstaffless
-function sorcerer:plungespear

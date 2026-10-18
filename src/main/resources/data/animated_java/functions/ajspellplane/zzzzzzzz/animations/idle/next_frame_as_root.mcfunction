@@ -1,1 +1,0 @@
-function animated_java:ajspellplane/zzzzzzzz/animations/idle/tick_animation

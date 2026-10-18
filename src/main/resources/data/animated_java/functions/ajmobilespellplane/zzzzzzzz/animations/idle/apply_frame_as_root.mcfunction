@@ -1,1 +1,0 @@
-execute if score @s aj.anim_time matches 0..200 run function animated_java:ajmobilespellplane/zzzzzzzz/animations/idle/tree/branch_0_200

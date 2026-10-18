@@ -1,1 +1,0 @@
-execute on passengers run function animated_java:ajhypertrace/zzzzzzzz/apply_variant/default/as_bone

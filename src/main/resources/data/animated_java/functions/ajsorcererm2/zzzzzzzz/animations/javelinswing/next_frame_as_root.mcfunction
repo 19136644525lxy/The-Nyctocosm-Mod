@@ -1,1 +1,0 @@
-function animated_java:ajsorcererm2/zzzzzzzz/animations/javelinswing/tick_animation

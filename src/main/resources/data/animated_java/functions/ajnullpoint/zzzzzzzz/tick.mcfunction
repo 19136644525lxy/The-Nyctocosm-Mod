@@ -1,1 +1,0 @@
-execute if entity @s[tag=aj.ajnullpoint.root] run function animated_java:ajnullpoint/zzzzzzzz/tick_as_root

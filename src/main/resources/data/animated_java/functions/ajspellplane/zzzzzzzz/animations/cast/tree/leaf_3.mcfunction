@@ -1,1 +1,0 @@
-execute on passengers run function animated_java:ajspellplane/zzzzzzzz/animations/cast/tree/leaf_3_as_bone

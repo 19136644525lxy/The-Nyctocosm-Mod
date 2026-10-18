@@ -1,1 +1,0 @@
-execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase3.attack.swordswing/tree/leaf_15_as_bone

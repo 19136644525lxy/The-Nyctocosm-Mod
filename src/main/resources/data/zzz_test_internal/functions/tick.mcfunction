@@ -1,1 +1,0 @@
-execute as @e[type=#test:aj_root,tag=aj.test.root] run function zzz_test_internal:tick_as_root

@@ -1,3 +1,0 @@
-execute if score @s aj.ajhypertrace.animation.idle.loop_mode = $aj.loop_mode.loop aj.i run function zzz_ajhypertrace_internal:animations/idle/end_loop
-execute if score @s aj.ajhypertrace.animation.idle.loop_mode = $aj.loop_mode.once aj.i run function ajhypertrace:animations/idle/stop
-execute if score @s aj.ajhypertrace.animation.idle.loop_mode = $aj.loop_mode.hold aj.i run function ajhypertrace:animations/idle/pause

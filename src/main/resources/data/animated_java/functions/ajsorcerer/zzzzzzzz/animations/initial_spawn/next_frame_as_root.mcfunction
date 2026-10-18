@@ -1,1 +1,0 @@
-function animated_java:ajsorcerer/zzzzzzzz/animations/initial_spawn/tick_animation

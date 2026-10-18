@@ -1,22 +1,14 @@
 {
-    "display": {
-      "icon": {
-        "item": "minecraft:warped_fungus_on_a_stick",
-        "nbt": "{CustomModelData:2}"
-      },
-      "title": {
-        "translate": "advancements.nyctocosm.defeat_serpent.title",
-        "color": "dark_red"
-      },
-      "description": {
-        "translate": "advancements.nyctocosm.defeat_serpent.description",
-        "color": "gray"
-      }
-    },
-    "parent": "nyctocosm:root",
-    "criteria": {
-      "requirement": {
-        "trigger": "minecraft:impossible"
-      }
-    }
-  }
+  "parent": "nyctocosm:root",
+  "display": {
+    "icon": {"item": "nyctocosm:nightmare_scale"},
+    "title": {"translate": "advancements.nyctocosm.defeat_serpent.title"},
+    "description": {"translate": "advancements.nyctocosm.defeat_serpent.description"},
+    "background": "minecraft:textures/gui/advancements/backgrounds/stone.png",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {"defeated": {"trigger": "minecraft:impossible"}}
+}

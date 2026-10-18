@@ -1,2 +1,0 @@
-execute on passengers run function animated_java:ajsorcererm2/zzzzzzzz/animations/javelinswing/tree/leaf_41_as_bone
-function animated_java:ajsorcererm2/zzzzzzzz/apply_variant/default/as_root

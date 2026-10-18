@@ -1,2 +1,0 @@
-execute on passengers run function zzz_inculcate_internal:animations/inculcate/tree/leaf_10_as_bone
-execute unless entity @s[tag=aj.inculcate.disable_command_keyframes] at @s run function crafting:dais/effects/inculcate1

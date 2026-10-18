@@ -1,1 +1,0 @@
-execute if score @s aj.anim_time matches 0..80 run function zzz_ajdeathwalker_internal:animations/walk/tree/branch_0_80

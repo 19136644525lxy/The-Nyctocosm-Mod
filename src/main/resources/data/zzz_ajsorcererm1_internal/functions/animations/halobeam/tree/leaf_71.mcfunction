@@ -1,1 +1,0 @@
-execute on passengers run function zzz_ajsorcererm1_internal:animations/halobeam/tree/leaf_71_as_bone

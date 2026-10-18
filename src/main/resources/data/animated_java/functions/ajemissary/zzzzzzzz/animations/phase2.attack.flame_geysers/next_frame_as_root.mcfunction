@@ -1,1 +1,0 @@
-function animated_java:ajemissary/zzzzzzzz/animations/phase2.attack.flame_geysers/tick_animation

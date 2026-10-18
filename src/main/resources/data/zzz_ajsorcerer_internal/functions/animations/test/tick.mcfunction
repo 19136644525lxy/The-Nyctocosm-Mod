@@ -1,2 +1,0 @@
-execute if score @s aj.tween_time matches 1.. run function zzz_ajsorcerer_internal:animations/test/tick_tween
-execute unless score @s aj.tween_time matches 1.. run function zzz_ajsorcerer_internal:animations/test/tick_animation

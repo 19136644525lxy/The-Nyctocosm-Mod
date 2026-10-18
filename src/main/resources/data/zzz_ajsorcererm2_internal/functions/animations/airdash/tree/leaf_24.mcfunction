@@ -1,1 +1,0 @@
-execute on passengers run function zzz_ajsorcererm2_internal:animations/airdash/tree/leaf_24_as_bone

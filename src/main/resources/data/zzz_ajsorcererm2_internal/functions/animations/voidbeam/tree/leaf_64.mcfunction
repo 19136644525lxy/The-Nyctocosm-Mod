@@ -1,1 +1,0 @@
-execute on passengers run function zzz_ajsorcererm2_internal:animations/voidbeam/tree/leaf_64_as_bone

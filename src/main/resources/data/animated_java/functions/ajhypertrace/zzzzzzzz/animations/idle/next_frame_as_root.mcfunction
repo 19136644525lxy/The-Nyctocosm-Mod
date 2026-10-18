@@ -1,1 +1,0 @@
-function animated_java:ajhypertrace/zzzzzzzz/animations/idle/tick_animation

@@ -1,2 +1,0 @@
-execute on passengers run function zzz_ajsorcererm2_internal:animations/javelinswing/tree/leaf_41_as_bone
-function zzz_ajsorcererm2_internal:apply_variant/default_as_root

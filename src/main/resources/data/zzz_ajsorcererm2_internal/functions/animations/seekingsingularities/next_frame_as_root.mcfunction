@@ -1,1 +1,0 @@
-function zzz_ajsorcererm2_internal:animations/seekingsingularities/tick_animation

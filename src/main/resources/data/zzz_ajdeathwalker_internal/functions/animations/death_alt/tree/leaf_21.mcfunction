@@ -1,1 +1,0 @@
-execute on passengers run function zzz_ajdeathwalker_internal:animations/death_alt/tree/leaf_21_as_bone

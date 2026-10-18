@@ -1,2 +1,0 @@
-execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/testpose/tree/leaf_6_as_bone
-function animated_java:ajemissary/zzzzzzzz/apply_variant/default/as_root

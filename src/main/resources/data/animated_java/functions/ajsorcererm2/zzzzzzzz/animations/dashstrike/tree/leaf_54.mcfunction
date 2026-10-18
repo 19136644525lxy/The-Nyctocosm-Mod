@@ -1,1 +1,0 @@
-execute on passengers run function animated_java:ajsorcererm2/zzzzzzzz/animations/dashstrike/tree/leaf_54_as_bone

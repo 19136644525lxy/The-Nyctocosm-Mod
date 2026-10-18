@@ -1,1 +1,0 @@
-function animated_java:ajemissary/zzzzzzzz/animations/phase1.attack.meteor_shower/tick_animation

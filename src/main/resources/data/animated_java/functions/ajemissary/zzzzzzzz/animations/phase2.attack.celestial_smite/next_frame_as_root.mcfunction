@@ -1,1 +1,0 @@
-function animated_java:ajemissary/zzzzzzzz/animations/phase2.attack.celestial_smite/tick_animation

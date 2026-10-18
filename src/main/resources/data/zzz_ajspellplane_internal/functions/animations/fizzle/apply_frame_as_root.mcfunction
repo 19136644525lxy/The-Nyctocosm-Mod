@@ -1,1 +1,0 @@
-execute if score @s aj.anim_time matches 0..17 run function zzz_ajspellplane_internal:animations/fizzle/tree/branch_0_17

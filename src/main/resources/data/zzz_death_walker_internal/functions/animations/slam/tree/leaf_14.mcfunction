@@ -1,1 +1,0 @@
-execute on passengers run function zzz_death_walker_internal:animations/slam/tree/leaf_14_as_bone

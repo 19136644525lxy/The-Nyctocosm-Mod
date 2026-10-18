@@ -1,1 +1,0 @@
-execute if score @s aj.anim_time matches 0..59 run function zzz_ajsorcererm2_internal:animations/risetransition/tree/branch_0_59

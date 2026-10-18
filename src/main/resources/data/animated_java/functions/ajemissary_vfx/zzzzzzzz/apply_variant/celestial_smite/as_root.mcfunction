@@ -1,1 +1,0 @@
-execute on passengers run function animated_java:ajemissary_vfx/zzzzzzzz/apply_variant/celestial_smite/as_bone

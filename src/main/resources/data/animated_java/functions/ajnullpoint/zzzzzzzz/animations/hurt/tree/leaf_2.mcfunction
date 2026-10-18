@@ -1,1 +1,0 @@
-execute on passengers run function animated_java:ajnullpoint/zzzzzzzz/animations/hurt/tree/leaf_2_as_bone

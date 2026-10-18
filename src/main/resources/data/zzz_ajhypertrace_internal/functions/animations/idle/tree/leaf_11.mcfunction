@@ -1,1 +1,0 @@
-execute on passengers run function zzz_ajhypertrace_internal:animations/idle/tree/leaf_11_as_bone

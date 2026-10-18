@@ -1,41 +1,21 @@
-# Nyctocosm 模组元数据
 modLoader="javafml"
-loaderVersion="${loader_version_range}"
-license="${mod_license}"
-
+loaderVersion="[47,)"
+license="All Rights Reserved; original Nyctocosm assets by Flubberschnub"
 [[mods]]
-modId="${mod_id}"
+modId="nyctocosm"
 version="${mod_version}"
-displayName="${mod_name}"
-authors="${mod_authors}"
-description='''${mod_description}'''
-
-[[dependencies.${mod_id}]]
-    modId="forge"
-    mandatory=true
-    versionRange="${forge_version_range}"
-    ordering="NONE"
-    side="BOTH"
-
-[[dependencies.${mod_id}]]
-    modId="minecraft"
-    mandatory=true
-    versionRange="${minecraft_version_range}"
-    ordering="NONE"
-    side="BOTH"
-
-# GeckoLib：实体/物品/动画渲染（必需）
-[[dependencies.${mod_id}]]
-    modId="geckolib"
-    mandatory=true
-    versionRange="[4.0,)"
-    ordering="NONE"
-    side="BOTH"
-
-# Curios API：饰品槽位系统（必需）
-[[dependencies.${mod_id}]]
-    modId="curios"
-    mandatory=true
-    versionRange="[5.0,)"
-    ordering="NONE"
-    side="BOTH"
+displayName="Nyctocosm"
+authors="Yifei, Flubberschnub, EchoAria"
+description='''永夜之国 Nyctocosm：基于 Flubberschnub 原作数据包的原生 Forge 1.20.1 重构。'''
+[[dependencies.nyctocosm]]
+modId="forge"
+mandatory=true
+versionRange="[47.4.13,48)"
+ordering="NONE"
+side="BOTH"
+[[dependencies.nyctocosm]]
+modId="minecraft"
+mandatory=true
+versionRange="[1.20.1,1.20.2)"
+ordering="NONE"
+side="BOTH"

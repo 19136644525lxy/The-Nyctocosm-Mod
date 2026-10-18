@@ -1,1 +1,0 @@
-execute on passengers run function zzz_ajsorcererm2_internal:apply_variant/invis_as_bone

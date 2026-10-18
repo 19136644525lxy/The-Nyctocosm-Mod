@@ -1,1 +1,0 @@
-execute as @e[type=#death_walker:aj_root,tag=aj.death_walker.root] run function zzz_death_walker_internal:tick_as_root

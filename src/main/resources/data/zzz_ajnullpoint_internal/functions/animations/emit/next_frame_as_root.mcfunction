@@ -1,1 +1,0 @@
-function zzz_ajnullpoint_internal:animations/emit/tick_animation

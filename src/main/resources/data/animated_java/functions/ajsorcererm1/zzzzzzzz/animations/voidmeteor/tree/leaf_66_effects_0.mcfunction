@@ -1,2 +1,0 @@
-function ajsorcererm1:animations/stop_all_animations
-function ajsorcererm1:animations/idle/play

@@ -1,1 +1,0 @@
-execute as @e[type=minecraft:item_display,tag=aj.ajsorcererm2.root] run function animated_java:ajsorcererm2/zzzzzzzz/remove/as_root

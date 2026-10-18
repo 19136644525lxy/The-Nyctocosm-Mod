@@ -41,6 +41,37 @@ minecraft {
 
         client {
             property 'forge.enabledGameTestNamespaces', mod_id
+
+            // 客户端自动冒烟场景（ClientSmoke 系列用，-Psmoke 等开关触发）
+            if (project.hasProperty('feedback19Smoke')) {
+                workingDirectory project.file(project.property('feedback19RunDir'))
+                property 'nyctocosm.feedback19Smoke', 'true'
+                if (project.hasProperty('feedback19IdleOnly')) property 'nyctocosm.feedback19IdleOnly', 'true'
+            }
+            if (project.hasProperty('bossRepairSmoke')) {
+                workingDirectory project.file(project.property('bossRepairRunDir'))
+                property 'nyctocosm.bossRepairSmoke', 'true'
+            }
+            if (project.hasProperty('sorcererRepairSmoke')) {
+                workingDirectory project.file(project.property('sorcererRepairRunDir'))
+                property 'nyctocosm.sorcererRepairSmoke', 'true'
+            }
+            if (project.hasProperty('visualRepairSmoke')) {
+                workingDirectory project.file(project.property('visualRepairRunDir'))
+                property 'nyctocosm.visualRepairSmoke', 'true'
+            }
+            if (project.hasProperty('resonanceSmoke')) {
+                property 'nyctocosm.resonanceSmoke', 'true'
+                args '--quickPlaySingleplayer', 'NativeSmoke'
+            }
+            if (project.hasProperty('p0Smoke')) {
+                property 'nyctocosm.p0Smoke', 'true'
+                args '--quickPlaySingleplayer', 'NativeSmoke'
+            }
+            if (project.hasProperty('smoke')) {
+                property 'nyctocosm.clientSmoke', 'true'
+                args '--quickPlaySingleplayer', 'NativeSmoke'
+            }
         }
 
         server {
@@ -62,21 +93,19 @@ minecraft {
 // 数据生成器输出目录
 sourceSets.main.resources { srcDir 'src/generated/resources' }
 
+// 第三方 API 仓库（JEI 集成）
 repositories {
-    // ForgeGradle 已自动添加 Forge maven 与 Maven Central
-    flatDir {
-        dirs 'libs'
+    maven {
+        name = 'BlameJared'
+        url = 'https://maven.blamejared.com'
     }
 }
 
 dependencies {
     minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
-
-    // GeckoLib：实体/物品/动画渲染（替代 Animated Java）
-    implementation fg.deobf("software.bernie.geckolib:geckolib-forge-1.20.1:4.8.4")
-
-    // Curios API：饰品槽位系统
-    implementation fg.deobf("top.theillusivec4.curios:curios-forge:5.14.1+1.20.1")
+    // JEI 仅编译期集成（运行时用户自装 JEI，无 JEI 时插件类不加载、零影响）
+    compileOnly fg.deobf("mezz.jei:jei-${minecraft_version}-common-api:${jei_version}")
+    compileOnly fg.deobf("mezz.jei:jei-${minecraft_version}-forge-api:${jei_version}")
 }
 
 // 资源变量替换（mods.toml 与 pack.mcmeta）
@@ -112,6 +141,9 @@ tasks.named('jar', Jar).configure {
                 'Implementation-Timestamp': new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
         ])
     }
+
+    // 测试与开发辅助类、空结构文件不进入发布 JAR
+    exclude '**/GameTests*', '**/ClientSmoke*', 'data/nyctocosm/structures/empty.nbt', 'data/nyctocosm/structures/portal_test.nbt'
 
     finalizedBy 'reobfJar'
 }

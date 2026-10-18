@@ -1,1 +1,0 @@
-execute if entity @s[tag=aj.ajsorcererm2.root] run function animated_java:ajsorcererm2/zzzzzzzz/tick_as_root

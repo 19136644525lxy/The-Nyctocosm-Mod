@@ -1,1 +1,0 @@
-execute if entity @s[tag=aj.inculcate.animation.inculcate] run function zzz_inculcate_internal:animations/inculcate/tick

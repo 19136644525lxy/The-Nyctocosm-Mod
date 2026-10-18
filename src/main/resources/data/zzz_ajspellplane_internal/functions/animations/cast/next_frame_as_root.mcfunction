@@ -1,1 +1,0 @@
-function zzz_ajspellplane_internal:animations/cast/tick_animation

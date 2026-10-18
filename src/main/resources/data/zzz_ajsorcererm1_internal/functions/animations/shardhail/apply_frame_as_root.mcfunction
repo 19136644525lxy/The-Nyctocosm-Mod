@@ -1,1 +1,0 @@
-execute if score @s aj.anim_time matches 0..63 run function zzz_ajsorcererm1_internal:animations/shardhail/tree/branch_0_63

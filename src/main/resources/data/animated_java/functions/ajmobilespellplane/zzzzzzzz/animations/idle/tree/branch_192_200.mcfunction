@@ -1,2 +1,0 @@
-execute if score @s aj.anim_time matches 192..199 run function animated_java:ajmobilespellplane/zzzzzzzz/animations/idle/tree/branch_192_199
-execute if score @s aj.anim_time matches 200 run function animated_java:ajmobilespellplane/zzzzzzzz/animations/idle/tree/leaf_200

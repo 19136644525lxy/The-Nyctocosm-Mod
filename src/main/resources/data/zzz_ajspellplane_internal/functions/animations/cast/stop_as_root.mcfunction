@@ -1,6 +1,0 @@
-scoreboard players set @s aj.ajspellplane.animation.cast.local_anim_time 0
-tag @s remove aj.ajspellplane.animation.cast
-execute on passengers run data modify entity @s interpolation_duration set value 0
-tag @s add aj.ajspellplane.disable_command_keyframes
-function zzz_ajspellplane_internal:animations/cast/tree/leaf_0
-tag @s remove aj.ajspellplane.disable_command_keyframes

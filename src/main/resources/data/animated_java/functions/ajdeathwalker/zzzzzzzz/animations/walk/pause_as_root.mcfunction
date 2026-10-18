@@ -1,1 +1,0 @@
-tag @s remove aj.ajdeathwalker.animation.walk

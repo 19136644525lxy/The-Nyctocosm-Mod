@@ -1,1 +1,0 @@
-execute if score @s aj.anim_time matches 0..23 run function zzz_ajmobilespellplane_internal:animations/cast/tree/branch_0_23

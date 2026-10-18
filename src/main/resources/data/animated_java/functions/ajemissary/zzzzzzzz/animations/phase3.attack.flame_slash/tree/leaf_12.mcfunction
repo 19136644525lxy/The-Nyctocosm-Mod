@@ -1,2 +1,0 @@
-execute on passengers run function animated_java:ajemissary/zzzzzzzz/animations/phase3.attack.flame_slash/tree/leaf_12_as_bone
-function animated_java:ajemissary/zzzzzzzz/apply_variant/sweepful/as_root

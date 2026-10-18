@@ -1,1 +1,0 @@
-execute on passengers run function animated_java:ajdeathwalker/zzzzzzzz/animations/walk/tree/leaf_14_as_bone

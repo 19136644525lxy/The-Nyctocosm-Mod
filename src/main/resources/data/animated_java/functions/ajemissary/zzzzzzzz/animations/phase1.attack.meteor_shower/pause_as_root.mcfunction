@@ -1,1 +1,0 @@
-tag @s remove aj.ajemissary.animation.phase1.attack.meteor_shower

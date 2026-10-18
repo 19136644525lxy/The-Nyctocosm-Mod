@@ -1,2 +1,0 @@
-execute on passengers run function zzz_ajsorcerer_internal:animations/initial_spawn/tree/leaf_0_as_bone
-function zzz_ajsorcerer_internal:apply_variant/staffless_as_root

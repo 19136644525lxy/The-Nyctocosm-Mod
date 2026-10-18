@@ -1,3 +1,0 @@
-execute if score @s aj.ajsorcererm2.animation.dashstrike.loop_mode = $aj.loop_mode.loop aj.i run function animated_java:ajsorcererm2/zzzzzzzz/animations/dashstrike/end_loop
-execute if score @s aj.ajsorcererm2.animation.dashstrike.loop_mode = $aj.loop_mode.once aj.i run function animated_java:ajsorcererm2/animations/dashstrike/stop
-execute if score @s aj.ajsorcererm2.animation.dashstrike.loop_mode = $aj.loop_mode.hold aj.i run function animated_java:ajsorcererm2/animations/dashstrike/pause

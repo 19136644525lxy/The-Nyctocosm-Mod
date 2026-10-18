@@ -1,1 +1,0 @@
-execute on passengers run function animated_java:ajmobilespellplane/zzzzzzzz/animations/fizzle/tree/leaf_12_as_bone

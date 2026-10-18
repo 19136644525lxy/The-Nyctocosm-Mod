@@ -1,1 +1,0 @@
-function animated_java:ajemissary/zzzzzzzz/animations/phase1.attack.lightning_javelin/tick_animation

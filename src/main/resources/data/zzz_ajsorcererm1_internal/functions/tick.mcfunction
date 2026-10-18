@@ -1,1 +1,0 @@
-execute as @e[type=#ajsorcererm1:aj_root,tag=aj.ajsorcererm1.root] run function zzz_ajsorcererm1_internal:tick_as_root

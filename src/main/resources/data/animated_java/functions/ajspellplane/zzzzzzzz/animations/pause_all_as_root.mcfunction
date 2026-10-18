@@ -1,3 +1,0 @@
-function animated_java:ajspellplane/zzzzzzzz/animations/idle/pause_as_root
-function animated_java:ajspellplane/zzzzzzzz/animations/cast/pause_as_root
-function animated_java:ajspellplane/zzzzzzzz/animations/fizzle/pause_as_root

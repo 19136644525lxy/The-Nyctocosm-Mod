@@ -1,5 +1,0 @@
-function zzz_ajdeathwalker_internal:animations/walk/pause
-function zzz_ajdeathwalker_internal:animations/slam/pause
-function zzz_ajdeathwalker_internal:animations/idle/pause
-function zzz_ajdeathwalker_internal:animations/death/pause
-function zzz_ajdeathwalker_internal:animations/death_alt/pause

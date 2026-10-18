@@ -1,1 +1,0 @@
-execute if score @s aj.anim_time matches 0..62 run function animated_java:ajsorcererm1/zzzzzzzz/animations/singularitycharge/tree/branch_0_62

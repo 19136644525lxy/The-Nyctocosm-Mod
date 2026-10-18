@@ -1,1 +1,0 @@
-function zzz_ajnullpoint_internal:animations/hurt/tick_animation

@@ -1,1 +1,0 @@
-execute if entity @s[tag=aj.ajdeathwalker.root] run function animated_java:ajdeathwalker/zzzzzzzz/tick_as_root

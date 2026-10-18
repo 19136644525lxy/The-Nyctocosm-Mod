@@ -1,2 +1,0 @@
-execute on passengers run function animated_java:ajspellplane/zzzzzzzz/animations/fizzle/tree/leaf_15_as_bone
-execute unless entity @s[tag=aj.ajspellplane.disable_command_keyframes] at @s run function ajspellplane:remove/this

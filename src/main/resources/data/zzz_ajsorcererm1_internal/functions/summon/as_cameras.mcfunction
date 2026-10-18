@@ -1,1 +1,0 @@
-function #ajsorcererm1:on_summon_as_cameras

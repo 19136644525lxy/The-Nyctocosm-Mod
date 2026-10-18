@@ -1,2 +1,0 @@
-scoreboard players set @s aj.ajsorcererm2.rig_loaded 1
-execute unless score @s aj.ajsorcererm2.export_version = aj.ajsorcererm2.export_version aj.i at @s run function animated_java:ajsorcererm2/zzzzzzzz/mark_outdated_rig

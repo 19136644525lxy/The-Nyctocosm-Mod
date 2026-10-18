@@ -1,1 +1,0 @@
-execute if score @s aj.anim_time matches 0..66 run function animated_java:ajsorcererm2/zzzzzzzz/animations/javelinswing/tree/branch_0_66

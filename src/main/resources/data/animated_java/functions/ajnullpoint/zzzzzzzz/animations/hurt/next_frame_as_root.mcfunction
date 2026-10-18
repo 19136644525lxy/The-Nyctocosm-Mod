@@ -1,1 +1,0 @@
-function animated_java:ajnullpoint/zzzzzzzz/animations/hurt/tick_animation

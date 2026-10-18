@@ -1,1 +1,0 @@
-execute on passengers run function zzz_ajsorcerer_internal:animations/initial_spawn/tree/leaf_120_as_bone

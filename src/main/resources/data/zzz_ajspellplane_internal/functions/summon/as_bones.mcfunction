@@ -1,1 +1,0 @@
-function #ajspellplane:on_summon_as_bones

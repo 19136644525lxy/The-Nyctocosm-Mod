@@ -1,3 +1,0 @@
-execute if score @s aj.ajsorcerer.animation.initial_spawn.loop_mode = $aj.loop_mode.loop aj.i run function zzz_ajsorcerer_internal:animations/initial_spawn/end_loop
-execute if score @s aj.ajsorcerer.animation.initial_spawn.loop_mode = $aj.loop_mode.once aj.i run function ajsorcerer:animations/initial_spawn/stop
-execute if score @s aj.ajsorcerer.animation.initial_spawn.loop_mode = $aj.loop_mode.hold aj.i run function ajsorcerer:animations/initial_spawn/pause

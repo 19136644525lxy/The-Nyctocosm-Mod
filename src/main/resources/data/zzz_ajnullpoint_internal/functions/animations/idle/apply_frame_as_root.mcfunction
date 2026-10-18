@@ -1,1 +1,0 @@
-execute if score @s aj.anim_time matches 0..120 run function zzz_ajnullpoint_internal:animations/idle/tree/branch_0_120

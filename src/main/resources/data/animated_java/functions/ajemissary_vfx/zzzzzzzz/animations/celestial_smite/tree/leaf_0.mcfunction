@@ -1,2 +1,0 @@
-execute on passengers run function animated_java:ajemissary_vfx/zzzzzzzz/animations/celestial_smite/tree/leaf_0_as_bone
-function animated_java:ajemissary_vfx/zzzzzzzz/apply_variant/celestial_smite/as_root

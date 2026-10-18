@@ -1,1 +1,0 @@
-function animated_java:ajemissary/zzzzzzzz/animations/spawn/tick_animation

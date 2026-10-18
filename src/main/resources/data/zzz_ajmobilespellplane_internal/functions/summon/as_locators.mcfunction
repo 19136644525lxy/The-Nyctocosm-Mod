@@ -1,1 +1,0 @@
-function #ajmobilespellplane:on_summon_as_locators

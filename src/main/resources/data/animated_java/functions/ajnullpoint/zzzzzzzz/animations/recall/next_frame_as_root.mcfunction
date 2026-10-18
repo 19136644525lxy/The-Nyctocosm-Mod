@@ -1,1 +1,0 @@
-function animated_java:ajnullpoint/zzzzzzzz/animations/recall/tick_animation

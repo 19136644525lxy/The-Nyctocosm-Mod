@@ -1,1 +1,0 @@
-function animated_java:ajemissary/zzzzzzzz/animations/phase3.attack.cross/tick_animation

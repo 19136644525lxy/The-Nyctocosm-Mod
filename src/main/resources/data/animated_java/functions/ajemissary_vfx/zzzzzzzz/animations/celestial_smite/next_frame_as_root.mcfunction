@@ -1,1 +1,0 @@
-function animated_java:ajemissary_vfx/zzzzzzzz/animations/celestial_smite/tick_animation

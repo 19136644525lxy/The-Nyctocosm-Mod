@@ -1,1 +1,0 @@
-execute on passengers run function zzz_ajsorcererm2_internal:animations/seekingsingularities/tree/leaf_61_as_bone

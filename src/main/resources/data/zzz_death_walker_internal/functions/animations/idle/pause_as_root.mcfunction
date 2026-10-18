@@ -1,1 +1,0 @@
-tag @s remove aj.death_walker.animation.idle

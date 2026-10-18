@@ -1,2 +1,0 @@
-function ajnullpoint:animations/stop_all_animations
-function ajnullpoint:animations/idle/play

@@ -1,1 +1,0 @@
-execute on passengers run function animated_java:ajsorcererm1/zzzzzzzz/apply_variant/invis/as_bone

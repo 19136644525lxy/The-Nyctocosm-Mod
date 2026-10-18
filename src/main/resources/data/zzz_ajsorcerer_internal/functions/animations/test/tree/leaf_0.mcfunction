@@ -1,1 +1,0 @@
-execute on passengers run function zzz_ajsorcerer_internal:animations/test/tree/leaf_0_as_bone

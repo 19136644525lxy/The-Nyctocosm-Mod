@@ -1,1 +1,0 @@
-function animated_java:ajsorcererm2/zzzzzzzz/animations/seekingsingularities/tick_animation

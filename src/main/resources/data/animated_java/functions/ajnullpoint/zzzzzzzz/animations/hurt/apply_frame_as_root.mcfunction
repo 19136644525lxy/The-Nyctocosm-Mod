@@ -1,1 +1,0 @@
-execute if score @s aj.anim_time matches 0..6 run function animated_java:ajnullpoint/zzzzzzzz/animations/hurt/tree/branch_0_6

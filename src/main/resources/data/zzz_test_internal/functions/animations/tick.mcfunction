@@ -1,1 +1,0 @@
-execute if entity @s[tag=aj.test.animation.ez] run function zzz_test_internal:animations/ez/tick

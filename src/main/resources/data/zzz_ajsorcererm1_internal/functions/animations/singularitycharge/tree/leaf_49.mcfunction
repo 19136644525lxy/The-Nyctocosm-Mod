@@ -1,1 +1,0 @@
-execute on passengers run function zzz_ajsorcererm1_internal:animations/singularitycharge/tree/leaf_49_as_bone

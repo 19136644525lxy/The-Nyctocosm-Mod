@@ -1,2 +1,0 @@
-execute if score @s aj.tween_time matches 1.. run function animated_java:ajsorcererm1/zzzzzzzz/animations/falltransition/tick_tween
-execute unless score @s aj.tween_time matches 1.. run function animated_java:ajsorcererm1/zzzzzzzz/animations/falltransition/tick_animation

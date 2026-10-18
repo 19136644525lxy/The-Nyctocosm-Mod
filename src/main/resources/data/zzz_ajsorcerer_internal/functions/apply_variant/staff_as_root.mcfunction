@@ -1,1 +1,0 @@
-execute on passengers run function zzz_ajsorcerer_internal:apply_variant/staff_as_bone

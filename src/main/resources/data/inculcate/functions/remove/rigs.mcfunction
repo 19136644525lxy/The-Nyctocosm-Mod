@@ -1,1 +1,0 @@
-execute as @e[type=#inculcate:aj_root,tag=aj.inculcate.root] run function zzz_inculcate_internal:remove/as_root

@@ -1,2 +1,0 @@
-function animated_java:ajemissary_vfx/zzzzzzzz/animations/celestial_smite/pause_as_root
-function animated_java:ajemissary_vfx/zzzzzzzz/animations/explosion/pause_as_root

@@ -1,1 +1,0 @@
-execute if entity @s[tag=aj.ajhypertrace.root] run function animated_java:ajhypertrace/zzzzzzzz/tick_as_root

@@ -1,1 +1,0 @@
-function zzz_inculcate_internal:animations/inculcate/tick_animation

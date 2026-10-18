@@ -1,3 +1,0 @@
-execute if score @s aj.ajsorcererm2.animation.voidbeam.loop_mode = $aj.loop_mode.loop aj.i run function zzz_ajsorcererm2_internal:animations/voidbeam/end_loop
-execute if score @s aj.ajsorcererm2.animation.voidbeam.loop_mode = $aj.loop_mode.once aj.i run function ajsorcererm2:animations/voidbeam/stop
-execute if score @s aj.ajsorcererm2.animation.voidbeam.loop_mode = $aj.loop_mode.hold aj.i run function ajsorcererm2:animations/voidbeam/pause

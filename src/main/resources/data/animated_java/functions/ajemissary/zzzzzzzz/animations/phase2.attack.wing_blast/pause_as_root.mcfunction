@@ -1,1 +1,0 @@
-tag @s remove aj.ajemissary.animation.phase2.attack.wing_blast

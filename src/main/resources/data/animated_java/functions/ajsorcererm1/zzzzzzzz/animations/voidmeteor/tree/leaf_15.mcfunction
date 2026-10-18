@@ -1,1 +1,0 @@
-execute on passengers run function animated_java:ajsorcererm1/zzzzzzzz/animations/voidmeteor/tree/leaf_15_as_bone

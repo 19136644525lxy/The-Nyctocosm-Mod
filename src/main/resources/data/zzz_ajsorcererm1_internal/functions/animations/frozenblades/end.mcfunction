@@ -1,3 +1,0 @@
-execute if score @s aj.ajsorcererm1.animation.frozenblades.loop_mode = $aj.loop_mode.loop aj.i run function zzz_ajsorcererm1_internal:animations/frozenblades/end_loop
-execute if score @s aj.ajsorcererm1.animation.frozenblades.loop_mode = $aj.loop_mode.once aj.i run function ajsorcererm1:animations/frozenblades/stop
-execute if score @s aj.ajsorcererm1.animation.frozenblades.loop_mode = $aj.loop_mode.hold aj.i run function ajsorcererm1:animations/frozenblades/pause

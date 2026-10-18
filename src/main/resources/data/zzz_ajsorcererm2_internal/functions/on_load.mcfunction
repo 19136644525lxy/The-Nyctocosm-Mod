@@ -1,2 +1,0 @@
-scoreboard players set @s aj.ajsorcererm2.rig_loaded 1
-execute unless score @s aj.ajsorcererm2.export_version = aj.ajsorcererm2.export_version aj.i at @s run function zzz_ajsorcererm2_internal:upgrade_rig

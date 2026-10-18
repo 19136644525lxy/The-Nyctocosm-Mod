@@ -1,1 +1,0 @@
-function #ajhypertrace:on_summon_as_cameras

@@ -1,2 +1,0 @@
-function ajspellplane:animations/stop_all_animations
-function ajspellplane:animations/idle/play

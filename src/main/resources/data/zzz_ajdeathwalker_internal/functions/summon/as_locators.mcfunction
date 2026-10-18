@@ -1,1 +1,0 @@
-function #ajdeathwalker:on_summon_as_locators

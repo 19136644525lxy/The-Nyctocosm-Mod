@@ -1,1 +1,0 @@
-execute on passengers run function animated_java:ajsorcererm2/zzzzzzzz/animations/idle/tree/leaf_6_as_bone

@@ -1,1 +1,0 @@
-execute if score @s aj.anim_time matches 0..20 run function animated_java:ajspellplane/zzzzzzzz/animations/cast/tree/branch_0_20

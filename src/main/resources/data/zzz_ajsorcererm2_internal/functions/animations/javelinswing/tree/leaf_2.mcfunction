@@ -1,1 +1,0 @@
-execute on passengers run function zzz_ajsorcererm2_internal:animations/javelinswing/tree/leaf_2_as_bone

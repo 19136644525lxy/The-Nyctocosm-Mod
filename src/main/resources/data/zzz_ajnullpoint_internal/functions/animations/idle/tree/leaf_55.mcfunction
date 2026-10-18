@@ -1,1 +1,0 @@
-execute on passengers run function zzz_ajnullpoint_internal:animations/idle/tree/leaf_55_as_bone

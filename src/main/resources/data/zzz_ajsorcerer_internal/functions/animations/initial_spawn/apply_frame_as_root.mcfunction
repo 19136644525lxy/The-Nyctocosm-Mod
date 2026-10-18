@@ -1,1 +1,0 @@
-execute if score @s aj.anim_time matches 0..331 run function zzz_ajsorcerer_internal:animations/initial_spawn/tree/branch_0_331

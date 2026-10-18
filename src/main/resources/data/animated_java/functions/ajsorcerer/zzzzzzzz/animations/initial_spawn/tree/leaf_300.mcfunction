@@ -1,1 +1,0 @@
-execute on passengers run function animated_java:ajsorcerer/zzzzzzzz/animations/initial_spawn/tree/leaf_300_as_bone

@@ -1,1 +1,0 @@
-execute on passengers run function animated_java:ajsorcerer/zzzzzzzz/apply_variant/slash/as_bone

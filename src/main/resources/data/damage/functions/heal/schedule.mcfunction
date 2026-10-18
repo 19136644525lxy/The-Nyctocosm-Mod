@@ -1,1 +1,0 @@
-execute as @a[tag=admg.heal] run function admg:heal/remove_tag
