@@ -54,7 +54,7 @@ Essentially the complete playable flow of the datapack:
 
 ## 5. Intentional Deviations (Documented)
 
-A small number of changes are deliberate; each is recorded in the repository docs:
+A small number of changes are deliberate:
 
 1. **Casting entry**: your "candle ring → Spell Plane" ritual is merged into the direct "throw material with Soul Bottle" path (your candle ring belongs to the dais scene; players found two casting entries confusing).
 2. **Dais activation**: activated by casting toward the anvil instead of right-clicking it (the vanilla anvil GUI intercepts right-clicks; unified with the casting path above).
@@ -68,10 +68,6 @@ Everything else — formulas, radii, timings, sound sources (`master @a[distance
 - **292 GameTests** cover boss NBT persistence, spell lifecycles, artifact interactions, loot tables, structure loading, and original-function parity checks (the serpent-body tests literally diff against your datapack source).
 - Every change must pass: build → clean game-test world → `All 292 required tests passed`.
 - Visual-heavy changes are additionally verified in a live client.
-
-## 7. Current Status
-
-Milestone R1–R13 complete: codebase restructured into domain packages, all major systems restored, README (Chinese) with the full gameplay flow. Remaining work is polish: full playthrough comparison, localization proofreading, and a rig animation for the dais rune circle.
 
 We would be honored to hear any feedback or corrections from you. If you would like any change — attribution wording, asset handling, naming, or removal — please reach out; this project exists only because of your original creation.
 
