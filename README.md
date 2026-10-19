@@ -3,11 +3,12 @@
 基于 Flubberschnub 原作《Nyctocosm》数据包 + 资源包（v0.2.0，MC 1.20.5+）的原生 Forge 1.20.1 重构。
 
 **原作者**：[Flubberschnub](https://www.youtube.com/@FlubberschnubSchnyxteboutle)（YouTube）
+**贡献者**：EchoAria
 
 ## 授权与所有权（已获原作者明确授权）
 
 - **原数据包（datapack）及全部原作资产**（模型/纹理/音效/文本/美术）：版权归 **Flubberschnub** 所有，原作者保留其原始数据包的所有权。
-- **本 Forge 原生重写实现与代码**：归 **Yifei 及本项目贡献者** 所有。
+- **本 Forge 原生重写实现与代码**：归 **Yifei、EchoAria 及本项目贡献者** 所有。
 - 原作者已明确授权：允许维护本仓库、分发 Forge 模组并持续扩展。
 - 本项目采用 **Apache License 2.0** 开源许可证（详见 [`LICENSE`](LICENSE) 文件）；原数据包与原作资产仍归 Flubberschnub 所有，以授权形式随模组分发。
 - 分发要求：本模组在任何平台（GitHub / CurseForge / Modrinth 等）分发时，均须保留对原作者的署名与原项目链接，并保持免费开放、欢迎社区贡献。

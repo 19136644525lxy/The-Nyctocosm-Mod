@@ -7,6 +7,7 @@ This document introduces an unofficial, community-made **native Forge 1.20.1 rem
 **Repository**: https://github.com/19136644525lxy/The-Nyctocosm-Unofficial-remake
 **Maintainer**: Yifei (with contributors EchoAria and community members)
 **Original author**: [Flubberschnub](https://www.youtube.com/@FlubberschnubSchnyxteboutle) (YouTube)
+**Contributor**: EchoAria
 
 ***
 
@@ -15,7 +16,7 @@ This document introduces an unofficial, community-made **native Forge 1.20.1 rem
 This project has received **explicit permission** from Flubberschnub to maintain the repository, distribute the Forge mod, and continue expanding it.
 
 - **Original datapack and all original assets** (textures, models, sounds, text, art): owned by **Flubberschnub**, who retains ownership of the original datapack.
-- **This native Forge implementation and code**: owned by **Yifei and the project contributors**.
+- **This native Forge implementation and code**: owned by **Yifei, EchoAria, and the project contributors**.
 - Your work is credited in every place a mod can carry attribution: `gradle.properties` (`mod_authors=Yifei, Flubberschnub, EchoAria`), `mods.toml`, and both READMEs.
 - The mod re-distributes your textures, sounds, models, and text **inside its JAR** (so players do not need to install the original resourcepack separately).
 - **License**: This project is licensed under the **Apache License 2.0** (see the [`LICENSE`](LICENSE) file). The original datapack and all original assets remain the property of Flubberschnub and are redistributed with explicit permission.

@@ -6,7 +6,7 @@ modId="nyctocosm"
 version="${mod_version}"
 displayName="Nyctocosm"
 authors="Yifei, Flubberschnub, EchoAria"
-description='''永夜之国 Nyctocosm：基于 Flubberschnub 原作数据包的原生 Forge 1.20.1 重构。'''
+description='''永夜之国 Nyctocosm：基于 Flubberschnub 原作数据包的原生 Forge 1.20.1 重构。Forge 实现由 Yifei、EchoAria 及社区贡献者完成。'''
 [[dependencies.nyctocosm]]
 modId="forge"
 mandatory=true
