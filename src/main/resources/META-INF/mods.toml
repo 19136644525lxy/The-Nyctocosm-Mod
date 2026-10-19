@@ -1,6 +1,6 @@
 modLoader="javafml"
 loaderVersion="[47,)"
-license="All Rights Reserved; original Nyctocosm assets by Flubberschnub"
+license="Apache-2.0 (code by Yifei & contributors); original Nyctocosm assets by Flubberschnub with explicit permission"
 [[mods]]
 modId="nyctocosm"
 version="${mod_version}"

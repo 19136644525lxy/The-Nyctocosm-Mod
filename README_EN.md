@@ -18,7 +18,7 @@ This project has received **explicit permission** from Flubberschnub to maintain
 - **This native Forge implementation and code**: owned by **Yifei and the project contributors**.
 - Your work is credited in every place a mod can carry attribution: `gradle.properties` (`mod_authors=Yifei, Flubberschnub, EchoAria`), `mods.toml`, and both READMEs.
 - The mod re-distributes your textures, sounds, models, and text **inside its JAR** (so players do not need to install the original resourcepack separately).
-- **License intent**: a permissive open-source license (Apache 2.0 or MIT) will be added as `LICENSE` once finalized.
+- **License**: This project is licensed under the **Apache License 2.0** (see the [`LICENSE`](LICENSE) file). The original datapack and all original assets remain the property of Flubberschnub and are redistributed with explicit permission.
 - **Distribution requirement**: credit and a link to the original Nyctocosm project must be kept in the README and on every distribution platform (CurseForge, Modrinth, etc.). The mod will remain freely available and open to community contributions.
 - The modid `nyctocosm` is intentionally identical to your namespace, and the mod refuses to coexist with your datapack in a single world to prevent conflicts.
 
