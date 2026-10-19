@@ -199,16 +199,3 @@ com.yifei.nyctocosm/
 ```
 
 Animation uses the native_rigs sampled-matrix approach (`assets/nyctocosm/native_rigs/*.json.gz`, offline AJ per-frame matrix export + runtime TRS interpolation); artifacts use pure Java inventory detection (no external dependency).
-
-***
-
-## Appendix: Technical Notes
-
-- **Why a native remake?** The original datapack (1.20.5+ commands) does not run on 1.20.1, where many players remain for mod compatibility. Rather than backporting command functions, this project re-implements the entire experience in Java on Forge — everything runs as native game code with no function-call overhead, and behavior can be regression-tested automatically.
-- **Intentional deviations (documented)**:
-  1. The original "candle ring → Spell Plane" ritual is merged into the direct "throw material with Soul Bottle" path (the candle ring belongs to the dais scene; two casting entries confused players).
-  2. The dais is activated by casting toward the anvil instead of right-clicking it (the vanilla anvil GUI intercepts right-clicks; unified with the casting path above).
-  3. Tony's search radius is ±3 around the player (the original ±300/±30 scan had a ~0.5% success rate per attempt and effectively never fired in play).
-  4. Deterministic per-boss artifact drops are added on top of the original structure-chest loot, so all 13 artifacts are reachable in survival.
-  Everything else — formulas, radii, timings, sound sources, particle counts — was ported line-by-line against the original mcfunction files.
-- **Quality assurance**: 292 automated GameTests cover boss NBT persistence, spell lifecycles, artifact interactions, loot tables, structure loading, and original-function parity checks (the serpent-body tests literally diff against the original datapack source). Every change must pass: build → clean game-test world → `All 292 required tests passed`.
