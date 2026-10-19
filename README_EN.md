@@ -4,7 +4,7 @@ Dear Flubberschnub,
 
 This document introduces an unofficial, community-made **native Forge 1.20.1 remake** of your Nyctocosm datapack + resourcepack (v0.2.0). It is written to give you a clear picture of what this project is, how it was built, and how it relates to your original work.
 
-**Repository**: https://github.com/19136644525lxy/The-Nyctocosm-Unofficial-remake
+**Repository**: https://github.com/19136644525lxy/The-Nyctocosm-Mod
 **Maintainer**: Yifei (with contributors EchoAria and community members)
 **Original author**: [Flubberschnub](https://www.youtube.com/@FlubberschnubSchnyxteboutle) (YouTube)
 **Contributor**: EchoAria
