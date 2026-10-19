@@ -6,15 +6,20 @@ This document introduces an unofficial, community-made **native Forge 1.20.1 rem
 
 **Repository**: https://github.com/19136644525lxy/The-Nyctocosm-Unofficial-remake
 **Maintainer**: Yifei (with contributors EchoAria and community members)
+**Original author**: [Flubberschnub](https://www.youtube.com/@FlubberschnubSchnyxteboutle) (YouTube)
 
 ***
 
 ## 1. Attribution & License
 
-**All original assets, design, lore, and audio belong to you.** Your work is credited in every place a mod can carry attribution: `gradle.properties` (`mod_authors=Yifei, Flubberschnub, EchoAria`), `mods.toml`, and the README.
+This project has received **explicit permission** from Flubberschnub to maintain the repository, distribute the Forge mod, and continue expanding it.
 
-- The mod re-distributes your textures, sounds, models, and text **inside its JAR** (so players do not need to install the original resourcepack separately). If you prefer this not to happen, tell us and we will remove the assets from the repository and builds immediately.
-- The mod is marked **All Rights Reserved** on the original assets; no public release will be made without your explicit permission.
+- **Original datapack and all original assets** (textures, models, sounds, text, art): owned by **Flubberschnub**, who retains ownership of the original datapack.
+- **This native Forge implementation and code**: owned by **Yifei and the project contributors**.
+- Your work is credited in every place a mod can carry attribution: `gradle.properties` (`mod_authors=Yifei, Flubberschnub, EchoAria`), `mods.toml`, and both READMEs.
+- The mod re-distributes your textures, sounds, models, and text **inside its JAR** (so players do not need to install the original resourcepack separately).
+- **License intent**: a permissive open-source license (Apache 2.0 or MIT) will be added as `LICENSE` once finalized.
+- **Distribution requirement**: credit and a link to the original Nyctocosm project must be kept in the README and on every distribution platform (CurseForge, Modrinth, etc.). The mod will remain freely available and open to community contributions.
 - The modid `nyctocosm` is intentionally identical to your namespace, and the mod refuses to coexist with your datapack in a single world to prevent conflicts.
 
 ## 2. Why a Native Remake?

@@ -1,7 +1,16 @@
 # Nyctocosm 永夜之国（Forge 1.20.1 原生重构）
 
 基于 Flubberschnub 原作《Nyctocosm》数据包 + 资源包（v0.2.0，MC 1.20.5+）的原生 Forge 1.20.1 重构。
-原作的全部资产（模型/纹理/音效/文本）与行为设计版权归原作者 Flubberschnub（All Rights Reserved），公开发布前需核实授权。
+
+**原作者**：[Flubberschnub](https://www.youtube.com/@FlubberschnubSchnyxteboutle)（YouTube）
+
+## 授权与所有权（已获原作者明确授权）
+
+- **原数据包（datapack）及全部原作资产**（模型/纹理/音效/文本/美术）：版权归 **Flubberschnub** 所有，原作者保留其原始数据包的所有权。
+- **本 Forge 原生重写实现与代码**：归 **Yifei 及本项目贡献者** 所有。
+- 原作者已明确授权：允许维护本仓库、分发 Forge 模组并持续扩展。
+- 许可证意向：采用宽松开源许可（Apache 2.0 或 MIT，最终确定后补充 `LICENSE` 文件）。
+- 分发要求：本模组在任何平台（GitHub / CurseForge / Modrinth 等）分发时，均须保留对原作者的署名与原项目链接，并保持免费开放、欢迎社区贡献。
 
 - **Minecraft**: 1.20.1　**加载器**: Forge 47.4.27　**Java**: 17
 - **modid**: `nyctocosm`（与原数据包/资源包同命名空间，**不可同时加载**）
