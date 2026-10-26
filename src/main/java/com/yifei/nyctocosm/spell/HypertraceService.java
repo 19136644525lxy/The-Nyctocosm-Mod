@@ -13,8 +13,8 @@ import net.minecraft.world.phys.Vec3;
 
 /** Source-specific creation rules for player-owned Hypertraces. */
 public final class HypertraceService {
-    private static final int BASE_GLOBAL_CHANCE = 15;
     private static final int BASE_ACCUMULATION_BONUS = 10;
+    private static final int BASE_GLOBAL_CHANCE = 15;
 
     private HypertraceService() {}
 
@@ -23,7 +23,7 @@ public final class HypertraceService {
         // All 17 source cast functions roll from global tracechance before their spell resolves.
         Vec3 origin = caster.position().add(caster.getLookAngle().scale(3));
         Combat.Element element = spell.elements.length == 0 ? Combat.Element.DREAM : spell.elements[0];
-        return attempt(level, caster, origin, caster.getYRot(), element, chance(caster), roll);
+        return attempt(level, caster, origin, caster.getYRot(), element, chance(caster, spell), roll);
     }
 
     public static SeelicField onSpellHit(ServerLevel level, Player attacker, LivingEntity victim,
@@ -31,15 +31,34 @@ public final class HypertraceService {
         if (element != Combat.Element.NIGHTMARE && element != Combat.Element.VOID) return null;
         // The source block/58 and block/81 branches roll elemental + global tracechance,
         // then summon as the player attacker while retaining the victim's position context.
-        return attempt(level, attacker, victim.position(), victim.getYRot(), element, chance(attacker), roll);
+        return attempt(level, attacker, victim.position(), victim.getYRot(), element, chanceForElement(attacker, element), roll);
     }
 
     public static int chance(Player owner) {
-        int accumulation = CommonEvents.hasArtifact(owner, "accumulation")
+        return chance(owner, (Spell) null);
+    }
+
+    /** 原包 cast：global.tracechance 起算，再累加该法术所含各元素的 tracechance。 */
+    public static int chance(Player owner, Spell spell) {
+        int total = globalTraceChance(owner);
+        if (spell != null) for (Combat.Element element : spell.elements) total += SpellStats.traceChance(owner, element);
+        return Math.min(100, total + accumulation(owner));
+    }
+
+    /** 原包命中分支：global 与该次命中的元素各累计一次 tracechance。 */
+    public static int chanceForElement(Player owner, Combat.Element element) {
+        return Math.min(100, globalTraceChance(owner) + SpellStats.traceChance(owner, element) + accumulation(owner));
+    }
+
+    /** 未经 playertick 初始化的玩家（如测试假玩家）沿用原包 15 点全局基础概率。 */
+    private static int globalTraceChance(Player owner) {
+        return SpellStats.hasBase(owner, null, "tracechance") ? SpellStats.traceChance(owner, null) : BASE_GLOBAL_CHANCE;
+    }
+
+    private static int accumulation(Player owner) {
+        return CommonEvents.hasArtifact(owner, "accumulation")
             ? BASE_ACCUMULATION_BONUS * CommonEvents.traces(owner).size()
             : 0;
-        // D22's non-default global-power modifier is not available in the native stat pipeline yet.
-        return Math.min(100, BASE_GLOBAL_CHANCE + accumulation);
     }
 
     public static boolean succeeds(int chance, IntUnaryOperator roll) {

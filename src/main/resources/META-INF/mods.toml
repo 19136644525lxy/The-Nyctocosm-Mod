@@ -1,12 +1,15 @@
 modLoader="javafml"
 loaderVersion="[47,)"
-license="Apache-2.0 (code by Yifei & contributors); original Nyctocosm assets by Flubberschnub with explicit permission"
+license="Code: Apache-2.0 (Yifei & contributors) | Assets: All Rights Reserved (Flubberschnub)"
 [[mods]]
 modId="nyctocosm"
 version="${mod_version}"
 displayName="Nyctocosm"
 authors="Yifei, Flubberschnub, EchoAria"
-description='''永夜之国 Nyctocosm：基于 Flubberschnub 原作数据包的原生 Forge 1.20.1 重构。Forge 实现由 Yifei、EchoAria 及社区贡献者完成。'''
+description='''永夜之国 Nyctocosm：基于 Flubberschnub 原作数据包的原生 Forge 1.20.1 重构。
+
+许可：源码 Apache-2.0，资产 All Rights Reserved (Flubberschnub)。
+详见模组根目录 LICENSE 文件。'''
 [[dependencies.nyctocosm]]
 modId="forge"
 mandatory=true

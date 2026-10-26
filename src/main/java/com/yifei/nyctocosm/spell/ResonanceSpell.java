@@ -1,6 +1,7 @@
 package com.yifei.nyctocosm.spell;
 
 import com.yifei.nyctocosm.combat.Combat;
+import com.yifei.nyctocosm.item.WeaponEffects;
 import com.yifei.nyctocosm.network.Network;
 import com.yifei.nyctocosm.spell.Spell;
 import com.yifei.nyctocosm.world.portal.PortalBlock;
@@ -25,6 +26,10 @@ public final class ResonanceSpell {
                 if(Combat.canHit(caster,target)&&hit.add(target.getUUID()))Combat.hit(caster,target,Spell.RESONANCE.damage,Combat.Element.RESONANCE);
             }
         }
+        // 原包 cast 的 flash（~ ~1 ~ 5 个 0.2 散布）+ raycast 每步的 sonic_boom（force）
+        WeaponEffects.forcedParticle(level,net.minecraft.core.particles.ParticleTypes.FLASH,caster.position().add(0,1,0),5,.2,0);
+        for(int step=0;step<RANGE;step+=2)
+            WeaponEffects.forcedParticle(level,net.minecraft.core.particles.ParticleTypes.SONIC_BOOM,origin.add(forward.scale(step)),1,0,0);
         Network.weaponEffect(caster,4,origin,origin.add(forward.scale(RANGE-1)),forward);
     }
     private ResonanceSpell(){}

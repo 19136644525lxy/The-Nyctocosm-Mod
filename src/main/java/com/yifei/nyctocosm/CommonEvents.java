@@ -11,6 +11,7 @@ import com.yifei.nyctocosm.item.WeaponItem;
 import com.yifei.nyctocosm.migration.LegacyMigration;
 import com.yifei.nyctocosm.spell.ExpulsionBurst;
 import com.yifei.nyctocosm.spell.SeelicField;
+import com.yifei.nyctocosm.spell.SpellStats;
 import com.yifei.nyctocosm.world.portal.SafeTravel;
 import java.util.List;
 import net.minecraft.commands.Commands;
@@ -37,6 +38,8 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 
 public final class CommonEvents {
     private static final java.util.UUID RESISTANCE_KNOCKBACK=java.util.UUID.fromString("6dba0d62-367a-411b-9453-ecf8c69416a5");
+    /** 原包 artifacts/load：a.protection.resAmt = 3，防护卷轴每点超迹充能提供 3 点抗性。 */
+    private static final int PROTECTION_RESISTANCE_PER_CHARGE=3;
     private static final ResourceLocation NYCTOCOSM_DIMENSION=ResourceLocation.fromNamespaceAndPath("nyctocosm","nyctocosm");
     private static final ResourceLocation EMISSARY_DOMAIN=ResourceLocation.fromNamespaceAndPath("nyctocosm","emissary_domain");
     private static final String ENCOUNTER_MODE_CHANGED="NyctocosmEncounterModeChanged";
@@ -104,6 +107,26 @@ public final class CommonEvents {
         for(var player:level.players())if(player.position().distanceToSqr(at)<=radius*radius)
             player.connection.send(new net.minecraft.network.protocol.game.ClientboundSoundPacket(holder,SoundSource.MASTER,
                 at.x,at.y,at.z,volume,pitch,player.getRandom().nextLong()));
+    }
+    /** 铁砧自带原版界面会吞掉右键，因此在方块交互前拦截：手持灵魂瓶右键祭坛任意部位即可激活。 */
+    @SubscribeEvent(priority=net.minecraftforge.eventbus.api.EventPriority.HIGHEST)
+    public void rightClickDais(net.minecraftforge.event.entity.player.PlayerInteractEvent.RightClickBlock event){
+        Player player=event.getEntity();
+        if(!(player.getItemInHand(event.getHand()).getItem() instanceof FocusItem focus)||focus.mobile)return;
+        BlockPos anchor=com.yifei.nyctocosm.dais.DaisRitual.anchorNear(player.level(),event.getPos(),3);
+        if(anchor==null){
+            // 点到铁砧/信标但二者未上下相邻时，最常见的就是锚点摆错，同样给出提示
+            var state=player.level().getBlockState(event.getPos());
+            if(!player.level().isClientSide&&(state.is(net.minecraft.world.level.block.Blocks.ANVIL)||state.is(net.minecraft.world.level.block.Blocks.BEACON)))
+                player.displayClientMessage(Component.translatable("message.nyctocosm.dais_missing_core"),true);
+            return;
+        }
+        String fault=com.yifei.nyctocosm.dais.DaisRitual.fault(player.level(),anchor);
+        if(fault!=null){if(!player.level().isClientSide)player.displayClientMessage(Component.translatable(fault),true);return;}
+        event.setCanceled(true);
+        event.setCancellationResult(net.minecraft.world.InteractionResult.SUCCESS);
+        if(player.level() instanceof ServerLevel server&&!player.getCooldowns().isOnCooldown(focus))
+            focus.useOnDais(server,player,event.getHand(),player.getItemInHand(event.getHand()),anchor);
     }
     @SubscribeEvent public void killed(LivingDeathEvent event){
         if(event.getSource().getEntity() instanceof Player player){
@@ -176,7 +199,12 @@ public final class CommonEvents {
             if(hypertraceCharges(player)>=3){addHypertraceCharge(player,-3);player.addEffect(new MobEffectInstance(MobEffects.SLOW_FALLING,100,0,true,false));persistent.putBoolean("NyctocosmLevitationHeld",true);}
         }
         boolean protection=false;
-        for(Combat.Element element:Combat.Element.values())if(hasArtifact(player,"protection_"+element.name().toLowerCase(java.util.Locale.ROOT))){protection=true;break;}
+        // 原包 protection/block/12-23：持有时 m.<域>.resistance.modifier = 充能 × resAmt(3)，失去时归零
+        for(Combat.Element element:Combat.Element.values()){
+            boolean held=hasArtifact(player,"protection_"+element.name().toLowerCase(java.util.Locale.ROOT));
+            SpellStats.setModifier(player,element,"resistance",held?hypertraceCharges(player)*PROTECTION_RESISTANCE_PER_CHARGE:0);
+            if(held)protection=true;
+        }
         // All six protections share one timer. It pauses when none is held, as in the source scoreboard.
         if(protection){
             int elapsed=persistent.getInt("NyctocosmProtectionChargeTimer")+1;
@@ -337,7 +365,11 @@ public final class CommonEvents {
         if(boss.isEmpty()){player.displayClientMessage(Component.translatable("message.nyctocosm.incur_unavailable"),true);return;}
         if(boss.equals("emissary")){
             ServerLevel domain=serverPlayer.server.getLevel(ResourceKey.create(Registries.DIMENSION,ResourceLocation.fromNamespaceAndPath("nyctocosm","emissary_domain")));
-            if(domain==null||!domain.getEntities(Content.EMISSARY.get(),entity->!entity.isRemoved()).isEmpty())return;
+            if(domain==null){player.displayClientMessage(Component.translatable("message.nyctocosm.dimension_unavailable"),true);return;}
+            // 原包 emissary:incur 的 execute unless entity 门：领域内已有使者（含未打完的旧场次）时静默跳过，这里给出提示避免误判为不触发
+            if(!domain.getEntities(Content.EMISSARY.get(),entity->!entity.isRemoved()).isEmpty()){
+                player.displayClientMessage(Component.translatable("message.nyctocosm.emissary_present"),true);return;
+            }
             var landing=findArrival(domain,player,castOrigin);Boss emissary=Content.EMISSARY.get().create(domain);
             var bossLanding=landing.isEmpty()||emissary==null?java.util.Optional.<Vec3>empty():findEmissaryLanding(domain,emissary,landing.get());
             if(landing.isEmpty()||bossLanding.isEmpty()){player.displayClientMessage(Component.translatable("message.nyctocosm.no_safe_landing"),true);return;}

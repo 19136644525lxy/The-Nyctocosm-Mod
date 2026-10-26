@@ -77,9 +77,12 @@ public final class SeelicField extends Entity {
     public void beginCasting(Spell selected){entityData.set(SPELL,selected.ordinal());entityData.set(CAST,selected.castTicks);}
     public void startCasting(ServerLevel server,Player player,Spell selected,IntUnaryOperator traceRoll){
         beginCasting(selected);
-        // 原包 cast：施法时间减去 speed% 加成（cast_time -= cast_time * speed / 100）。
-        int speed=SpellStats.speed(player,null)+SpellStats.speed(player,selected.elements[0]);
-        if(speed>0)entityData.set(CAST,Math.max(0,castTicks()-castTicks()*speed/100));
+        // 原包 cast：global 与每个元素各自链式扣减 cast_time（ct -= ct*speed/100），非加性合并
+        int ticks=castTicks();
+        ticks=Math.max(0,ticks-ticks*SpellStats.speed(player,null)/100);
+        for(Combat.Element element:selected.elements)
+            ticks=Math.max(0,ticks-ticks*SpellStats.speed(player,element)/100);
+        entityData.set(CAST,ticks);
         HypertraceService.onSpellStarted(server,player,selected,traceRoll);
         if(selected!=Spell.LUMINESCENCE&&selected!=Spell.RESONANCE)CommonEvents.resonanceSound(server,position(),"spells.cast."+selected.id(),6,50);
     }
@@ -205,8 +208,11 @@ public final class SeelicField extends Entity {
     private void finish(ServerLevel server,Player player) {
         Spell s=spell(); if(s==null)return;
         cooldown=50;
-        // 原包 cast：m.spell.power = 基础威力 + global.power + 元素.power，供伤害法术结算。
-        int power=s.damage+SpellStats.power(player,null)+SpellStats.power(player,s.elements[0]);
+        // 原包 cast：m.spell.power = 基础威力 + global.power + 各元素.power（逐域累加）
+        int power=s.damage+SpellStats.power(player,null);
+        for(Combat.Element element:s.elements)power+=SpellStats.power(player,element);
+        // 原包 cast 尾部：m.spell.power 上限 50
+        power=Math.min(50,power);
         switch(s) {
             case ABHORRENCE, INCANDESCENCE, FULMINANCE, FORBIDDANCE, GRAVITANCE -> {
                 var effect=s==Spell.INCANDESCENCE?SpellBolt.Effect.FIRE:s==Spell.FULMINANCE?SpellBolt.Effect.LIGHTNING:s==Spell.FORBIDDANCE?SpellBolt.Effect.COUNTER:s==Spell.GRAVITANCE?SpellBolt.Effect.GRAVITY:SpellBolt.Effect.DAMAGE;

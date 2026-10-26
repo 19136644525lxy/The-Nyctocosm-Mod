@@ -52,6 +52,11 @@ public final class SpellStats {
         return total(player, element, "tracechance");
     }
 
+    /** 该域某项属性的 base 是否已由原包 playertick 默认值初始化。 */
+    public static boolean hasBase(Player player, Combat.Element element, String stat) {
+        return data(player).contains(key(element, stat, "base"));
+    }
+
     /** 承伤抗性（百分比，减少伤害）。 */
     public static int resistance(Player player, Combat.Element element) {
         return total(player, element, "resistance");

@@ -11,6 +11,7 @@ import com.yifei.nyctocosm.boss.sorcerer.SorcererBeamNode;
 import com.yifei.nyctocosm.boss.sorcerer.SorcererCastMath;
 import com.yifei.nyctocosm.boss.sorcerer.SorcererHail;
 import com.yifei.nyctocosm.combat.Combat;
+import com.yifei.nyctocosm.item.WeaponEffects;
 import com.yifei.nyctocosm.spell.ReflectableAttack;
 import com.yifei.nyctocosm.spell.Reflectance;
 import com.yifei.nyctocosm.spell.SeelicField;
@@ -519,10 +520,11 @@ public final class SpellBolt extends Projectile {
             if(directTarget!=null)fireTargets.add(directTarget);
             for(LivingEntity target:fireTargets)if(Combat.canHit(owner,target))target.setSecondsOnFire(5);
         }
-        if(effect()==Effect.LIGHTNING)server.sendParticles(ParticleTypes.ELECTRIC_SPARK,getX(),getY(),getZ(),70,1,3,1,.2);
-        if(entityData.get(WEAPON)==5)server.sendParticles(new net.minecraft.core.particles.BlockParticleOption(ParticleTypes.BLOCK,net.minecraft.world.level.block.Blocks.ICE.defaultBlockState()),getX(),getY(),getZ(),30,.4,.4,.4,.1);
-        if(entityData.get(WEAPON)==6){server.sendParticles(ParticleTypes.EXPLOSION_EMITTER,getX(),getY(),getZ(),1,0,0,0,0);server.sendParticles(ParticleTypes.SMOKE,getX(),getY(),getZ(),35,1,1,1,.04);}
-        server.sendParticles(ParticleTypes.FLASH,getX(),getY(),getZ(),1,0,0,0,0);
+        // 命中特效统一走 force：非 force 粒子在客户端距相机 >32 格或粒子设置降级时会被丢弃
+        if(effect()==Effect.LIGHTNING)WeaponEffects.forcedParticle(server,ParticleTypes.ELECTRIC_SPARK,position(),70,1,.2);
+        if(entityData.get(WEAPON)==5)WeaponEffects.forceBox(server,new net.minecraft.core.particles.BlockParticleOption(ParticleTypes.BLOCK,net.minecraft.world.level.block.Blocks.ICE.defaultBlockState()),position(),30,.4,.4,.4,.1);
+        if(entityData.get(WEAPON)==6){WeaponEffects.forcedParticle(server,ParticleTypes.EXPLOSION_EMITTER,position(),1,0,0);WeaponEffects.forcedParticle(server,ParticleTypes.SMOKE,position(),35,1,.04);}
+        WeaponEffects.forcedFlash(server,position());
         if(!impactSound.isBlank())CommonEvents.sound(server,position(),impactSound,5);
         discard();
     }

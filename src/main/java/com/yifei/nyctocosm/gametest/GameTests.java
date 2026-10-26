@@ -52,6 +52,7 @@ import com.yifei.nyctocosm.spell.SeelicField;
 import com.yifei.nyctocosm.spell.SoulSwirlEffects;
 import com.yifei.nyctocosm.spell.Spell;
 import com.yifei.nyctocosm.spell.SpellArea;
+import com.yifei.nyctocosm.spell.SpellStats;
 import com.yifei.nyctocosm.spell.SpellBolt;
 import com.yifei.nyctocosm.spell.SpellCollisionPolicy;
 import com.yifei.nyctocosm.spell.VoidSwirlEffects;
@@ -1016,6 +1017,27 @@ public final class GameTests {
         helper.assertTrue(!HypertraceService.succeeds(15,bound->16),"Roll 16 must fail at score 15");
         helper.assertTrue(HypertraceService.succeeds(100,bound->99),"Chance 100 must accept the final source roll");
         helper.succeed();
+    }
+
+    @GameTest(template="empty",batch="spell_stats",timeoutTicks=20)
+    public static void cast_speed_applies_per_domain_in_source_chain_order(GameTestHelper helper){
+        var level=(net.minecraft.server.level.ServerLevel)helper.getLevel();
+        Vec3 center=helper.absolutePos(new BlockPos(4,4,4)).getCenter();
+        var owner=encounterTestPlayer(helper,center,net.minecraft.world.level.GameType.SURVIVAL);
+        // 原包 cast 为链式：先 global 再每个元素，各自 ct -= ct*speed/100
+        SpellStats.setBase(owner,null,"speed",10);
+        SpellStats.setBase(owner,Combat.Element.RESONANCE,"speed",10);
+        SpellStats.setBase(owner,Combat.Element.VOID,"speed",10);
+        SpellStats.recalculate(owner);
+        var field=new SeelicField(Content.FIELD.get(),level);field.configure(owner,false,false);field.setPos(center);level.addFreshEntity(field);
+        // EVANESCENCE 基础 100 刻，双元素：100→90→81→73；加性合并会得到 70
+        field.startCasting(level,owner,Spell.EVANESCENCE,bound->99);
+        helper.assertTrue(field.castTicks()==73,"Multi-domain speed must chain multiplicatively like the source cast: got "+field.castTicks());
+        // 不相关元素的速度不得参与（INCANDESCENCE 为 RADIANCE+DISSONANCE，仅剩 global 10%）
+        SpellStats.setBase(owner,Combat.Element.NIGHTMARE,"speed",90);SpellStats.recalculate(owner);
+        field.startCasting(level,owner,Spell.INCANDESCENCE,bound->99);
+        helper.assertTrue(field.castTicks()==18,"Speed from elements outside the spell must be ignored: got "+field.castTicks());
+        field.discard();owner.discard();helper.succeed();
     }
 
     @GameTest(template="empty",batch="hypertrace",timeoutTicks=20)
@@ -4034,6 +4056,19 @@ public final class GameTests {
         helper.assertTrue(CommonEvents.hypertraceCharges(replacement)==4,"Protection lost its saved timer or charged once per artifact");helper.succeed();
     }
     @GameTest(template="empty")
+    public static void protection_scroll_writes_resistance_from_hypertrace_charge(GameTestHelper helper){
+        var player=helper.makeMockPlayer();CommonEvents.addHypertraceCharge(player,4);
+        player.getInventory().add(new ItemStack(Content.get("artifact_protection_dream")));
+        CommonEvents.tickArtifacts(player);
+        helper.assertTrue(SpellStats.modifier(player,Combat.Element.DREAM,"resistance")==12,"Protection scroll must grant charge x3 resistance: "+SpellStats.modifier(player,Combat.Element.DREAM,"resistance"));
+        helper.assertTrue(SpellStats.modifier(player,Combat.Element.VOID,"resistance")==0,"A dream scroll must not touch other domains");
+        SpellStats.recalculate(player);
+        helper.assertTrue(SpellStats.resistance(player,Combat.Element.DREAM)==SpellStats.base(player,Combat.Element.DREAM,"resistance")+12,"Recalculated dream resistance must include the scroll modifier");
+        player.getInventory().clearContent();CommonEvents.tickArtifacts(player);
+        helper.assertTrue(SpellStats.modifier(player,Combat.Element.DREAM,"resistance")==0,"Removing the scroll must clear its resistance modifier");
+        helper.succeed();
+    }
+    @GameTest(template="empty")
     public static void levitation_uses_two_air_blocks_and_one_activation_per_press(GameTestHelper helper){
         var player=helper.makeMockPlayer();player.setPos(helper.absolutePos(new BlockPos(3,5,3)).getCenter());
         player.getInventory().add(new ItemStack(Content.get("artifact_levitation")));CommonEvents.addHypertraceCharge(player,5);
@@ -4541,13 +4576,17 @@ public final class GameTests {
         }
         for(int x:new int[]{-1,1})for(int z:new int[]{-1,1})level.setBlockAndUpdate(base.offset(x,0,z),net.minecraft.world.level.block.Blocks.WAXED_CUT_COPPER_SLAB.defaultBlockState());
         helper.assertTrue(DaisRitual.matches(level,anvil),"Original ritual layout rejected");
+        helper.assertTrue(anvil.equals(DaisRitual.findNearby(level,anvil.offset(2,0,2),6)),"Nearby dais lookup missed the built structure");
+        helper.assertTrue(anvil.equals(DaisRitual.anchorNear(level,anvil.offset(2,0,2),3)),"Anchor lookup missed an anvil above a beacon");
         level.setBlockAndUpdate(base.offset(3,0,0),net.minecraft.world.level.block.Blocks.CANDLE.defaultBlockState());
+        helper.assertTrue("message.nyctocosm.dais_missing_candles".equals(DaisRitual.fault(level,anvil)),"Unlit candle was not reported as the faulty part");
         helper.assertTrue(!DaisRitual.activate(level,anvil),"Unlit candle activated ritual");
         helper.assertTrue(level.getBlockState(anvil).is(net.minecraft.world.level.block.Blocks.ANVIL),"Failed ritual consumed anvil");
         level.setBlockAndUpdate(base.offset(3,0,0),net.minecraft.world.level.block.Blocks.CANDLE.defaultBlockState().setValue(net.minecraft.world.level.block.CandleBlock.LIT,true));
         var east=base.offset(2,0,0);var stair=level.getBlockState(east);
         level.setBlockAndUpdate(east,stair.setValue(net.minecraft.world.level.block.StairBlock.FACING,net.minecraft.core.Direction.EAST));
         helper.assertTrue(!DaisRitual.matches(level,anvil),"Outward-facing stairs accepted");
+        helper.assertTrue("message.nyctocosm.dais_missing_quartz".equals(DaisRitual.fault(level,anvil)),"Wrong stair facing was not reported as the faulty part");
         level.setBlockAndUpdate(east,stair);
         helper.assertTrue(DaisRitual.activate(level,anvil)&&level.getBlockState(anvil).is(Content.DAIS.get()),"Native dais not created");
         helper.succeed();

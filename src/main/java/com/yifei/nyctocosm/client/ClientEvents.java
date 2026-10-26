@@ -51,6 +51,8 @@ public final class ClientEvents {
         GlowingModels.clear();event.getModels().replaceAll((id,model)->id.getNamespace().equals("nyctocosm")||id.getNamespace().equals("animated_java")?GlowingModels.wrap(model):model);
     }
     @SubscribeEvent public static void setup(FMLClientSetupEvent event){event.enqueueWork(()->{
+        // 祭坛贴图是线条图（仅 496/4096 不透明像素），必须走 cutout 才能保留透明区域
+        net.minecraft.client.renderer.ItemBlockRenderTypes.setRenderLayer(Content.DAIS.get(),net.minecraft.client.renderer.RenderType.cutout());
         net.minecraft.client.gui.screens.MenuScreens.register(Content.DAIS_MENU.get(),DaisScreen::new);
         for(String id:new String[]{"seelic_scythe","wyrmsliver","nullfissure","semblanceofdoom"})ItemProperties.register(Content.get(id),ResourceLocation.fromNamespaceAndPath("nyctocosm","casting"),(stack,level,entity,seed)->weaponCoolingDown(stack,entity)?1:0);
         ItemProperties.register(Content.get("planar_coil"),ResourceLocation.fromNamespaceAndPath("nyctocosm","casting"),(stack,level,entity,seed)->entity instanceof net.minecraft.world.entity.player.Player player&&player.getCooldowns().isOnCooldown(stack.getItem())?1:0);

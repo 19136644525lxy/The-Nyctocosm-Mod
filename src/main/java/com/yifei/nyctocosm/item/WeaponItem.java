@@ -66,16 +66,16 @@ public final class WeaponItem extends SwordItem {
                     // 原包 slash：自施 slowness I 1 秒 + eye+1y 前方 1 格 flash(force) + +1.625y 前方 1.5 格 sweep_attack
                     player.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN,20,1,true,false));
                     Vec3 flashAt=player.position().add(0,1,0).add(player.getLookAngle().scale(1));
-                    for(var online:server.players())server.sendParticles(online,net.minecraft.core.particles.ParticleTypes.FLASH,false,flashAt.x,flashAt.y,flashAt.z,1,0,0,0,0);
+                    WeaponEffects.forcedFlash(server,flashAt);
                     Vec3 sweepAt=player.position().add(0,1.625,0).add(player.getLookAngle().scale(1.5));
-                    server.sendParticles(net.minecraft.core.particles.ParticleTypes.SWEEP_ATTACK,sweepAt.x,sweepAt.y,sweepAt.z,1,0,0,0,0);
+                    WeaponEffects.forcedParticle(server,net.minecraft.core.particles.ParticleTypes.SWEEP_ATTACK,sweepAt,1,0,0);
                     SpellBolt.launch(server,player,player.getEyePosition(),player.getLookAngle(),14,Combat.Element.NIGHTMARE,1.8f,.8f).weaponVisual(1);
                 }
                 case 2 -> {if(hand==InteractionHand.OFF_HAND){
                     // 原包 cast：自施 slowness I 1 秒 + +1.625y 前方 0.5 格 flash(force) + halobeam.shoot master 30 音量 5
                     player.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN,20,1,true,false));
                     Vec3 flashAt=player.position().add(0,1.625,0).add(player.getLookAngle().scale(.5));
-                    for(var online:server.players())server.sendParticles(online,net.minecraft.core.particles.ParticleTypes.FLASH,false,flashAt.x,flashAt.y,flashAt.z,1,0,0,0,0);
+                    WeaponEffects.forcedFlash(server,flashAt);
                     Vec3 end=Combat.beam(server,player,40,15.5f,Combat.Element.VOID,.7,false);WeaponEffects.offhand(server,player,kind,end);
                 }else sweep(server,player,15.5f,Combat.Element.VOID);}
                 case 3 -> {if(hand==InteractionHand.OFF_HAND){WeaponEffects.offhand(server,player,kind,null);SpellBolt.launch(server,player,player.getEyePosition(),player.getLookAngle(),19,Combat.Element.DISSONANCE,1.1f,2).weaponVisual(3);}else sweep(server,player,19,Combat.Element.DISSONANCE);}
@@ -103,7 +103,7 @@ public final class WeaponItem extends SwordItem {
             }
         }
         Vec3 p=player.getEyePosition().add(forward.scale(2));
-        level.sendParticles(net.minecraft.core.particles.ParticleTypes.SWEEP_ATTACK,p.x,p.y,p.z,1,0,0,0,0);
+        WeaponEffects.forcedParticle(level,net.minecraft.core.particles.ParticleTypes.SWEEP_ATTACK,p,1,0,0);
     }
     private static void semblanceSweep(ServerLevel level,Player player,float damage){
         boolean grounded=player.onGround();

@@ -2,16 +2,19 @@
 
 A native Forge 1.20.1 remake of Flubberschnub's original *Nyctocosm* datapack + resourcepack (v0.2.0, MC 1.20.5+).
 
+> **License**: Code Apache-2.0 · Assets All Rights Reserved (Flubberschnub). See [LICENSE](LICENSE)
+
 **Original author**: [Flubberschnub](https://www.youtube.com/@FlubberschnubSchnyxteboutle) (YouTube)
 **Contributor**: EchoAria
 
 ## Licensing & Ownership (with explicit permission from the original author)
 
-- **Original datapack and all original assets** (models / textures / sounds / text / art): copyright belongs to **Flubberschnub**, who retains ownership of the original datapack.
-- **This native Forge implementation and code**: owned by **Yifei, EchoAria, and the project contributors**.
+This project uses a **bifurcated licensing scheme**. See the full [`LICENSE`](LICENSE) file for details:
+
+- **Source code** (.java / Gradle scripts / build configuration): licensed under **Apache License 2.0**, owned by **Yifei, EchoAria, and project contributors**.
+- **All original assets** (models / textures / sounds / animations / text / art / language files): **All Rights Reserved**, copyright **Flubberschnub**. Assets may only be distributed as an integral part of the compiled mod JAR for in-game use. Extracting, modifying, or redistributing assets individually is prohibited.
 - Explicit permission has been granted: to maintain this repository, distribute the Forge mod, and continue expanding it.
-- This project is licensed under the **Apache License 2.0** (see the [`LICENSE`](LICENSE) file). The original datapack and original assets remain the property of Flubberschnub and are redistributed with permission.
-- Distribution requirement: when distributing this mod on any platform (GitHub / CurseForge / Modrinth, etc.), credit to the original author and a link to the original project must be retained; the mod remains free and open to community contributions.
+- Distribution requirement: when distributing this mod on any platform (GitHub / CurseForge / Modrinth, etc.), credit to the original author and a link to the original project must be retained; the mod remains free.
 
 - **Minecraft**: 1.20.1　**Loader**: Forge 47.4.27　**Java**: 17
 - **modid**: `nyctocosm` (same namespace as the original datapack/resourcepack — **cannot be loaded together**)
@@ -116,9 +119,9 @@ All player spells share a single casting chain — the **Seelic Field**:
 1. Center: **beacon**, with an **anvil** placed directly above it.
 2. 1 block in four directions from the beacon: **block of quartz** ×4; 2 blocks out: **quartz stairs** ×4 (outward, bottom slab).
 3. Four diagonals (±1,±1): **waxed cut copper slab** ×4.
-4. Outer cross: **lit candles** ×12 (must be lit with flint and steel).
+4. Outer cross: **lit candles** ×16 (must be lit with flint and steel).
 
-**Activation**: hold the Soul Bottle and **cast toward the anvil** (do not right-click the anvil — that opens the vanilla anvil GUI; the original datapack activated by right-clicking directly above the anvil, but this mod unifies the casting path so activation is done by casting). When the Seelic Field opens, it checks the full structure 1 block ahead; if valid, the anvil is replaced with the Dais block + construct presentation (30-block sound).
+**Activation**: hold the Soul Bottle and **right-click any part of the dais** (the mod intercepts before the block interaction, so the vanilla anvil GUI never opens). Casting while facing the anvil from the platform still works as in the original datapack (the full structure 1 block ahead is checked). If the structure is valid, the anvil is replaced with the Dais block + construct presentation (30-block sound). If it is incomplete, the hotbar tells you **which part is wrong** (anvil/beacon, quartz, copper slabs, candles).
 
 **Usage**: right-click the Dais to open the crafting GUI with 4 recipes (costs match the original pack's wandering trader prices, e.g. wyrmsliver / nullfissure). Taking the output triggers the original pack's presentation (flash + lava + explosion + 360° radial shockwave ring). When idle, the Dais emits a hum ambiance every 6 seconds.
 
