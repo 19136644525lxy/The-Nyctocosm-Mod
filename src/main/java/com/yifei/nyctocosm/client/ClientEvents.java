@@ -38,7 +38,7 @@ import org.joml.Matrix3f;
 
 @Mod.EventBusSubscriber(modid=NyctocosmMod.ID,bus=Mod.EventBusSubscriber.Bus.MOD,value=Dist.CLIENT)
 public final class ClientEvents {
-    private static final String[] EXTRA={"serpent/serpent_head","serpent/serpent_segment","serpent/serpent_tail","mobs/nightmare_apparition/nightmare_apparition","magic/spell_plane","magic/spells/ice_spike","magic/sorcerer_plane"};
+    private static final String[] EXTRA={"serpent/serpent_head","serpent/serpent_segment","serpent/serpent_tail","mobs/nightmare_apparition/nightmare_apparition","magic/spell_plane","magic/spells/ice_spike","magic/sorcerer_plane","magic/dais/dais_ring","magic/dais/dais_ring_glyph"};
     private static java.util.UUID cooldownPlayer;
     private static final int[] weaponCooldowns=new int[4];
     @SubscribeEvent public static void models(ModelEvent.RegisterAdditional event){
@@ -84,6 +84,8 @@ public final class ClientEvents {
         event.registerEntityRenderer(Content.EMISSARY_FLAME_SLASH_WAVE.get(),EmptyRenderer::new);
         event.registerEntityRenderer(Content.CRYPT_SLATEHENGE_TRIGGER.get(),EmptyRenderer::new);
         event.registerEntityRenderer(Content.SLATEHENGE_EFFECT.get(),EmptyRenderer::new);
+        event.registerEntityRenderer(Content.INCULCATE_RIG.get(),InculcateRigRenderer::new);
+        event.registerEntityRenderer(Content.DAIS_RING.get(),DaisRingRenderer::new);
     }
     public static void openBook(ItemStack stack){Minecraft.getInstance().setScreen(new BookViewScreen(new BookViewScreen.WrittenBookAccess(stack)));}
     public static void weaponCooldowns(java.util.UUID playerId,int nullSwing,int nullCast,int doomSwing,int doomCast){

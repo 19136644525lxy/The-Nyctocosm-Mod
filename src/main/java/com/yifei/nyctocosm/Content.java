@@ -20,6 +20,8 @@ import com.yifei.nyctocosm.boss.sorcerer.SorcererBeamNode;
 import com.yifei.nyctocosm.boss.sorcerer.SorcererHail;
 import com.yifei.nyctocosm.dais.DaisBlock;
 import com.yifei.nyctocosm.dais.DaisMenu;
+import com.yifei.nyctocosm.dais.DaisRing;
+import com.yifei.nyctocosm.dais.InculcateRig;
 import com.yifei.nyctocosm.entity.SoulEntity;
 import com.yifei.nyctocosm.item.ArtifactItem;
 import com.yifei.nyctocosm.item.FocusItem;
@@ -119,6 +121,10 @@ public final class Content {
         EntityType.Builder.<CryptSlatehengeTrigger>of(CryptSlatehengeTrigger::new,MobCategory.MISC).sized(.1f,.1f).clientTrackingRange(32).updateInterval(20).build("nyctocosm:crypt_slatehenge_trigger"));
     public static final RegistryObject<EntityType<SlatehengeEffect>> SLATEHENGE_EFFECT = ENTITIES.register("slatehenge_effect", () ->
         EntityType.Builder.<SlatehengeEffect>of(SlatehengeEffect::new,MobCategory.MISC).sized(.1f,.1f).clientTrackingRange(32).updateInterval(20).build("nyctocosm:slatehenge_effect"));
+    public static final RegistryObject<EntityType<InculcateRig>> INCULCATE_RIG = ENTITIES.register("inculcate_rig", () ->
+        EntityType.Builder.<InculcateRig>of(InculcateRig::new,MobCategory.MISC).sized(.1f,.1f).clientTrackingRange(128).updateInterval(1).build("nyctocosm:inculcate_rig"));
+    public static final RegistryObject<EntityType<DaisRing>> DAIS_RING = ENTITIES.register("dais_ring", () ->
+        EntityType.Builder.<DaisRing>of(DaisRing::new,MobCategory.MISC).sized(.1f,.1f).clientTrackingRange(128).updateInterval(1).build("nyctocosm:dais_ring"));
     static {
         try(var input=Content.class.getResourceAsStream("/assets/nyctocosm/sounds.json")) {
             var sounds=com.google.gson.JsonParser.parseReader(new java.io.InputStreamReader(java.util.Objects.requireNonNull(input),java.nio.charset.StandardCharsets.UTF_8)).getAsJsonObject();

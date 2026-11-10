@@ -35,18 +35,9 @@ public final class DaisMenu extends AbstractContainerMenu {
                     crafting=true;inputs.removeItem(0,recipe.firstCount);inputs.removeItem(1,recipe.secondCount);crafting=false;slotsChanged(inputs);
                     access.execute((level,pos)->{if(level instanceof net.minecraft.server.level.ServerLevel server){
                         var center=net.minecraft.world.phys.Vec3.atCenterOf(pos);
-                        // 原包 dais/inculcate1/2 演出：master 音效半径 30 + flash/lava/explosion + 360° 径向冲击环
+                        // 原包 crafting:dais/inculcate：召唤 111 帧 AJ rig 并播 master 音效；粒子由 rig 关键帧在 10/76/85/99/110 tick 驱动
                         CommonEvents.soundMaster(server,center,"dais.inculcate",5,30);
-                        for(var p:server.players())server.sendParticles(p,net.minecraft.core.particles.ParticleTypes.FLASH,true,center.x,center.y+.2,center.z,5,.1,.1,.1,0);
-                        server.sendParticles(net.minecraft.core.particles.ParticleTypes.LAVA,center.x,center.y+.2,center.z,10,0,0,0,.1);
-                        server.sendParticles(net.minecraft.core.particles.ParticleTypes.EXPLOSION,center.x,center.y+.2,center.z,10,.1,.1,.1,0);
-                        for(int degrees=0;degrees<360;degrees+=6){
-                            double radians=Math.toRadians(degrees),vx=Math.cos(radians)*.3,vz=Math.sin(radians)*.3;
-                            server.sendParticles(net.minecraft.core.particles.ParticleTypes.FLAME,center.x,center.y+.2,center.z,0,vx,0,vz,1);
-                            server.sendParticles(net.minecraft.core.particles.ParticleTypes.END_ROD,center.x,center.y+.2,center.z,0,vx,0,vz,1);
-                            server.sendParticles(net.minecraft.core.particles.ParticleTypes.FIREWORK,center.x,center.y+.2,center.z,0,vx,0,vz,1);
-                            server.sendParticles(net.minecraft.core.particles.ParticleTypes.WAX_ON,center.x,center.y+.2,center.z,0,vx,0,vz,1);
-                        }
+                        server.addFreshEntity(new InculcateRig(server,center.add(0,1.625,0)));
                     }});
                 }
                 super.onTake(player,stack);

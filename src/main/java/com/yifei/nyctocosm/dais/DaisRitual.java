@@ -54,6 +54,10 @@ public final class DaisRitual {
         // Keep the physical ritual base intact. A real block replaces the anvil and opens a native menu.
         if(!level.setBlockAndUpdate(anvil,Content.DAIS.get().defaultBlockState()))return false;
         Vec3 center=Vec3.atCenterOf(anvil);
+        // 原包 crafting:dais/construct + summon_ring：常驻符文环（pos/up/neg + 普通 glyph 四层）
+        // 由 marker 盔甲架头饰 quartz CMD7/8 渲染；Java 侧用一个 DaisRing 实体承载四层。
+        level.getEntitiesOfClass(DaisRing.class,new net.minecraft.world.phys.AABB(anvil).inflate(2)).forEach(DaisRing::discard);
+        level.addFreshEntity(new DaisRing(level,center.add(0,1,0)));
         // 原包 block/19：dais.construct master 半径 30 音量 5；SOUL 粒子保留（原包演出由 rig 承载）
         CommonEvents.soundMaster(level,center,"dais.construct",5,30);
         level.sendParticles(ParticleTypes.SOUL,center.x,center.y,center.z,60,1.5,.7,1.5,.02);
