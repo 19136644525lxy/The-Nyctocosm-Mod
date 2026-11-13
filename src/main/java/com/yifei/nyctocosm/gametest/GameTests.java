@@ -36,6 +36,7 @@ import com.yifei.nyctocosm.boss.sorcerer.SorcererTimeline;
 import com.yifei.nyctocosm.client.RigTransforms;
 import com.yifei.nyctocosm.combat.Combat;
 import com.yifei.nyctocosm.dais.DaisMenu;
+import com.yifei.nyctocosm.dais.DaisRecipe;
 import com.yifei.nyctocosm.dais.DaisRitual;
 import com.yifei.nyctocosm.item.FocusItem;
 import com.yifei.nyctocosm.item.LoreItem;
@@ -4245,7 +4246,7 @@ public final class GameTests {
     }
     @GameTest(template="empty")
     public static void dais_consumes_exact_original_cost(GameTestHelper helper){
-        var player=helper.makeMockPlayer();var menu=new DaisMenu(1,player.getInventory());
+        var player=helper.makeMockPlayer();var menu=new DaisMenu(1,player.getInventory(),net.minecraft.world.inventory.ContainerLevelAccess.NULL,helper.getLevel());
         menu.getSlot(0).set(new ItemStack(Content.get("seelic_essence"),40));
         menu.getSlot(1).set(new ItemStack(Content.get("nightmare_scale"),51));
         helper.assertTrue(!menu.getSlot(2).hasItem(),"Dais accepted too few scales");
@@ -4258,7 +4259,7 @@ public final class GameTests {
     }
     @GameTest(template="empty")
     public static void dais_does_not_lose_partial_output(GameTestHelper helper){
-        var player=helper.makeMockPlayer();var menu=new DaisMenu(1,player.getInventory());
+        var player=helper.makeMockPlayer();var menu=new DaisMenu(1,player.getInventory(),net.minecraft.world.inventory.ContainerLevelAccess.NULL,helper.getLevel());
         for(int i=0;i<36;i++)player.getInventory().setItem(i,new ItemStack(net.minecraft.world.item.Items.STONE,64));
         player.getInventory().setItem(0,new ItemStack(Content.get("seelic_essence"),62));
         menu.getSlot(0).set(new ItemStack(net.minecraft.world.item.Items.SOUL_SAND,4));
@@ -4589,6 +4590,24 @@ public final class GameTests {
         helper.assertTrue("message.nyctocosm.dais_missing_quartz".equals(DaisRitual.fault(level,anvil)),"Wrong stair facing was not reported as the faulty part");
         level.setBlockAndUpdate(east,stair);
         helper.assertTrue(DaisRitual.activate(level,anvil)&&level.getBlockState(anvil).is(Content.DAIS.get()),"Native dais not created");
+        helper.succeed();
+    }
+    @GameTest(template="empty")
+    public static void dais_recipes_load_from_data_and_match_counts(GameTestHelper helper){
+        var level=helper.getLevel();
+        @SuppressWarnings("unchecked")
+        var type=(net.minecraft.world.item.crafting.RecipeType<DaisRecipe>)Content.DAIS_RECIPE_TYPE.get();
+        var recipes=level.getRecipeManager().getAllRecipesFor(type);
+        helper.assertTrue(recipes.size()>=4,"Built-in dais recipes did not load: "+recipes.size());
+        var inputs=new net.minecraft.world.SimpleContainer(2);
+        inputs.setItem(0,new ItemStack(net.minecraft.world.item.Items.SOUL_SAND,4));
+        inputs.setItem(1,new ItemStack(net.minecraft.world.item.Items.BLAZE_ROD,1));
+        var match=recipes.stream().filter(recipe->recipe.matches(inputs,level)).findFirst();
+        helper.assertTrue(match.isPresent(),"Built-in see lic essence dais recipe did not match");
+        var result=match.get().getResultItem(level.registryAccess());
+        helper.assertTrue(result.is(Content.get("seelic_essence"))&&result.getCount()==4,"Built-in see lic essence dais recipe produced the wrong stack");
+        inputs.setItem(0,new ItemStack(net.minecraft.world.item.Items.SOUL_SAND,3));
+        helper.assertTrue(recipes.stream().noneMatch(recipe->recipe.matches(inputs,level)),"Dais recipe matched with too few items");
         helper.succeed();
     }
     @GameTest(template="empty")

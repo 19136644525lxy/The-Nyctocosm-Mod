@@ -1,0 +1,6 @@
+{
+  "type": "nyctocosm:dais",
+  "first": { "item": "minecraft:soul_sand", "count": 4 },
+  "second": { "item": "minecraft:blaze_rod", "count": 1 },
+  "result": { "item": "nyctocosm:seelic_essence", "count": 4 }
+}

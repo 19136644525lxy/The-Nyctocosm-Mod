@@ -20,7 +20,7 @@ public final class DaisBlock extends Block {
         if(!level.isClientSide){
             // 区块卸载会丢失 pending tick，右键时重启 hum 循环（hasScheduledTick 防重复叠加）
             if(!level.getBlockTicks().hasScheduledTick(pos,this))level.scheduleTick(pos,this,1);
-            player.openMenu(new SimpleMenuProvider((id,inventory,p)->new DaisMenu(id,inventory,ContainerLevelAccess.create(level,pos)),Component.translatable("gui.nyctocosm.dais_title")));
+            player.openMenu(new SimpleMenuProvider((id,inventory,p)->new DaisMenu(id,inventory,ContainerLevelAccess.create(level,pos),level),Component.translatable("gui.nyctocosm.dais_title")));
         }
         return InteractionResult.sidedSuccess(level.isClientSide);
     }

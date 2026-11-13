@@ -1,0 +1,6 @@
+{
+  "type": "nyctocosm:dais",
+  "first": { "item": "nyctocosm:seelic_essence", "count": 20 },
+  "second": { "item": "minecraft:gold_ingot", "count": 4 },
+  "result": { "item": "nyctocosm:planar_coil", "count": 1 }
+}

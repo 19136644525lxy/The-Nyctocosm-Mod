@@ -1,0 +1,6 @@
+{
+  "type": "nyctocosm:dais",
+  "first": { "item": "nyctocosm:seelic_essence", "count": 40 },
+  "second": { "item": "nyctocosm:null_splinter", "count": 6 },
+  "result": { "item": "nyctocosm:nullfissure", "count": 1 }
+}

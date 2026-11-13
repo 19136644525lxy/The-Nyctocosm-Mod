@@ -20,6 +20,8 @@ public final class NyctocosmMod {
         Content.SOUNDS.register(bus);
         Content.BLOCKS.register(bus);
         Content.MENUS.register(bus);
+        Content.RECIPE_TYPES.register(bus);
+        Content.RECIPE_SERIALIZERS.register(bus);
         Content.LOOT_MODIFIERS.register(bus);
         Network.register();
         bus.addListener(this::attributes);

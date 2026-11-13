@@ -1,0 +1,6 @@
+{
+  "type": "nyctocosm:dais",
+  "first": { "item": "nyctocosm:seelic_essence", "count": 40 },
+  "second": { "item": "nyctocosm:nightmare_scale", "count": 52 },
+  "result": { "item": "nyctocosm:wyrmsliver", "count": 1 }
+}
